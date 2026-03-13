@@ -1,0 +1,8984 @@
+window.__QUESTION_BANK__ = {
+  "generatedFrom": "./output/batch",
+  "questionCount": 300,
+  "questions": [
+    {
+      "id": "002_databricks_view_117083_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 1,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 1 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117083-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream system has been configured to pass the date for a given batch of data to the Databricks Jobs API as a parameter. The notebook to be scheduled will use this parameter to load data with the following code: df = spark.read.format(\"parquet\").load(f\"/mnt/source/(date)\")\nWhich code block should be used to create the date Python variable used in the above code block?",
+      "options": [
+        {
+          "key": "A",
+          "text": "date = spark.conf.get(\"date\")"
+        },
+        {
+          "key": "B",
+          "text": "input_dict = input()\ndate= input_dict[\"date\"]"
+        },
+        {
+          "key": "C",
+          "text": "import sys\ndate = sys.argv[1]"
+        },
+        {
+          "key": "D",
+          "text": "date = dbutils.notebooks.getParam(\"date\")"
+        },
+        {
+          "key": "E",
+          "text": "dbutils.widgets.text(\"date\", \"null\")\ndate = dbutils.widgets.get(\"date\")\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/002_databricks_view_117083_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "003_databricks_view_117384_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 2,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 2 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117384-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The atabricks workspace administrator has configured interactive clusters for each of the data engineering groups. To control costs, clusters are set to terminate after 30 minutes of inactivity. Each user should be able to execute workloads against their assigned clusters at any time of the day.\nAssuming users have been added to a workspace but not granted any permissions, which of the following describes the minimal permissions a user would need to start and attach to an already configured cluster.",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"Can Manage\" privileges on the required cluster"
+        },
+        {
+          "key": "B",
+          "text": "Workspace Admin privileges, cluster creation allowed, \"Can Attach To\" privileges on the required cluster"
+        },
+        {
+          "key": "C",
+          "text": "Cluster creation allowed, \"Can Attach To\" privileges on the required cluster"
+        },
+        {
+          "key": "D",
+          "text": "\"Can Restart\" privileges on the required cluster"
+        },
+        {
+          "key": "E",
+          "text": "Cluster creation allowed, \"Can Restart\" privileges on the required cluster\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/003_databricks_view_117384_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "004_databricks_view_117385_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 3,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 3 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117385-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When scheduling Structured Streaming jobs for production, which configuration automatically recovers from query failures and keeps costs low?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cluster: New Job Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: Unlimited"
+        },
+        {
+          "key": "B",
+          "text": "Cluster: New Job Cluster;\nRetries: None;\nMaximum Concurrent Runs: 1"
+        },
+        {
+          "key": "C",
+          "text": "Cluster: Existing All-Purpose Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: 1"
+        },
+        {
+          "key": "D",
+          "text": "Cluster: New Job Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: 1"
+        },
+        {
+          "key": "E",
+          "text": "Cluster: Existing All-Purpose Cluster;\nRetries: None;\nMaximum Concurrent Runs: 1\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/004_databricks_view_117385_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "005_databricks_view_121876_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 4,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 4 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/121876-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team has configured a Databricks SQL query and alert to monitor the values in a Delta Lake table. The recent_sensor_recordings table contains an identifying sensor_id alongside the timestamp and temperature for the most recent 5 minutes of recordings.\nThe below query is used to create the alert:\nThe query is set to refresh each minute and always completes in less than 10 seconds. The alert is set to trigger when mean (temperature) > 120. Notifications are triggered to be sent at most every 1 minute.\nIf this alert raises notifications for 3 consecutive minutes and then stops, which statement must be true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The total average temperature across all sensors exceeded 120 on three consecutive executions of the query"
+        },
+        {
+          "key": "B",
+          "text": "The recent_sensor_recordings table was unresponsive for three consecutive runs of the query"
+        },
+        {
+          "key": "C",
+          "text": "The source query failed to update properly for three consecutive minutes and then restarted"
+        },
+        {
+          "key": "D",
+          "text": "The maximum temperature recording for at least one sensor exceeded 120 on three consecutive executions of the query"
+        },
+        {
+          "key": "E",
+          "text": "The average temperature recordings for at least one sensor exceeded 120 on three consecutive executions of the query\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/005_databricks_view_121876_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/005_databricks_view_121876_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "006_databricks_view_123733_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 5,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 5 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/123733-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior developer complains that the code in their notebook isn't producing the correct results in the development environment. A shared screenshot reveals that while they're using a notebook versioned with Databricks Repos, they're using a personal branch that contains old logic. The desired branch named dev-2.3.9 is not available from the branch selection dropdown.\nWhich approach will allow this developer to review the current logic for this notebook?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Repos to make a pull request use the Databricks REST API to update the current branch to dev-2.3.9"
+        },
+        {
+          "key": "B",
+          "text": "Use Repos to pull changes from the remote Git repository and select the dev-2.3.9 branch."
+        },
+        {
+          "key": "C",
+          "text": "Use Repos to checkout the dev-2.3.9 branch and auto-resolve conflicts with the current branch"
+        },
+        {
+          "key": "D",
+          "text": "Merge all changes back to the main branch in the remote Git repository and clone the repo again"
+        },
+        {
+          "key": "E",
+          "text": "Use Repos to merge the current branch and the dev-2.3.9 branch, then make a pull request to sync with the remote repository\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/006_databricks_view_123733_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "007_databricks_view_117453_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 6,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 6 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117453-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The security team is exploring whether or not the Databricks secrets module can be leveraged for connecting to an external database.\nAfter testing the code with all Python variables being defined with strings, they upload the password to the secrets module and configure the correct permissions for the currently active user. They then modify their code to the following (leaving all other variables unchanged).\nWhich statement describes what will happen when the above code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The connection to the external table will fail; the string \"RDACTD\" will be printed."
+        },
+        {
+          "key": "B",
+          "text": "An interactive input box will appear in the notebook; if the right password is provided, the connection will succeed and the encoded password will be saved to DBFS."
+        },
+        {
+          "key": "C",
+          "text": "An interactive input box will appear in the notebook; if the right password is provided, the connection will succeed and the password will be printed in plain text."
+        },
+        {
+          "key": "D",
+          "text": "The connection to the external table will succeed; the string value of password will be printed in plain text."
+        },
+        {
+          "key": "E",
+          "text": "The connection to the external table will succeed; the string \"RDACTD\" will be printed.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/007_databricks_view_117453_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/007_databricks_view_117453_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 7,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 7 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119221-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has created and logged a production model using MLflow. The following code correctly imports and applies the production model to output the predictions as a new DataFrame named preds with the schema \"customer_id LONG, predictions DOUBLE, date DTE\".\nThe data science team would like predictions saved to a Delta Lake table with the ability to compare all predictions across time. Churn predictions will be made at most once per day.\nWhich code block accomplishes this task while minimizing potential compute costs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "preds.write.mode(\"append\").savesTable(\"churn_preds\")"
+        },
+        {
+          "key": "B",
+          "text": "preds.write.format(\"delta\").save(\"/preds/churn_preds\")"
+        },
+        {
+          "key": "E",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/008_databricks_view_119221_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "009_databricks_view_120171_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 8,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 8 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120171-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream source writes Parquet data as hourly batches to directories named with the current date. A nightly batch job runs the following code to ingest all data from the previous day as indicated by the date variable:\nAssume that the fields customer_id and order_id serve as a composite key to uniquely identify each order.\nIf the upstream system is known to occasionally produce duplicate entries for a single order hours apart, which statement is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each write to the orders table will only contain unique records, and only those records without duplicates in the target table will be written."
+        },
+        {
+          "key": "B",
+          "text": "Each write to the orders table will only contain unique records, but newly written records may have duplicates already present in the target table."
+        },
+        {
+          "key": "C",
+          "text": "Each write to the orders table will only contain unique records; if existing records with the same key are present in the target table, these records will be overwritten."
+        },
+        {
+          "key": "D",
+          "text": "Each write to the orders table will only contain unique records; if existing records with the same key are present in the target table, the operation will fail."
+        },
+        {
+          "key": "E",
+          "text": "Each write to the orders table will run deduplication over the union of new and existing records, ensuring no duplicate records are present.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/009_databricks_view_120171_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/009_databricks_view_120171_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "010_databricks_view_119186_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 9,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 9 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119186-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior member of the data engineering team is exploring the language interoperability of Databricks notebooks. The intended outcome of the below code is to register a view of all sales that occurred in countries on the continent of Africa that appear in the geo_lookup table.\nBefore executing the code, running SHOW TABLS on the current database indicates the database contains only two tables: geo_lookup and sales.\nWhich statement correctly describes the outcome of executing these command cells in order in an interactive notebook?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both commands will succeed. xecuting show tables will show that countries_af and sales_af have been registered as views."
+        },
+        {
+          "key": "B",
+          "text": "Cmd 1 will succeed. Cmd 2 will search all accessible databases for a table or view named countries_af: if this entity exists, Cmd 2 will succeed."
+        },
+        {
+          "key": "C",
+          "text": "Cmd 1 will succeed and Cmd 2 will fail. countries_af will be a Python variable representing a PySpark DataFrame."
+        },
+        {
+          "key": "D",
+          "text": "Both commands will fail. No new variables, tables, or views will be created."
+        },
+        {
+          "key": "E",
+          "text": "Cmd 1 will succeed and Cmd 2 will fail. countries_af will be a Python variable containing a list of strings.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/010_databricks_view_119186_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/010_databricks_view_119186_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "011_databricks_view_117162_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 10,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 10 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117162-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A elta table of weather records is partitioned by date and has the below schema: date ATE, device_id INT, temp FLOAT, latitude FLOAT, longitude FLOAT\nTo find all the records from within the Arctic Circle, you execute a query with the below filter: latitude > 66.3\nWhich statement describes how the elta engine identifies which files to load?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All records are cached to an operational database and then the filter is applied"
+        },
+        {
+          "key": "B",
+          "text": "The Parquet file footers are scanned for min and max statistics for the latitude column"
+        },
+        {
+          "key": "C",
+          "text": "All records are cached to attached storage and then the filter is applied"
+        },
+        {
+          "key": "D",
+          "text": "The elta log is scanned for min and max statistics for the latitude column"
+        },
+        {
+          "key": "E",
+          "text": "The Hive metastore is scanned for min and max statistics for the latitude column\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/011_databricks_view_117162_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "012_databricks_view_117060_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 11,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 11 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117060-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team has configured a job to process customer requests to be forgotten (have their data deleted). All user data that needs to be deleted is stored in Delta Lake tables using default table settings.\nThe team has decided to process all deletions from the previous week as a batch job at 1am each Sunday. The total duration of this job is less than one hour. very Monday at 3am, a batch job executes a series of VACUUM commands on all Delta Lake tables throughout the organization.\nThe compliance officer has recently learned about Delta Lake's time travel functionality. They are concerned that this might allow continued access to deleted data.\nAssuming all delete logic is correctly implemented, which statement correctly addresses this concern?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the VACUUM command permanently deletes all files containing deleted records, deleted records may be accessible with time travel for around 24 hours."
+        },
+        {
+          "key": "B",
+          "text": "Because the default data retention threshold is 24 hours, data files containing deleted records will be retained until the VACUUM job is run the following day."
+        },
+        {
+          "key": "C",
+          "text": "Because Delta Lake time travel provides full access to the entire history of a table, deleted records can always be recreated by users with full admin privileges."
+        },
+        {
+          "key": "D",
+          "text": "Because Delta Lake's delete statements have ACID guarantees, deleted records will be permanently purged from all storage systems as soon as a delete job completes."
+        },
+        {
+          "key": "E",
+          "text": "Because the default data retention threshold is 7 days, data files containing deleted records will be retained until the VACUUM job is run 8 days later.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/012_databricks_view_117060_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "013_databricks_view_120855_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 12,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 12 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120855-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer has configured a workload that posts the following JSON to the Databricks REST API endpoint 2.0/jobs/create.\nAssuming that all configurations and referenced resources are available, which statement describes the result of executing this workload three times?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Three new jobs named \"Ingest new data\" will be defined in the workspace, and they will each run once daily."
+        },
+        {
+          "key": "B",
+          "text": "The logic defined in the referenced notebook will be executed three times on new clusters with the configurations of the provided cluster ID."
+        },
+        {
+          "key": "C",
+          "text": "Three new jobs named \"Ingest new data\" will be defined in the workspace, but no jobs will be executed."
+        },
+        {
+          "key": "D",
+          "text": "One new job named \"Ingest new data\" will be defined in the workspace, but it will not be executed."
+        },
+        {
+          "key": "E",
+          "text": "The logic defined in the referenced notebook will be executed three times on the referenced existing all purpose cluster.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/013_databricks_view_120855_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/013_databricks_view_120855_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "014_databricks_view_119187_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 13,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 13 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119187-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream system is emitting change data capture (CDC) logs that are being written to a cloud object storage directory. ach record in the log indicates the change type (insert, update, or delete) and the values for each field after the change. The source table has a primary key identified by the field pk_id.\nFor auditing purposes, the data governance team wishes to maintain a full record of all values that have ever been valid in the source system. For analytical purposes, only the most recent value for each record needs to be recorded. The Databricks job to ingest these records occurs once per hour, but each individual record may have changed multiple times over the course of an hour.\nWhich solution meets these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a separate history table for each pk_id resolve the current state of the table by running a union all filtering the history tables for the most recent state."
+        },
+        {
+          "key": "B",
+          "text": "Use MRG INTO to insert, update, or delete the most recent entry for each pk_id into a bronze table, then propagate all changes throughout the system."
+        },
+        {
+          "key": "C",
+          "text": "Iterate through an ordered set of changes to the table, applying each in turn; rely on Delta Lake's versioning ability to create an audit log."
+        },
+        {
+          "key": "D",
+          "text": "Use Delta Lake's change data feed to automatically process CDC data from an external system, propagating all changes to all dependent tables in the Lakehouse."
+        },
+        {
+          "key": "E",
+          "text": "Ingest all log information into a bronze table; use MRG INTO to insert, update, or delete the most recent entry for each pk_id into a silver table to recreate the current table state.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/014_databricks_view_119187_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "015_databricks_view_120174_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 14,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 14 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120174-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An hourly batch job is configured to ingest data files from a cloud object storage container where each batch represent all records produced by the source system in a given hour. The batch job to process these records into the Lakehouse is sufficiently delayed to ensure no late-arriving data is missed. The user_id field represents a unique key for the data, which has the following schema: user_id BIGINT, username STRING, user_utc STRING, user_region STRING, last_login BIGINT, auto_pay BOOLEAN, last_updated BIGINT\nNew records are all ingested into a table named account_history which maintains a full record of all data in the same schema as the source. The next table in the system is named account_current and is implemented as a Type 1 table representing the most recent value for each unique user_id.\nAssuming there are millions of user accounts and tens of thousands of records processed hourly, which implementation can be used to efficiently update the described account_current table as part of each hourly batch job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Auto Loader to subscribe to new files in the account_history directory; configure a Structured Streaming trigger once job to batch update newly detected files into the account_current table."
+        },
+        {
+          "key": "B",
+          "text": "Overwrite the account_current table with each batch using the results of a query against the account_history table grouping by user_id and filtering for the max value of last_updated."
+        },
+        {
+          "key": "C",
+          "text": "Filter records in account_history using the last_updated field and the most recent hour processed, as well as the max last_iogin by user_id write a merge statement to update or insert the most recent value for each user_id."
+        },
+        {
+          "key": "D",
+          "text": "Use Delta Lake version history to get the difference between the latest version of account_history and one version prior, then write these records to account_current."
+        },
+        {
+          "key": "E",
+          "text": "Filter records in account_history using the last_updated field and the most recent hour processed, making sure to deduplicate on username; write a merge statement to update or insert the most recent value for each username.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/015_databricks_view_120174_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "016_databricks_view_119189_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 15,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 15 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119189-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A table in the Lakehouse named customer_churn_params is used in churn prediction by the machine learning team. The table contains information about customers derived from a number of upstream sources. Currently, the data engineering team populates this table nightly by overwriting the table with the current valid values derived from upstream data sources.\nThe churn prediction model used by the ML team is fairly stable in production. The team is only interested in making predictions on records that have changed in the past 24 hours.\nWhich approach would simplify the identification of these changed records?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apply the churn model to all rows in the customer_churn_params table, but implement logic to perform an upsert into the predictions table that ignores rows where predictions have not changed."
+        },
+        {
+          "key": "B",
+          "text": "Convert the batch job to a Structured Streaming job using the complete output mode; configure a Structured Streaming job to read from the customer_churn_params table and incrementally predict against the churn model."
+        },
+        {
+          "key": "C",
+          "text": "Calculate the difference between the previous model predictions and the current customer_churn_params on a key identifying unique customers before making new predictions; only make predictions on those customers not in the previous predictions."
+        },
+        {
+          "key": "D",
+          "text": "Modify the overwrite logic to include a field populated by calling spark.sql.functions.current_timestamp() as data are being written; use this field to identify records written on a particular date."
+        },
+        {
+          "key": "E",
+          "text": "Replace the current overwrite logic with a merge statement to modify only those records that have changed; write logic to make predictions on the changed records identified by the change data feed.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/016_databricks_view_119189_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "017_databricks_view_117078_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 16,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 16 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117078-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A table is registered with the following code:\noth users and orders are Delta Lake tables. Which statement describes the results of querying recent_orders?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query finishes."
+        },
+        {
+          "key": "B",
+          "text": "All logic will execute when the table is defined and store the result of joining tables to the DFS; this stored data will be returned when the table is queried."
+        },
+        {
+          "key": "C",
+          "text": "Results will be computed and cached when the table is defined; these cached results will incrementally update as new records are inserted into source tables."
+        },
+        {
+          "key": "D",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query began."
+        },
+        {
+          "key": "E",
+          "text": "The versions of each source table will be stored in the table transaction log; query results will be saved to DFS with each query.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/017_databricks_view_117078_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/017_databricks_view_117078_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "018_databricks_view_119377_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 17,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 17 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119377-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "production workload incrementally applies updates from an external Change Data Capture feed to a Delta Lake table as an always-on Structured Stream job. When data was initially migrated for this table, OPTIMIZE was executed and most data files were resized to 1 GB. uto Optimize and uto Compaction were both turned on for the streaming production job. Recent review of data files shows that most data files are under 64 MB, although each partition in the table contains at least 1 GB of data and the total table size is over 10 TB.\nWhich of the following likely explains these smaller file sizes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Databricks has autotuned to a smaller target file size to reduce duration of MERGE operations"
+        },
+        {
+          "key": "B",
+          "text": "Z-order indices calculated on the table are preventing file compaction"
+        },
+        {
+          "key": "C",
+          "text": "Bloom filter indices calculated on the table are preventing file compaction"
+        },
+        {
+          "key": "D",
+          "text": "Databricks has autotuned to a smaller target file size based on the overall size of data in the table"
+        },
+        {
+          "key": "E",
+          "text": "Databricks has autotuned to a smaller target file size based on the amount of data in each partition\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/018_databricks_view_119377_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "019_databricks_view_118335_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 18,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 18 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/118335-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement regarding stream-static joins and static Delta tables is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each microbatch of a stream-static join will use the most recent version of the static Delta table as of each microbatch."
+        },
+        {
+          "key": "B",
+          "text": "Each microbatch of a stream-static join will use the most recent version of the static Delta table as of the job's initialization."
+        },
+        {
+          "key": "C",
+          "text": "The checkpoint directory will be used to track state information for the unique keys present in the join."
+        },
+        {
+          "key": "D",
+          "text": "Stream-static joins cannot use static Delta tables because of consistency issues."
+        },
+        {
+          "key": "E",
+          "text": "The checkpoint directory will be used to track updates to the static Delta table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/019_databricks_view_118335_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "020_databricks_view_120176_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 19,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 19 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120176-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer has been asked to develop a streaming data pipeline with a grouped aggregation using DataFrame df. The pipeline needs to calculate the average humidity and average temperature for each non-overlapping five-minute interval. Events are recorded once per minute per device.\nStreaming DataFrame df has the following schema:\n\"device_id INT, event_time TIMESTAMP, temp FLOAT, humidity FLOAT\"\nCode block:\nChoose the response that correctly fills in the blank within the code block to complete this task.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to_interval(\"event_time\", \"5 minutes\").alias(\"time\")"
+        },
+        {
+          "key": "B",
+          "text": "window(\"event_time\", \"5 minutes\").alias(\"time\")"
+        },
+        {
+          "key": "C",
+          "text": "\"event_time\""
+        },
+        {
+          "key": "D",
+          "text": "window(\"event_time\", \"10 minutes\").alias(\"time\")"
+        },
+        {
+          "key": "E",
+          "text": "lag(\"event_time\", \"10 minutes\").alias(\"time\")\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/020_databricks_view_120176_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/020_databricks_view_120176_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "021_databricks_view_119397_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 20,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 20 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119397-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data architect has designed a system in which two Structured Streaming jobs will concurrently write to a single bronze Delta table. ach job is subscribing to a different topic from an Apache Kafka source, but they will write data with the same schema. To keep the directory structure simple, a data engineer has decided to nest a checkpoint directory to be shared by both streams.\nThe proposed directory structure is displayed below:\nWhich statement describes whether this checkpoint directory structure is valid for the given scenario and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No; Delta Lake manages streaming checkpoints in the transaction log."
+        },
+        {
+          "key": "B",
+          "text": "Yes; both of the streams can share a single checkpoint directory."
+        },
+        {
+          "key": "C",
+          "text": "No; only one stream can write to a Delta Lake table."
+        },
+        {
+          "key": "D",
+          "text": "Yes; Delta Lake supports infinite concurrent writers."
+        },
+        {
+          "key": "E",
+          "text": "No; each of the streams needs to have its own checkpoint directory.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/021_databricks_view_119397_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/021_databricks_view_119397_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "022_databricks_view_117090_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 21,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 21 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117090-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Structured Streaming job deployed to production has been experiencing delays during peak hours of the day. At present, during normal execution, each microbatch of data is processed in less than 3 seconds. During peak hours of the day, execution time for each microbatch becomes very inconsistent, sometimes exceeding 30 seconds. The streaming write is currently configured with a trigger interval of 10 seconds.\nHolding all other variables constant and assuming records need to be processed in less than 10 seconds, which adjustment will meet the requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decrease the trigger interval to 5 seconds; triggering batches more frequently allows idle executors to begin processing the next batch while longer running tasks from previous batches finish."
+        },
+        {
+          "key": "B",
+          "text": "Increase the trigger interval to 30 seconds; setting the trigger interval near the maximum execution time observed for each batch is always best practice to ensure no records are dropped."
+        },
+        {
+          "key": "C",
+          "text": "The trigger interval cannot be modified without modifying the checkpoint directory; to maintain the current stream state, increase the number of shuffle partitions to maximize parallelism."
+        },
+        {
+          "key": "D",
+          "text": "Use the trigger once option and configure a Databricks job to execute the query every 10 seconds; this ensures all backlogged records are processed with each batch."
+        },
+        {
+          "key": "E",
+          "text": "Decrease the trigger interval to 5 seconds; triggering batches more frequently may prevent records from backing up and large batches from causing spill.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/022_databricks_view_117090_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "023_databricks_view_117466_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 22,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 22 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117466-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes Delta Lake Auto Compaction?",
+      "options": [
+        {
+          "key": "A",
+          "text": "An asynchronous job runs after the write completes to detect if files could be further compacted; if yes, an OPTIMIZ job is executed toward a default of 1 GB."
+        },
+        {
+          "key": "B",
+          "text": "Before a Jobs cluster terminates, OPTIMIZ is executed on all tables modified during the most recent job."
+        },
+        {
+          "key": "C",
+          "text": "Optimized writes use logical partitions instead of directory partitions; because partition boundaries are only represented in metadata, fewer small files are written."
+        },
+        {
+          "key": "D",
+          "text": "Data is queued in a messaging bus instead of committing data directly to memory; all data is committed from the messaging bus in one batch once the job is complete."
+        },
+        {
+          "key": "E",
+          "text": "An asynchronous job runs after the write completes to detect if files could be further compacted; if yes, an OPTIMIZ job is executed toward a default of 128 MB.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/023_databricks_view_117466_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "024_databricks_view_117468_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 23,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 23 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117468-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement characterizes the general programming model used by Spark Structured Streaming?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Structured Streaming leverages the parallel processing of GPUs to achieve highly parallel data throughput."
+        },
+        {
+          "key": "B",
+          "text": "Structured Streaming is implemented as a messaging bus and is derived from Apache Kafka."
+        },
+        {
+          "key": "C",
+          "text": "Structured Streaming uses specialized hardware and I/O streams to achieve sub-second latency for data transfer."
+        },
+        {
+          "key": "D",
+          "text": "Structured Streaming models new data arriving in a data stream as new rows appended to an unbounded table."
+        },
+        {
+          "key": "E",
+          "text": "Structured Streaming relies on a distributed network of nodes that hold incremental state values for cached stages.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/024_databricks_view_117468_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "025_databricks_view_117469_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 24,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 24 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117469-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which configuration parameter directly affects the size of a spark-partition upon ingestion of data into Spark?",
+      "options": [
+        {
+          "key": "A",
+          "text": "spark.sql.files.maxPartitionBytes"
+        },
+        {
+          "key": "B",
+          "text": "spark.sql.autoBroadcastJoinThreshold"
+        },
+        {
+          "key": "C",
+          "text": "spark.sql.files.openCostInBytes"
+        },
+        {
+          "key": "D",
+          "text": "spark.sql.adaptive.coalescePartitions.minPartitionNum"
+        },
+        {
+          "key": "E",
+          "text": "spark.sql.adaptive.advisoryPartitionSizeInBytes\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/025_databricks_view_117469_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "026_databricks_view_121108_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 25,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 25 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/121108-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Spark job is taking longer than expected. Using the Spark UI, a data engineer notes that the Min, Median, and Max urations for tasks in a particular stage show the minimum and median time to complete a task as roughly the same, but the max duration for a task to be roughly 100 times as long as the minimum.\nWhich situation is causing increased duration of the overall job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Task queueing resulting from improper thread pool assignment."
+        },
+        {
+          "key": "B",
+          "text": "Spill resulting from attached volume storage being too small."
+        },
+        {
+          "key": "C",
+          "text": "Network latency due to some cluster nodes being in different regions from the source data"
+        },
+        {
+          "key": "D",
+          "text": "Skew caused by more data being assigned to a subset of spark-partitions."
+        },
+        {
+          "key": "E",
+          "text": "Credential validation errors while pulling data from an external system.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/026_databricks_view_121108_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "027_databricks_view_117097_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 26,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 26 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117097-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Each configuration below is identical to the extent that each cluster has 400 GB total of RAM, 160 total cores and only one Executor per VM.\nGiven a job with at least one wide transformation, which of the following cluster configurations will result in maximum performance?",
+      "options": [
+        {
+          "key": "A",
+          "text": "• Total VMs; 1\n• 400 GB per Executor\n• 160 ores / Executor"
+        },
+        {
+          "key": "B",
+          "text": "• Total VMs: 8\n• 50 GB per Executor\n• 20 ores / Executor"
+        },
+        {
+          "key": "C",
+          "text": "• Total VMs: 16\n• 25 GB per Executor\n• 10 ores/Executor"
+        },
+        {
+          "key": "D",
+          "text": "• Total VMs: 4\n• 100 GB per Executor\n• 40 ores/Executor"
+        },
+        {
+          "key": "E",
+          "text": "• Total VMs:2\n• 200 GB per Executor\n• 80 ores / Executor\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/027_databricks_view_117097_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "028_databricks_view_121337_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 27,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 27 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/121337-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer on your team has implemented the following code block.\nThe view new_events contains a batch of records with the same schema as the events Delta table. The event_id field serves as a unique key for this table.\nWhen this query is executed, what will happen with new records that have the same event_id as an existing record?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They are merged."
+        },
+        {
+          "key": "B",
+          "text": "They are ignored."
+        },
+        {
+          "key": "C",
+          "text": "They are updated."
+        },
+        {
+          "key": "D",
+          "text": "They are inserted."
+        },
+        {
+          "key": "E",
+          "text": "They are deleted.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/028_databricks_view_121337_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/028_databricks_view_121337_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "029_databricks_view_117098_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 28,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 28 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117098-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer seeks to leverage Delta Lake's Change Data Feed functionality to create a Type 1 table representing all of the values that have ever been valid for all rows in a bronze table created with the property delta.enableChangeDataFeed = true. They plan to execute the following code as a daily job:\nWhich statement describes the execution and results of running the above query multiple times?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each time the job is executed, newly updated records will be merged into the target table, overwriting previous values with the same primary keys."
+        },
+        {
+          "key": "B",
+          "text": "Each time the job is executed, the entire available history of inserted or updated records will be appended to the target table, resulting in many duplicate entries."
+        },
+        {
+          "key": "C",
+          "text": "Each time the job is executed, the target table will be overwritten using the entire history of inserted or updated records, giving the desired result."
+        },
+        {
+          "key": "D",
+          "text": "Each time the job is executed, the differences between the original and current versions are calculated; this may result in duplicate entries for some records."
+        },
+        {
+          "key": "E",
+          "text": "Each time the job is executed, only those records that have been inserted or updated since the last execution will be appended to the target table, giving the desired result.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/029_databricks_view_117098_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/029_databricks_view_117098_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "030_databricks_view_125387_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 29,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 29 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/125387-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A new data engineer notices that a critical field was omitted from an application that writes its Kafka source to Delta Lake. This happened even though the critical field was in the Kafka source. That field was further missing from data written to dependent, long-term storage. The retention threshold on the Kafka service is seven days. The pipeline has been in production for three months.\nWhich describes how Delta Lake can help to avoid data loss of this nature in the future?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The Delta log and Structured Streaming checkpoints record the full history of the Kafka producer."
+        },
+        {
+          "key": "B",
+          "text": "Delta Lake schema evolution can retroactively calculate the correct value for newly added fields, as long as the data was in the original source."
+        },
+        {
+          "key": "C",
+          "text": "Delta Lake automatically checks that all fields present in the source data are included in the ingestion layer."
+        },
+        {
+          "key": "D",
+          "text": "Data can never be permanently dropped or deleted from Delta Lake, so data loss is not possible under any circumstance."
+        },
+        {
+          "key": "E",
+          "text": "Ingesting all raw data and metadata from Kafka to a bronze Delta table creates a permanent, replayable history of the data state.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/030_databricks_view_125387_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "031_databricks_view_120700_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 30,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 30 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120700-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "nightly job ingests data into a Delta Lake table using the following code:\nThe next step in the pipeline requires a function that returns an object that can be used to manipulate new records that have not yet been processed to the next table in the pipeline.\nWhich code snippet completes this function definition?\ndef new_records():",
+      "options": [
+        {
+          "key": "A",
+          "text": "return spark.readStream.table(\"bronze\")"
+        },
+        {
+          "key": "B",
+          "text": "return spark.readStream.load(\"bronze\")"
+        },
+        {
+          "key": "D",
+          "text": "return spark.read.option(\"readChangeFeed\", \"true\").table (\"bronze\")"
+        },
+        {
+          "key": "E",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/031_databricks_view_120700_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/031_databricks_view_120700_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/031_databricks_view_120700_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png"
+      ],
+      "sourceFile": "output/batch/031_databricks_view_120700_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "032_databricks_view_120702_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 31,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 31 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120702-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer is working to implement logic for a Lakehouse table named silver_device_recordings. The source data contains 100 unique fields in a highly nested JSON structure.\nThe silver_device_recordings table will be used downstream to power several production monitoring dashboards and a production model. At present, 45 of the 100 fields are being used in at least one of these applications.\nThe data engineer is trying to determine the best approach for dealing with schema declaration given the highly-nested structure of the data and the numerous fields.\nWhich of the following accurately presents information about elta Lake and atabricks that may impact their decision-making process?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The Tungsten encoding used by atabricks is optimized for storing string data; newly-added native support for querying JSON strings means that string types are always most efficient."
+        },
+        {
+          "key": "B",
+          "text": "Because elta Lake uses Parquet for data storage, data types can be easily evolved by just modifying file footer information in place."
+        },
+        {
+          "key": "C",
+          "text": "Human labor in writing code is the largest cost associated with data engineering workloads; as such, automating table declaration logic should be a priority in all migration workloads."
+        },
+        {
+          "key": "D",
+          "text": "Because atabricks will infer schema using types that allow all observed data to be processed, setting types manually provides greater assurance of data quality enforcement."
+        },
+        {
+          "key": "E",
+          "text": "Schema inference and evolution on atabricks ensure that inferred types will always accurately match the data types used by downstream systems.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/032_databricks_view_120702_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "033_databricks_view_123741_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 32,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 32 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/123741-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team maintains the following code:\nAssuming that this code produces logically correct results and the data in the source tables has been de-duplicated and validated, which statement describes what will occur when this code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A batch job will update the enriched_itemized_orders_by_account table, replacing only those rows that have different values than the current version of the table, using accountID as the primary key."
+        },
+        {
+          "key": "B",
+          "text": "The enriched_itemized_orders_by_account table will be overwritten using the current valid version of data in each of the three tables referenced in the join logic."
+        },
+        {
+          "key": "C",
+          "text": "An incremental job will leverage information in the state store to identify unjoined rows in the source tables and write these rows to the enriched_iteinized_orders_by_account table."
+        },
+        {
+          "key": "D",
+          "text": "An incremental job will detect if new rows have been written to any of the source tables; if new rows are detected, all results will be recalculated and used to overwrite the enriched_itemized_orders_by_account table."
+        },
+        {
+          "key": "E",
+          "text": "No computation will occur until enriched_itemized_orders_by_account is queried; upon query materialization, results will be calculated using the current valid version of data in each of the three tables referenced in the join logic.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/033_databricks_view_123741_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/033_databricks_view_123741_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "034_databricks_view_124155_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 33,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 33 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124155-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team is migrating an enterprise system with thousands of tables and views into the Lakehouse. They plan to implement the target architecture using a series of bronze, silver, and gold tables. Bronze tables will almost exclusively be used by production data engineering workloads, while silver tables will be used to support both data engineering and machine learning workloads. Gold tables will largely serve business intelligence and reporting purposes. While personal identifying information (PII) exists in all tiers of data, pseudonymization and anonymization rules are in place for all data at the silver and gold levels.\nThe organization is interested in reducing security concerns while maximizing the ability to collaborate across diverse teams.\nWhich statement exemplifies best practices for implementing this system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Isolating tables in separate databases based on data quality tiers allows for easy permissions management through database CLs and allows physical separation of default storage locations for managed tables."
+        },
+        {
+          "key": "B",
+          "text": "Because databases on Databricks are merely a logical construct, choices around database organization do not impact security or discoverability in the Lakehouse."
+        },
+        {
+          "key": "C",
+          "text": "Storing all production tables in a single database provides a unified view of all data assets available throughout the Lakehouse, simplifying discoverability by granting all users view privileges on this database."
+        },
+        {
+          "key": "D",
+          "text": "Working in the default Databricks database provides the greatest security when working with managed tables, as these will be created in the DBFS root."
+        },
+        {
+          "key": "E",
+          "text": "Because all tables must live in the same storage containers used for the database they're created in, organizations should be prepared to create between dozens and thousands of databases depending on their data isolation requirements.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/034_databricks_view_124155_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "035_databricks_view_124156_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 34,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 34 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124156-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has mandated that all tables in the Lakehouse should be configured as external Delta Lake tables.\nWhich approach will ensure that this requirement is met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whenever a database is being created, make sure that the LOATION keyword is used"
+        },
+        {
+          "key": "B",
+          "text": "When configuring an external data warehouse for all table storage, leverage Databricks for all ELT."
+        },
+        {
+          "key": "C",
+          "text": "Whenever a table is being created, make sure that the LOATION keyword is used."
+        },
+        {
+          "key": "D",
+          "text": "When tables are created, make sure that the EXTERNAL keyword is used in the REATE TABLE statement."
+        },
+        {
+          "key": "E",
+          "text": "When the workspace is being configured, make sure that external cloud object storage has been mounted.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/035_databricks_view_124156_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "036_databricks_view_122481_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 35,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 35 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/122481-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "To reduce storage and compute costs, the data engineering team has been tasked with curating a series of aggregate tables leveraged by business intelligence dashboards, customer-facing applications, production machine learning models, and ad hoc analytical queries.\nThe data engineering team has been made aware of new requirements from a customer-facing application, which is the only downstream workload they manage entirely. As a result, an aggregate table used by numerous teams across the organization will need to have a number of fields renamed, and additional fields will also be added.\nWhich of the solutions addresses the situation while minimally interrupting other teams in the organization without increasing the number of tables that need to be managed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Send all users notice that the schema for the table will be changing; include in the communication the logic necessary to revert the new table schema to match historic queries."
+        },
+        {
+          "key": "B",
+          "text": "Configure a new table with all the requisite fields and new names and use this as the source for the customer-facing application; create a view that maintains the original data schema and table name by aliasing select fields from the new table."
+        },
+        {
+          "key": "C",
+          "text": "Create a new table with the required schema and new fields and use Delta Lake's deep clone functionality to sync up changes committed to one table to the corresponding table."
+        },
+        {
+          "key": "D",
+          "text": "Replace the current table definition with a logical view defined with the query logic currently writing the aggregate table; create a new table to power the customer-facing application."
+        },
+        {
+          "key": "E",
+          "text": "Add a table comment warning all users that the table schema and field names will be changing on a given date; overwrite the table in place to the specifications of the customer-facing application.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/036_databricks_view_122481_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "037_databricks_view_123743_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 36,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 36 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/123743-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A elta Lake table representing metadata about content posts from users has the following schema: user_id LONG, post_text STRING, post_id STRING, longitude FLOAT, latitude FLOAT, post_time TIMESTAMP, date ATE\nThis table is partitioned by the date column. A query is run with the following filter: longitude < 20 & longitude > -20\nWhich statement describes how data will be filtered?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Statistics in the elta Log will be used to identify partitions that might Include files in the filtered range."
+        },
+        {
+          "key": "B",
+          "text": "No file skipping will occur because the optimizer does not know the relationship between the partition column and the longitude."
+        },
+        {
+          "key": "C",
+          "text": "The elta Engine will use row-level statistics in the transaction log to identify the flies that meet the filter criteria."
+        },
+        {
+          "key": "D",
+          "text": "Statistics in the elta Log will be used to identify data files that might include records in the filtered range."
+        },
+        {
+          "key": "E",
+          "text": "The elta Engine will scan the parquet file footers to identify each row that meets the filter criteria.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/037_databricks_view_123743_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "038_databricks_view_124285_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 37,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 37 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124285-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A small company based in the United States has recently contracted a consulting firm in India to implement several new data engineering pipelines to power artificial intelligence applications. All the company's data is stored in regional cloud storage in the United States.\nThe workspace administrator at the company is uncertain about where the Databricks workspace used by the contractors should be deployed.\nAssuming that all data governance considerations are accounted for, which statement accurately informs this decision?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Databricks runs HDFS on cloud volume storage; as such, cloud virtual machines must be deployed in the region where the data is stored."
+        },
+        {
+          "key": "B",
+          "text": "Databricks workspaces do not rely on any regional infrastructure; as such, the decision should be made based upon what is most convenient for the workspace administrator."
+        },
+        {
+          "key": "C",
+          "text": "ross-region reads and writes can incur significant costs and latency; whenever possible, compute should be deployed in the same region the data is stored."
+        },
+        {
+          "key": "D",
+          "text": "Databricks leverages user workstations as the driver during interactive development; as such, users should always use a workspace deployed in a region they are physically near."
+        },
+        {
+          "key": "E",
+          "text": "Databricks notebooks send all executable code from the user’s browser to virtual machines over the open internet; whenever possible, choosing a workspace region near the end users is the most secure.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/038_databricks_view_124285_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "039_databricks_view_117481_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 38,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 38 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117481-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The downstream consumers of a Delta Lake table have been complaining about data quality issues impacting performance in their applications. Specifically, they have complained that invalid latitude and longitude values in the activity_details table have been breaking their ability to use other geolocation processes.\nA junior engineer has written the following code to add HEK constraints to the Delta Lake table:\nA senior engineer has confirmed the above logic is correct and the valid ranges for latitude and longitude are provided, but the code fails when executed.\nWhich statement explains the cause of this failure?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because another team uses this table to support a frequently running application, two-phase locking is preventing the operation from committing."
+        },
+        {
+          "key": "B",
+          "text": "The activity_details table already exists; HEK constraints can only be added during initial table creation."
+        },
+        {
+          "key": "C",
+          "text": "The activity_details table already contains records that violate the constraints; all existing data must pass HEK constraints in order to add them to an existing table."
+        },
+        {
+          "key": "D",
+          "text": "The activity_details table already contains records; HEK constraints can only be added prior to inserting values into a table."
+        },
+        {
+          "key": "E",
+          "text": "The current table schema does not contain the field valid_coordinates; schema evolution will need to be enabled before altering the table to add a constraint.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/039_databricks_view_117481_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/039_databricks_view_117481_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "040_databricks_view_124424_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 39,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 39 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124424-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which of the following is true of Delta Lake and the Lakehouse?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ecause Parquet compresses data row by row. strings will only be compressed when a character is repeated multiple times."
+        },
+        {
+          "key": "B",
+          "text": "Delta Lake automatically collects statistics on the first 32 columns of each table which are leveraged in data skipping based on query filters."
+        },
+        {
+          "key": "C",
+          "text": "Views in the Lakehouse maintain a valid cache of the most recent versions of source tables at all times."
+        },
+        {
+          "key": "D",
+          "text": "Primary and foreign key constraints can be leveraged to ensure duplicate values are never entered into a dimension table."
+        },
+        {
+          "key": "E",
+          "text": "Z-order can only be applied to numeric values stored in Delta Lake tables.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/040_databricks_view_124424_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "041_databricks_view_124425_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 40,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 40 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124425-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The view updates represents an incremental batch of all newly ingested data to be inserted or updated in the customers table.\nThe following logic is used to process these records.\nWhich statement describes this implementation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The customers table is implemented as a Type 3 table; old values are maintained as a new column alongside the current value."
+        },
+        {
+          "key": "B",
+          "text": "The customers table is implemented as a Type 2 table; old values are maintained but marked as no longer current and new values are inserted."
+        },
+        {
+          "key": "C",
+          "text": "The customers table is implemented as a Type 0 table; all writes are append only with no changes to existing values."
+        },
+        {
+          "key": "D",
+          "text": "The customers table is implemented as a Type 1 table; old values are overwritten by new values and no history is maintained."
+        },
+        {
+          "key": "E",
+          "text": "The customers table is implemented as a Type 2 table; old values are overwritten and new customers are appended.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/041_databricks_view_124425_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/041_databricks_view_124425_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "042_databricks_view_124922_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 41,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 41 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124922-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The evOps team has configured a production workload as a collection of notebooks scheduled to run daily using the Jobs UI. A new data engineering hire is onboarding to the team and has requested access to one of these notebooks to review the production logic.\nWhat are the maximum notebook permissions that can be granted to the user without allowing accidental changes to production code or data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Can Manage"
+        },
+        {
+          "key": "B",
+          "text": "Can Edit"
+        },
+        {
+          "key": "C",
+          "text": "No permissions"
+        },
+        {
+          "key": "D",
+          "text": "Can Read"
+        },
+        {
+          "key": "E",
+          "text": "Can Run\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/042_databricks_view_124922_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "043_databricks_view_124427_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 42,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 42 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124427-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A table named user_ltv is being used to create a view that will be used by data analysts on various teams. Users in the workspace are configured into groups, which are used for setting up data access using ACLs.\nThe user_ltv table has the following schema:\nemail STRING, age INT, ltv INT\nThe following view definition is executed:\nAn analyst who is not a member of the marketing group executes the following query:\nSLCT * FROM email_ltv -\nWhich statement describes the results returned by this query?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Three columns will be returned, but one column will be named \"RDACTD\" and contain only null values."
+        },
+        {
+          "key": "B",
+          "text": "Only the email and ltv columns will be returned; the email column will contain all null values."
+        },
+        {
+          "key": "C",
+          "text": "The email and ltv columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "D",
+          "text": "The email.age, and ltv columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "E",
+          "text": "Only the email and ltv columns will be returned; the email column will contain the string \"RDACTD\" in each row.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/043_databricks_view_124427_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/043_databricks_view_124427_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "044_databricks_view_128158_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 43,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 43 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128158-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team has instituted a requirement that all tables containing Personal Identifiable Information (PH) must be clearly annotated. This includes adding column comments, table comments, and setting the custom table property \"contains_pii\" = true.\nThe following SQL DDL statement is executed to create a new table:\nWhich command allows manual confirmation that these three requirements have been met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "DESCRIBE EXTENDED dev.pii_test"
+        },
+        {
+          "key": "B",
+          "text": "DESCRIBE DETIL dev.pii_test"
+        },
+        {
+          "key": "C",
+          "text": "SHOW TBLPROPERTIES dev.pii_test"
+        },
+        {
+          "key": "D",
+          "text": "DESCRIBE HISTORY dev.pii_test"
+        },
+        {
+          "key": "E",
+          "text": "SHOW TBLES dev\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/044_databricks_view_128158_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/044_databricks_view_128158_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "045_databricks_view_124428_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 44,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 44 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124428-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team is reviewing code used for deleting records for compliance with GDPR. They note the following logic is used to delete records from the Delta Lake table named users.\nAssuming that user_id is a unique identifying key and that delete_requests contains all users that have requested deletion, which statement describes whether successfully executing the above logic guarantees that the records to be deleted are no longer accessible and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yes; Delta Lake ACID guarantees provide assurance that the DLT command succeeded fully and permanently purged these records."
+        },
+        {
+          "key": "B",
+          "text": "No; the Delta cache may return records from previous versions of the table until the cluster is restarted."
+        },
+        {
+          "key": "C",
+          "text": "Yes; the Delta cache immediately updates to reflect the latest data files recorded to disk."
+        },
+        {
+          "key": "D",
+          "text": "No; the Delta Lake DLT command only provides ACID guarantees when combined with the MRG INTO command."
+        },
+        {
+          "key": "E",
+          "text": "No; files containing deleted records may still be accessible with time travel until a VACUUM command is used to remove invalidated data files.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/045_databricks_view_124428_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/045_databricks_view_124428_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "046_databricks_view_118940_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 45,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 45 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/118940-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An external object storage container has been mounted to the location /mnt/finance_eda_bucket.\nThe following logic was executed to create a database for the finance team:\nAfter the database was successfully created and permissions configured, a member of the finance team runs the following code:\nIf all users on the finance team are members of the finance group, which statement describes how the tx_sales table will be created?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A logical table will persist the query plan to the Hive Metastore in the atabricks control plane."
+        },
+        {
+          "key": "B",
+          "text": "An external table will be created in the storage container mounted to /mnt/finance_eda_bucket."
+        },
+        {
+          "key": "C",
+          "text": "A logical table will persist the physical plan to the Hive Metastore in the atabricks control plane."
+        },
+        {
+          "key": "D",
+          "text": "An managed table will be created in the storage container mounted to /mnt/finance_eda_bucket."
+        },
+        {
+          "key": "E",
+          "text": "A managed table will be created in the BFS root storage container.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/046_databricks_view_118940_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/046_databricks_view_118940_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/046_databricks_view_118940_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "047_databricks_view_122555_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 46,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 46 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/122555-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Although the atabricks Utilities Secrets module provides tools to store sensitive credentials and avoid accidentally displaying them in plain text users should still be careful with which credentials are stored here and which users have access to using these secrets.\nWhich statement describes a limitation of atabricks Secrets?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the SHA256 hash is used to obfuscate stored secrets, reversing this hash will display the value in plain text."
+        },
+        {
+          "key": "B",
+          "text": "Account administrators can see all secrets in plain text by logging on to the atabricks Accounts console."
+        },
+        {
+          "key": "C",
+          "text": "Secrets are stored in an administrators-only table within the Hive Metastore; database administrators have permission to query this table by default."
+        },
+        {
+          "key": "D",
+          "text": "Iterating through a stored secret and printing each character will display secret contents in plain text."
+        },
+        {
+          "key": "E",
+          "text": "The atabricks REST API can be used to list secrets in plain text if the personal access token has proper credentials.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/047_databricks_view_122555_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "048_databricks_view_117482_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 47,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 47 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/117482-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What statement is true regarding the retention of job run history?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is retained until you export or delete job run logs"
+        },
+        {
+          "key": "B",
+          "text": "It is retained for 30 days, during which time you can deliver job run logs to DBFS or S3"
+        },
+        {
+          "key": "C",
+          "text": "It is retained for 60 days, during which you can export notebook run results to HTML"
+        },
+        {
+          "key": "D",
+          "text": "It is retained for 60 days, after which logs are archived"
+        },
+        {
+          "key": "E",
+          "text": "It is retained for 90 days or until the run-id is re-used through custom run configuration\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/048_databricks_view_117482_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "049_databricks_view_128161_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 48,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 48 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128161-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer, User A, has promoted a new pipeline to production by using the REST API to programmatically create several jobs. A DevOps engineer, User B, has configured an external orchestration tool to trigger job runs through the REST API. Both users authorized the REST API calls using their personal access tokens.\nWhich statement describes the contents of the workspace audit logs concerning these events?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the REST API was used for job creation and triggering runs, a Service Principal will be automatically used to identify these events."
+        },
+        {
+          "key": "B",
+          "text": "Because User B last configured the jobs, their identity will be associated with both the job creation events and the job run events."
+        },
+        {
+          "key": "C",
+          "text": "Because these events are managed separately, User A will have their identity associated with the job creation events and User B will have their identity associated with the job run events."
+        },
+        {
+          "key": "D",
+          "text": "Because the REST API was used for job creation and triggering runs, user identity will not be captured in the audit logs."
+        },
+        {
+          "key": "E",
+          "text": "Because User A created the jobs, their identity will be associated with both the job creation events and the job run events.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/049_databricks_view_128161_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "050_databricks_view_118941_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 49,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 49 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/118941-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A user new to atabricks is trying to troubleshoot long execution times for some pipeline logic they are working on. Presently, the user is executing code cell-by-cell, using display() calls to confirm code is producing the logically correct results as new transformations are added to an operation. To get a measure of average time to execute, the user is running each cell multiple times interactively.\nWhich of the following adjustments will get a more accurate measure of how code is likely to perform in production?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Scala is the only language that can be accurately tested using interactive notebooks; because the best performance is achieved by using Scala code compiled to JARs, all PySpark and Spark SQL logic should be refactored."
+        },
+        {
+          "key": "B",
+          "text": "The only way to meaningfully troubleshoot code execution times in development notebooks Is to use production-sized data and production-sized clusters with Run All execution."
+        },
+        {
+          "key": "C",
+          "text": "Production code development should only be done using an IE; executing code against a local build of open source Spark and elta Lake will provide the most accurate benchmarks for how code will perform in production."
+        },
+        {
+          "key": "D",
+          "text": "Calling display() forces a job to trigger, while many transformations will only add to the logical query plan; because of caching, repeated execution of the same logic does not provide meaningful results."
+        },
+        {
+          "key": "E",
+          "text": "The Jobs UI should be leveraged to occasionally run the notebook as a job and track execution time during incremental code development because Photon can only be enabled on clusters launched for scheduled jobs.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/050_databricks_view_118941_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "051_databricks_view_119184_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 50,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 50 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/119184-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A production cluster has 3 executor nodes and uses the same virtual machine type for the driver and executor.\nWhen evaluating the Ganglia Metrics for this cluster, which indicator would signal a bottleneck caused by code executing on the driver?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The five Minute Load Average remains consistent/flat"
+        },
+        {
+          "key": "B",
+          "text": "Bytes Received never exceeds 80 million bytes per second"
+        },
+        {
+          "key": "C",
+          "text": "Total Disk Space remains constant"
+        },
+        {
+          "key": "D",
+          "text": "Network I/O never spikes"
+        },
+        {
+          "key": "E",
+          "text": "Overall cluster CPU utilization is around 25%\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/051_databricks_view_119184_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "052_databricks_view_133247_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 51,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 51 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/133247-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Where in the Spark UI can one diagnose a performance problem induced by not leveraging predicate push-down?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In the xecutor’s log file, by grepping for \"predicate push-down\""
+        },
+        {
+          "key": "B",
+          "text": "In the Stage’s Detail screen, in the Completed Stages table, by noting the size of data read from the Input column"
+        },
+        {
+          "key": "C",
+          "text": "In the Storage Detail screen, by noting which RDDs are not stored on disk"
+        },
+        {
+          "key": "D",
+          "text": "In the Delta Lake transaction log. by noting the column statistics"
+        },
+        {
+          "key": "E",
+          "text": "In the Query Detail screen, by interpreting the Physical Plan\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/052_databricks_view_133247_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "053_databricks_view_120580_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 52,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 52 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120580-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Review the following error traceback:\nWhich statement describes the error being raised?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The code executed was PySpark but was executed in a Scala notebook."
+        },
+        {
+          "key": "B",
+          "text": "There is no column in the table named heartrateheartrateheartrate"
+        },
+        {
+          "key": "C",
+          "text": "There is a type error because a column object cannot be multiplied."
+        },
+        {
+          "key": "D",
+          "text": "There is a type error because a DataFrame object cannot be multiplied."
+        },
+        {
+          "key": "E",
+          "text": "There is a syntax error because the heartrate column is not correctly identified as a column.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/053_databricks_view_120580_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/053_databricks_view_120580_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "054_databricks_view_128879_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 53,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 53 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128879-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which distribution does atabricks support for installing custom Python code packages?",
+      "options": [
+        {
+          "key": "A",
+          "text": "sbt"
+        },
+        {
+          "key": "B",
+          "text": "CRANC. npm"
+        },
+        {
+          "key": "C",
+          "text": "Wheels"
+        },
+        {
+          "key": "E",
+          "text": "jars\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/054_databricks_view_128879_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "055_databricks_view_128880_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 54,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 54 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128880-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which Python variable contains a list of directories to be searched when trying to locate required modules?",
+      "options": [
+        {
+          "key": "A",
+          "text": "importlib.resource_path"
+        },
+        {
+          "key": "B",
+          "text": "sys.path"
+        },
+        {
+          "key": "C",
+          "text": "os.path"
+        },
+        {
+          "key": "D",
+          "text": "pypi.path"
+        },
+        {
+          "key": "E",
+          "text": "pylib.source\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/055_databricks_view_128880_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "056_databricks_view_128881_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 55,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 55 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128881-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Incorporating unit tests into a PySpark application requires upfront attention to the design of your jobs, or a potentially significant refactoring of existing code.\nWhich statement describes a main benefit that offset this additional effort?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Improves the quality of your data"
+        },
+        {
+          "key": "B",
+          "text": "Validates a complete use case of your application"
+        },
+        {
+          "key": "C",
+          "text": "Troubleshooting is easier since all steps are isolated and tested individually"
+        },
+        {
+          "key": "D",
+          "text": "Yields faster deployment and execution times"
+        },
+        {
+          "key": "E",
+          "text": "Ensures that all steps interact correctly to achieve the desired end result\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/056_databricks_view_128881_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "057_databricks_view_128882_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 56,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 56 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128882-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes integration testing?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Validates interactions between subsystems of your application"
+        },
+        {
+          "key": "B",
+          "text": "Requires an automated testing framework"
+        },
+        {
+          "key": "C",
+          "text": "Requires manual intervention"
+        },
+        {
+          "key": "D",
+          "text": "Validates an application use case"
+        },
+        {
+          "key": "E",
+          "text": "Validates behavior of individual elements of your application\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/057_databricks_view_128882_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "058_databricks_view_127546_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 57,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 57 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/127546-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which REST API call can be used to review the notebooks configured to run as tasks in a multi-task job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "/jobs/runs/list"
+        },
+        {
+          "key": "B",
+          "text": "/jobs/runs/get-output"
+        },
+        {
+          "key": "C",
+          "text": "/jobs/runs/get"
+        },
+        {
+          "key": "D",
+          "text": "/jobs/get"
+        },
+        {
+          "key": "E",
+          "text": "/jobs/list\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/058_databricks_view_127546_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "059_databricks_view_118942_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 58,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 58 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/118942-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Databricks job has been configured with 3 tasks, each of which is a Databricks notebook. Task does not depend on other tasks. Tasks B and C run in parallel, with each having a serial dependency on task .\nIf tasks and B complete successfully but task C fails during a scheduled run, which statement describes the resulting state?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ll logic expressed in the notebook associated with tasks and B will have been successfully completed; some operations in task C may have completed successfully."
+        },
+        {
+          "key": "B",
+          "text": "ll logic expressed in the notebook associated with tasks and B will have been successfully completed; any changes made in task C will be rolled back due to task failure."
+        },
+        {
+          "key": "C",
+          "text": "ll logic expressed in the notebook associated with task will have been successfully completed; tasks B and C will not commit any changes because of stage failure."
+        },
+        {
+          "key": "D",
+          "text": "Because all tasks are managed as a dependency graph, no changes will be committed to the Lakehouse until ail tasks have successfully been completed."
+        },
+        {
+          "key": "E",
+          "text": "Unless all tasks complete successfully, no changes will be committed to the Lakehouse; because task C failed, all commits will be rolled back automatically.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/059_databricks_view_118942_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "060_databricks_view_132441_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 59,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 59 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/132441-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Delta Lake table was created with the below query:\nRealizing that the original query had a typographical error, the below code was executed:\nLTER TBLE prod.sales_by_stor RENME TO prod.sales_by_store\nWhich result will occur after running the second command?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The table reference in the metastore is updated and no data is changed."
+        },
+        {
+          "key": "B",
+          "text": "The table name change is recorded in the Delta transaction log."
+        },
+        {
+          "key": "C",
+          "text": "ll related files and metadata are dropped and recreated in a single CID transaction."
+        },
+        {
+          "key": "D",
+          "text": "The table reference in the metastore is updated and all data files are moved."
+        },
+        {
+          "key": "E",
+          "text": "new Delta transaction log Is created for the renamed table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/060_databricks_view_132441_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/060_databricks_view_132441_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "061_databricks_view_120443_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 60,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 60 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/120443-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team maintains a table of aggregate statistics through batch nightly updates. This includes total sales for the previous day alongside totals and averages for a variety of time periods including the 7 previous days, year-to-date, and quarter-to-date. This table is named store_saies_summary and the schema is as follows:\nThe table daily_store_sales contains all the information needed to update store_sales_summary. The schema for this table is: store_id INT, sales_date DTE, total_sales FLOT\nIf daily_store_sales is implemented as a Type 1 table and the total_sales column might be adjusted after manual data auditing, which approach is the safest to generate accurate reports in the store_sales_summary table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Implement the appropriate aggregate logic as a batch read against the daily_store_sales table and overwrite the store_sales_summary table with each Update."
+        },
+        {
+          "key": "B",
+          "text": "Implement the appropriate aggregate logic as a batch read against the daily_store_sales table and append new rows nightly to the store_sales_summary table."
+        },
+        {
+          "key": "C",
+          "text": "Implement the appropriate aggregate logic as a batch read against the daily_store_sales table and use upsert logic to update results in the store_sales_summary table."
+        },
+        {
+          "key": "D",
+          "text": "Implement the appropriate aggregate logic as a Structured Streaming read against the daily_store_sales table and use upsert logic to update results in the store_sales_summary table."
+        },
+        {
+          "key": "E",
+          "text": "Use Structured Streaming to subscribe to the change data feed for daily_store_sales and apply changes to the aggregates in the store_sales_summary table with each update.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/061_databricks_view_120443_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/061_databricks_view_120443_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "062_databricks_view_125249_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 61,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 61 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/125249-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A member of the data engineering team has submitted a short notebook that they wish to schedule as part of a larger data pipeline. Assume that the commands provided below produce the logically correct results when run as presented.\nWhich command should be removed from the notebook before scheduling it as a job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cmd 2"
+        },
+        {
+          "key": "B",
+          "text": "Cmd 3"
+        },
+        {
+          "key": "C",
+          "text": "Cmd 4"
+        },
+        {
+          "key": "D",
+          "text": "Cmd 5"
+        },
+        {
+          "key": "E",
+          "text": "Cmd 6\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/062_databricks_view_125249_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/062_databricks_view_125249_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "063_databricks_view_126360_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 62,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 62 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126360-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The business reporting team requires that data for their dashboards be updated every hour. The total processing time for the pipeline that extracts transforms, and loads the data for their pipeline runs in 10 minutes.\nAssuming normal operating conditions, which configuration will meet their service-level agreement requirements with the lowest cost?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Manually trigger a job anytime the business reporting team refreshes their dashboards"
+        },
+        {
+          "key": "B",
+          "text": "Schedule a job to execute the pipeline once an hour on a new job cluster"
+        },
+        {
+          "key": "C",
+          "text": "Schedule a Structured Streaming job with a trigger interval of 60 minutes"
+        },
+        {
+          "key": "D",
+          "text": "Schedule a job to execute the pipeline once an hour on a dedicated interactive cluster"
+        },
+        {
+          "key": "E",
+          "text": "Configure a job that executes every time new data lands in a given directory\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/063_databricks_view_126360_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "064_databricks_view_124566_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 63,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 63 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124566-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Databricks SQL dashboard has been configured to monitor the total number of records present in a collection of Delta Lake tables using the following query pattern:\nSELET OUNT (*) FROM table -\nWhich of the following describes how results are generated each time the dashboard is updated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The total count of rows is calculated by scanning all data files"
+        },
+        {
+          "key": "B",
+          "text": "The total count of rows will be returned from cached results unless REFRESH is run"
+        },
+        {
+          "key": "C",
+          "text": "The total count of records is calculated from the Delta transaction logs"
+        },
+        {
+          "key": "D",
+          "text": "The total count of records is calculated from the parquet file metadata"
+        },
+        {
+          "key": "E",
+          "text": "The total count of records is calculated from the Hive metastore\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/064_databricks_view_124566_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "065_databricks_view_124117_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 64,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 64 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124117-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Delta Lake table was created with the below query:\nonsider the following query:\nDROP TABLE prod.sales_by_store -\nIf this statement is executed by a workspace admin, which result will occur?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nothing will occur until a OMMIT command is executed."
+        },
+        {
+          "key": "B",
+          "text": "The table will be removed from the catalog but the data will remain in storage."
+        },
+        {
+          "key": "C",
+          "text": "The table will be removed from the catalog and the data will be deleted."
+        },
+        {
+          "key": "D",
+          "text": "An error will occur because Delta Lake prevents the deletion of production data."
+        },
+        {
+          "key": "E",
+          "text": "Data will be marked as deleted but still recoverable with Time Travel.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/065_databricks_view_124117_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/065_databricks_view_124117_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "066_databricks_view_124569_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 65,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 65 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124569-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Two of the most common data locations on Databricks are the DBFS root storage and external object storage mounted with dbutils.fs.mount().\nWhich of the following statements is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "DBFS is a file system protocol that allows users to interact with files stored in object storage using syntax and guarantees similar to Unix file systems."
+        },
+        {
+          "key": "B",
+          "text": "By default, both the DBFS root and mounted data sources are only accessible to workspace administrators."
+        },
+        {
+          "key": "C",
+          "text": "The DBFS root is the most secure location to store data, because mounted storage volumes must have full public read and write permissions."
+        },
+        {
+          "key": "D",
+          "text": "Neither the DBFS root nor mounted storage can be accessed when using %sh in a Databricks notebook."
+        },
+        {
+          "key": "E",
+          "text": "The DBFS root stores files in ephemeral block volumes attached to the driver, while mounted directories will always persist saved data to external storage between sessions.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/066_databricks_view_124569_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "067_databricks_view_124571_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 66,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 66 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124571-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The following code has been migrated to a Databricks notebook from a legacy workload:\nThe code executes successfully and provides the logically correct results, however, it takes over 20 minutes to extract and load around 1 GB of data.\nWhich statement is a possible explanation for this behavior?",
+      "options": [
+        {
+          "key": "A",
+          "text": "%sh triggers a cluster restart to collect and install Git. Most of the latency is related to cluster startup time."
+        },
+        {
+          "key": "B",
+          "text": "Instead of cloning, the code should use %sh pip install so that the Python code can get executed in parallel across all nodes in a cluster."
+        },
+        {
+          "key": "C",
+          "text": "%sh does not distribute file moving operations; the final line of code should be updated to use %fs instead."
+        },
+        {
+          "key": "D",
+          "text": "Python will always execute slower than Scala on Databricks. The run.py script should be refactored to Scala."
+        },
+        {
+          "key": "E",
+          "text": "%sh executes shell code on the driver node. The code does not take advantage of the worker nodes or Databricks optimized Spark.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/067_databricks_view_124571_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/067_databricks_view_124571_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "068_databricks_view_124572_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 67,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 67 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124572-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has requested assistance in accelerating queries on free form text from user reviews. The data is currently stored in Parquet with the below schema:\nitem_id INT, user_id INT, review_id INT, rating FLOT, review STRING\nThe review column contains the full text of the review left by the user. Specifically, the data science team is looking to identify if any of 30 key words exist in this field.\njunior data engineer suggests converting this data to Delta Lake will improve query performance.\nWhich response to the junior data engineer s suggestion is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Delta Lake statistics are not optimized for free text fields with high cardinality."
+        },
+        {
+          "key": "B",
+          "text": "Text data cannot be stored with Delta Lake."
+        },
+        {
+          "key": "C",
+          "text": "ZORDER ON review will need to be run to see performance gains."
+        },
+        {
+          "key": "D",
+          "text": "The Delta log creates a term matrix for free text fields to support selective filtering."
+        },
+        {
+          "key": "E",
+          "text": "Delta Lake statistics are only collected on the first 4 columns in a table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/068_databricks_view_124572_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "069_databricks_view_124574_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 68,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 68 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124574-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Assuming that the Databricks CLI has been installed and configured correctly, which Databricks CLI command can be used to upload a custom Python Wheel to object storage mounted with the DFS for use with a production job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "configure"
+        },
+        {
+          "key": "B",
+          "text": "fs"
+        },
+        {
+          "key": "C",
+          "text": "jobs"
+        },
+        {
+          "key": "D",
+          "text": "libraries"
+        },
+        {
+          "key": "E",
+          "text": "workspace\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/069_databricks_view_124574_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "070_databricks_view_129697_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 69,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 69 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/129697-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The business intelligence team has a dashboard configured to track various summary metrics for retail stores. This includes total sales for the previous day alongside totals and averages for a variety of time periods. The fields required to populate this dashboard have the following schema:\nFor demand forecasting, the Lakehouse contains a validated table of all itemized sales updated incrementally in near real-time. This table, named products_per_order, includes the following fields:\nBecause reporting on long-term sales trends is less volatile, analysts using the new dashboard only require data to be refreshed once daily. Because the dashboard will be queried interactively by many users throughout a normal business day, it should return results quickly and reduce total compute associated with each materialization.\nWhich solution meets the expectations of the end users while controlling and limiting possible costs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Populate the dashboard by configuring a nightly batch job to save the required values as a table overwritten with each update."
+        },
+        {
+          "key": "B",
+          "text": "Use Structured Streaming to configure a live dashboard against the products_per_order table within a Databricks notebook."
+        },
+        {
+          "key": "C",
+          "text": "Configure a webhook to execute an incremental read against products_per_order each time the dashboard is refreshed."
+        },
+        {
+          "key": "D",
+          "text": "Use the Delta Cache to persist the products_per_order table in memory to quickly update the dashboard with each query."
+        },
+        {
+          "key": "E",
+          "text": "Define a view against the products_per_order table and define the dashboard against this view.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/070_databricks_view_129697_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/070_databricks_view_129697_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/070_databricks_view_129697_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "071_databricks_view_124575_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 70,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 70 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124575-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data ingestion task requires a one-TB JSON dataset to be written out to Parquet with a target part-file size of 512 MB. Because Parquet is being used instead of Delta Lake, built-in file-sizing features such as uto-Optimize & uto-Compaction cannot be used.\nWhich strategy will yield the best performance without shuffling data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set spark.sql.files.maxPartitionBytes to 512 MB, ingest the data, execute the narrow transformations, and then write to parquet."
+        },
+        {
+          "key": "B",
+          "text": "Set spark.sql.shuffle.partitions to 2,048 partitions (1TB*1024*1024/512), ingest the data, execute the narrow transformations, optimize the data by sorting it (which automatically repartitions the data), and then write to parquet."
+        },
+        {
+          "key": "C",
+          "text": "Set spark.sql.adaptive.advisoryPartitionSizeInBytes to 512 MB bytes, ingest the data, execute the narrow transformations, coalesce to 2,048 partitions (1TB*1024*1024/512), and then write to parquet."
+        },
+        {
+          "key": "D",
+          "text": "Ingest the data, execute the narrow transformations, repartition to 2,048 partitions (1TB* 1024*1024/512), and then write to parquet."
+        },
+        {
+          "key": "E",
+          "text": "Set spark.sql.shuffle.partitions to 512, ingest the data, execute the narrow transformations, and then write to parquet.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/071_databricks_view_124575_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "072_databricks_view_124595_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 71,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 71 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124595-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "junior data engineer has been asked to develop a streaming data pipeline with a grouped aggregation using DataFrame df. The pipeline needs to calculate the average humidity and average temperature for each non-overlapping five-minute interval. Incremental state information should be maintained for 10 minutes for late-arriving data.\nStreaming DataFrame df has the following schema:\n\"device_id INT, event_time TIMESTMP, temp FLOT, humidity FLOT\"\nCode block:\nChoose the response that correctly fills in the blank within the code block to complete this task.",
+      "options": [
+        {
+          "key": "A",
+          "text": "withWatermark(\"event_time\", \"10 minutes\")"
+        },
+        {
+          "key": "B",
+          "text": "awaitrrival(\"event_time\", \"10 minutes\")"
+        },
+        {
+          "key": "C",
+          "text": "await(\"event_time + ‘10 minutes'\")"
+        },
+        {
+          "key": "D",
+          "text": "slidingWindow(\"event_time\", \"10 minutes\")"
+        },
+        {
+          "key": "E",
+          "text": "delayWrite(\"event_time\", \"10 minutes\")\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/072_databricks_view_124595_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/072_databricks_view_124595_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "073_databricks_view_129174_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 72,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 72 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/129174-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data team's Structured Streaming job is configured to calculate running aggregates for item sales to update a downstream marketing dashboard. The marketing team has introduced a new promotion, and they would like to add a new field to track the number of times this promotion code is used for each item. junior data engineer suggests updating the existing query as follows. Note that proposed changes are in bold.\nOriginal query:\nProposed query:\nProposed query:\n.start(“/item_agg”)\nWhich step must also be completed to put the proposed query into production?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Specify a new checkpointLocation"
+        },
+        {
+          "key": "B",
+          "text": "Increase the shuffle partitions to account for additional aggregates"
+        },
+        {
+          "key": "C",
+          "text": "Run REFRESH TBLE delta.'/item_agg'"
+        },
+        {
+          "key": "D",
+          "text": "Register the data in the \"/item_agg\" directory to the Hive metastore"
+        },
+        {
+          "key": "E",
+          "text": "Remove .option(‘mergeSchema’, ‘true’) from the streaming write\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/073_databricks_view_129174_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/073_databricks_view_129174_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/073_databricks_view_129174_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "074_databricks_view_126756_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 73,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 73 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126756-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Structured Streaming job deployed to production has been resulting in higher than expected cloud storage costs. At present, during normal execution, each microbatch of data is processed in less than 3s; at least 12 times per minute, a microbatch is processed that contains 0 records. The streaming write was configured using the default trigger settings. The production job is currently scheduled alongside many other Databricks jobs in a workspace with instance pools provisioned to reduce start-up time for jobs with batch execution.\nHolding all other variables constant and assuming records need to be processed in less than 10 minutes, which adjustment will meet the requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the trigger interval to 3 seconds; the default trigger interval is consuming too many records per batch, resulting in spill to disk that can increase volume costs."
+        },
+        {
+          "key": "B",
+          "text": "Increase the number of shuffle partitions to maximize parallelism, since the trigger interval cannot be modified without modifying the checkpoint directory."
+        },
+        {
+          "key": "C",
+          "text": "Set the trigger interval to 10 minutes; each batch calls APIs in the source storage account, so decreasing trigger frequency to maximum allowable threshold should minimize this cost."
+        },
+        {
+          "key": "D",
+          "text": "Set the trigger interval to 500 milliseconds; setting a small but non-zero trigger interval ensures that the source is not queried too frequently."
+        },
+        {
+          "key": "E",
+          "text": "Use the trigger once option and configure a Databricks job to execute the query every 10 minutes; this approach minimizes costs for both compute and storage.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/074_databricks_view_126756_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "075_databricks_view_124596_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 74,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 74 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124596-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes the correct use of pyspark.sql.functions.broadcast?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It marks a column as having low enough cardinality to properly map distinct values to available partitions, allowing a broadcast join."
+        },
+        {
+          "key": "B",
+          "text": "It marks a column as small enough to store in memory on all executors, allowing a broadcast join."
+        },
+        {
+          "key": "C",
+          "text": "It caches a copy of the indicated table on attached storage volumes for all active clusters within a atabricks workspace."
+        },
+        {
+          "key": "D",
+          "text": "It marks a ataFrame as small enough to store in memory on all executors, allowing a broadcast join."
+        },
+        {
+          "key": "E",
+          "text": "It caches a copy of the indicated table on all nodes in the cluster for use in all future queries during the cluster lifetime.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/075_databricks_view_124596_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "076_databricks_view_124369_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 75,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 75 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124369-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is configuring a pipeline that will potentially see late-arriving, duplicate records.\nIn addition to de-duplicating records within the batch, which of the following approaches allows the data engineer to deduplicate data against previously processed records as it is inserted into a Delta table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the configuration delta.deduplicate = true."
+        },
+        {
+          "key": "B",
+          "text": "VAUUM the Delta table after each batch completes."
+        },
+        {
+          "key": "C",
+          "text": "Perform an insert-only merge with a matching condition on a unique key."
+        },
+        {
+          "key": "D",
+          "text": "Perform a full outer join on a unique key and overwrite existing data."
+        },
+        {
+          "key": "E",
+          "text": "Rely on Delta Lake schema enforcement to prevent duplicate records.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/076_databricks_view_124369_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "077_databricks_view_129709_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 76,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 76 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/129709-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data pipeline uses Structured Streaming to ingest data from pache Kafka to Delta Lake. Data is being stored in a bronze table, and includes the Kafka-generated timestamp, key, and value. Three months after the pipeline is deployed, the data engineering team has noticed some latency issues during certain times of the day.\nsenior data engineer updates the Delta Table's schema and ingestion logic to include the current timestamp (as recorded by pache Spark) as well as the Kafka topic and partition. The team plans to use these additional metadata fields to diagnose the transient processing delays.\nWhich limitation will the team face while diagnosing this problem?",
+      "options": [
+        {
+          "key": "A",
+          "text": "New fields will not be computed for historic records."
+        },
+        {
+          "key": "B",
+          "text": "Spark cannot capture the topic and partition fields from a Kafka source."
+        },
+        {
+          "key": "C",
+          "text": "New fields cannot be added to a production Delta table."
+        },
+        {
+          "key": "D",
+          "text": "Updating the table schema will invalidate the Delta transaction log metadata."
+        },
+        {
+          "key": "E",
+          "text": "Updating the table schema requires a default value provided for each field added.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/077_databricks_view_129709_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 77,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 77 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124597-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "In order to facilitate near real-time workloads, a data engineer is creating a helper function to leverage the schema detection and evolution functionality of Databricks Auto Loader. The desired function will automatically detect the schema of the source directly, incrementally process JSON files as they arrive in a source directory, and automatically evolve the schema of the table when new fields are detected.\nThe function is displayed below with a blank:\nWhich response correctly fills in the blank to meet the specified requirements?",
+      "options": [
+        {
+          "key": "E",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png",
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_05.png",
+        "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/images/image_06.png"
+      ],
+      "sourceFile": "output/batch/078_databricks_view_124597_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "079_databricks_view_124598_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 78,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 78 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124598-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team maintains the following code:\nAssuming that this code produces logically correct results and the data in the source table has been de-duplicated and validated, which statement describes what will occur when this code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The silver_customer_sales table will be overwritten by aggregated values calculated from all records in the gold_customer_lifetime_sales_summary table as a batch job."
+        },
+        {
+          "key": "B",
+          "text": "A batch job will update the gold_customer_lifetime_sales_summary table, replacing only those rows that have different values than the current version of the table, using customer_id as the primary key."
+        },
+        {
+          "key": "C",
+          "text": "The gold_customer_lifetime_sales_summary table will be overwritten by aggregated values calculated from all records in the silver_customer_sales table as a batch job."
+        },
+        {
+          "key": "D",
+          "text": "An incremental job will leverage running information in the state store to update aggregate values in the gold_customer_lifetime_sales_summary table."
+        },
+        {
+          "key": "E",
+          "text": "An incremental job will detect if new rows have been written to the silver_customer_sales table; if new rows are detected, all aggregates will be recalculated and used to overwrite the gold_customer_lifetime_sales_summary table.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/079_databricks_view_124598_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/079_databricks_view_124598_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "080_databricks_view_124599_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 79,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 79 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124599-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has mandated that all tables in the Lakehouse should be configured as external (also known as \"unmanaged\") Delta Lake tables.\nWhich approach will ensure that this requirement is met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "When a database is being created, make sure that the LOATION keyword is used."
+        },
+        {
+          "key": "B",
+          "text": "When configuring an external data warehouse for all table storage, leverage Databricks for all ELT."
+        },
+        {
+          "key": "C",
+          "text": "When data is saved to a table, make sure that a full file path is specified alongside the Delta format."
+        },
+        {
+          "key": "D",
+          "text": "When tables are created, make sure that the EXTERNAL keyword is used in the REATE TABLE statement."
+        },
+        {
+          "key": "E",
+          "text": "When the workspace is being configured, make sure that external cloud object storage has been mounted.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/080_databricks_view_124599_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "081_databricks_view_129728_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 80,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 80 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/129728-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The marketing team is looking to share data in an aggregate table with the sales organization, but the field names used by the teams do not match, and a number of marketing-specific fields have not been approved for the sales org.\nWhich of the following solutions addresses the situation while emphasizing simplicity?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a view on the marketing table selecting only those fields approved for the sales team; alias the names of any fields that should be standardized to the sales naming conventions."
+        },
+        {
+          "key": "B",
+          "text": "Create a new table with the required schema and use Delta Lake's DEEP CLONE functionality to sync up changes committed to one table to the corresponding table."
+        },
+        {
+          "key": "C",
+          "text": "Use a CTS statement to create a derivative table from the marketing table; configure a production job to propagate changes."
+        },
+        {
+          "key": "D",
+          "text": "dd a parallel table write to the current production pipeline, updating a new sales table that varies as required from the marketing table."
+        },
+        {
+          "key": "E",
+          "text": "Instruct the marketing team to download results as a CSV and email them to the sales organization.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/081_databricks_view_129728_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "082_databricks_view_124255_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 81,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 81 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124255-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A CHECK constraint has been successfully added to the Delta table named activity_details using the following logic:\nA batch job is attempting to insert new records to the table, including a record where latitude = 45.50 and longitude = 212.67.\nWhich statement describes the outcome of this batch insert?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The write will fail when the violating record is reached; any records previously processed will be recorded to the target table."
+        },
+        {
+          "key": "B",
+          "text": "The write will fail completely because of the constraint violation and no records will be inserted into the target table."
+        },
+        {
+          "key": "C",
+          "text": "The write will insert all records except those that violate the table constraints; the violating records will be recorded to a quarantine table."
+        },
+        {
+          "key": "D",
+          "text": "The write will include all records in the target table; any violations will be indicated in the boolean column named valid_coordinates."
+        },
+        {
+          "key": "E",
+          "text": "The write will insert all records except those that violate the table constraints; the violating records will be reported in a warning log.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/082_databricks_view_124255_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/082_databricks_view_124255_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "083_databricks_view_124600_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 82,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 82 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124600-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "junior data engineer has manually configured a series of jobs using the Databricks Jobs UI. Upon reviewing their work, the engineer realizes that they are listed as the \"Owner\" for each job. They attempt to transfer \"Owner\" privileges to the \"DevOps\" group, but cannot successfully accomplish this task.\nWhich statement explains what is preventing this privilege transfer?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Databricks jobs must have exactly one owner; \"Owner\" privileges cannot be assigned to a group."
+        },
+        {
+          "key": "B",
+          "text": "The creator of a Databricks job will always have \"Owner\" privileges; this configuration cannot be changed."
+        },
+        {
+          "key": "C",
+          "text": "Other than the default \"admins\" group, only individual users can be granted privileges on jobs."
+        },
+        {
+          "key": "D",
+          "text": "user can only transfer job ownership to a group if they are also a member of that group."
+        },
+        {
+          "key": "E",
+          "text": "Only workspace administrators can grant \"Owner\" privileges to a group.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/083_databricks_view_124600_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "084_databricks_view_124601_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 83,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 83 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124601-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "All records from an Apache Kafka producer are being ingested into a single Delta Lake table with the following schema:\nkey BINARY, value BINARY, topic STRING, partition LONG, offset LONG, timestamp LONG\nThere are 5 unique topics being ingested. Only the \"registration\" topic contains Personal Identifiable Information (PII). The company wishes to restrict access to PII. The company also wishes to only retain records containing PII in this table for 14 days after initial ingestion. However, for non-PII information, it would like to retain these records indefinitely.\nWhich of the following solutions meets the requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All data should be deleted biweekly; Delta Lake's time travel functionality should be leveraged to maintain a history of non-PII information."
+        },
+        {
+          "key": "B",
+          "text": "Data should be partitioned by the registration field, allowing ACLs and delete statements to be set for the PII directory."
+        },
+        {
+          "key": "C",
+          "text": "Because the value field is stored as binary data, this information is not considered PII and no special precautions should be taken."
+        },
+        {
+          "key": "D",
+          "text": "Separate object storage containers should be specified based on the partition field, allowing isolation at the storage level."
+        },
+        {
+          "key": "E",
+          "text": "Data should be partitioned by the topic field, allowing ACLs and delete statements to leverage partition boundaries.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/084_databricks_view_124601_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "085_databricks_view_124602_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 84,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 84 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124602-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has decided that once data has been ingested from external sources into the\natabricks Lakehouse, table access controls will be leveraged to manage permissions for all production tables and views.\nThe following logic was executed to grant privileges for interactive queries on a production database to the core engineering group.\nGRANT USAGE ON ATABASE prod TO eng;\nGRANT SELECT ON ATABASE prod TO eng;\nAssuming these are the only privileges that have been granted to the eng group and that these users are not workspace administrators, which statement describes their privileges?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Group members have full permissions on the prod database and can also assign permissions to other users or groups."
+        },
+        {
+          "key": "B",
+          "text": "Group members are able to list all tables in the prod database but are not able to see the results of any queries on those tables."
+        },
+        {
+          "key": "C",
+          "text": "Group members are able to query and modify all tables and views in the prod database, but cannot create new tables or views."
+        },
+        {
+          "key": "D",
+          "text": "Group members are able to query all tables and views in the prod database, but cannot create or edit anything in the database."
+        },
+        {
+          "key": "E",
+          "text": "Group members are able to create, query, and modify all tables and views in the prod database, but cannot define custom functions.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/085_databricks_view_124602_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "086_databricks_view_124604_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 85,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 85 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124604-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A distributed team of data analysts share computing resources on an interactive cluster with autoscaling configured. In order to better manage costs and query throughput, the workspace administrator is hoping to evaluate whether cluster upscaling is caused by many concurrent users or resource-intensive queries.\nIn which location can one review the timeline for cluster resizing events?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Workspace audit logs"
+        },
+        {
+          "key": "B",
+          "text": "river's log file"
+        },
+        {
+          "key": "C",
+          "text": "Ganglia"
+        },
+        {
+          "key": "D",
+          "text": "Cluster Event Log"
+        },
+        {
+          "key": "E",
+          "text": "Executor's log file\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/086_databricks_view_124604_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "087_databricks_view_125408_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 86,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 86 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/125408-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When evaluating the Ganglia Metrics for a given cluster with 3 executor nodes, which indicator would signal proper utilization of the VM's resources?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The five Minute Load Average remains consistent/flat"
+        },
+        {
+          "key": "B",
+          "text": "Bytes Received never exceeds 80 million bytes per second"
+        },
+        {
+          "key": "C",
+          "text": "Network I/O never spikes"
+        },
+        {
+          "key": "D",
+          "text": "Total Disk Space remains constant"
+        },
+        {
+          "key": "E",
+          "text": "CPU Utilization is around 75%\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/087_databricks_view_125408_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "088_databricks_view_124605_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 87,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 87 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124605-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which of the following technologies can be used to identify key areas of text when parsing Spark Driver log4j output?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Regex"
+        },
+        {
+          "key": "B",
+          "text": "Julia"
+        },
+        {
+          "key": "C",
+          "text": "pyspsark.ml.feature"
+        },
+        {
+          "key": "D",
+          "text": "Scala Datasets"
+        },
+        {
+          "key": "E",
+          "text": "C++\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/088_databricks_view_124605_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "089_databricks_view_130110_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 88,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 88 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/130110-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "You are testing a collection of mathematical functions, one of which calculates the area under a curve as described by another function.\nassert(myIntegrate(lambda x: x*x, 0, 3) [0] == 9)\nWhich kind of test would the above line exemplify?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Unit"
+        },
+        {
+          "key": "B",
+          "text": "Manual"
+        },
+        {
+          "key": "C",
+          "text": "Functional"
+        },
+        {
+          "key": "D",
+          "text": "Integration"
+        },
+        {
+          "key": "E",
+          "text": "End-to-end\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/089_databricks_view_130110_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "090_databricks_view_124606_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 89,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 89 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/124606-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A atabricks job has been configured with 3 tasks, each of which is a atabricks notebook. Task A does not depend on other tasks. Tasks B and C run in parallel, with each having a serial dependency on Task A.\nIf task A fails during a scheduled run, which statement describes the results of this run?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because all tasks are managed as a dependency graph, no changes will be committed to the Lakehouse until all tasks have successfully been completed."
+        },
+        {
+          "key": "B",
+          "text": "Tasks B and C will attempt to run as configured; any changes made in task A will be rolled back due to task failure."
+        },
+        {
+          "key": "C",
+          "text": "Unless all tasks complete successfully, no changes will be committed to the Lakehouse; because task A failed, all commits will be rolled back automatically."
+        },
+        {
+          "key": "D",
+          "text": "Tasks B and C will be skipped; some logic expressed in task A may have been committed before task failure."
+        },
+        {
+          "key": "E",
+          "text": "Tasks B and C will be skipped; task A will not commit any changes because of stage failure.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/090_databricks_view_124606_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "091_databricks_view_127597_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 90,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 90 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/127597-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement regarding Spark configuration on the atabricks platform is true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The atabricks REST API can be used to modify the Spark configuration properties for an interactive cluster without interrupting jobs currently running on the cluster."
+        },
+        {
+          "key": "B",
+          "text": "Spark configurations set within a notebook will affect all SparkSessions attached to the same interactive cluster."
+        },
+        {
+          "key": "C",
+          "text": "Spark configuration properties can only be set for an interactive cluster by creating a global init script."
+        },
+        {
+          "key": "D",
+          "text": "Spark configuration properties set for an interactive cluster with the Clusters UI will impact all notebooks attached to that cluster."
+        },
+        {
+          "key": "E",
+          "text": "When the same Spark configuration property is set for an interactive cluster and a notebook attached to that cluster, the notebook setting will always be ignored.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/091_databricks_view_127597_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "092_databricks_view_130091_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 91,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 91 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/130091-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A developer has successfully configured their credentials for Databricks Repos and cloned a remote Git repository. They do not have privileges to make changes to the main branch, which is the only branch currently visible in their workspace.\nWhich approach allows this user to share their code updates without the risk of overwriting the work of their teammates?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Repos to checkout all changes and send the git diff log to the team."
+        },
+        {
+          "key": "B",
+          "text": "Use Repos to create a fork of the remote repository, commit all changes, and make a pull request on the source repository."
+        },
+        {
+          "key": "C",
+          "text": "Use Repos to pull changes from the remote Git repository; commit and push changes to a branch that appeared as changes were pulled."
+        },
+        {
+          "key": "D",
+          "text": "Use Repos to merge all differences and make a pull request back to the remote repository."
+        },
+        {
+          "key": "E",
+          "text": "Use Repos to create a new branch, commit all changes, and push changes to the remote Git repository.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/092_databricks_view_130091_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "093_databricks_view_126210_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 92,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 92 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126210-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "In order to prevent accidental commits to production data, a senior data engineer has instituted a policy that all development work will reference clones of elta Lake tables. After testing both EEP and SHALLOW CLONE, development tables are created using SHALLOW CLONE.\nA few weeks after initial table creation, the cloned versions of several tables implemented as Type 1 Slowly Changing imension (SC) stop working. The transaction logs for the source tables show that VACUUM was run the day before.\nWhich statement describes why the cloned tables are no longer working?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because Type 1 changes overwrite existing records, elta Lake cannot guarantee data consistency for cloned tables."
+        },
+        {
+          "key": "B",
+          "text": "Running VACUUM automatically invalidates any shallow clones of a table; EEP CLONE should always be used when a cloned table will be repeatedly queried."
+        },
+        {
+          "key": "C",
+          "text": "Tables created with SHALLOW CLONE are automatically deleted after their default retention threshold of 7 days."
+        },
+        {
+          "key": "D",
+          "text": "The metadata created by the CLONE operation is referencing data files that were purged as invalid by the VACUUM command."
+        },
+        {
+          "key": "E",
+          "text": "The data files compacted by VACUUM are not tracked by the cloned metadata; running REFRESH on the cloned table will pull in recent changes.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/093_databricks_view_126210_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "094_databricks_view_127268_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 93,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 93 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/127268-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "You are performing a join operation to combine values from a static userLookup table with a streaming DataFrame streamingDF.\nWhich code block attempts to perform an invalid stream-static join?",
+      "options": [
+        {
+          "key": "A",
+          "text": "userLookup.join(streamingDF, [\"userid\"], how=\"inner\")"
+        },
+        {
+          "key": "B",
+          "text": "streamingDF.join(userLookup, [\"user_id\"], how=\"outer\")"
+        },
+        {
+          "key": "C",
+          "text": "streamingDF.join(userLookup, [\"user_id”], how=\"left\")"
+        },
+        {
+          "key": "D",
+          "text": "streamingDF.join(userLookup, [\"userid\"], how=\"inner\")"
+        },
+        {
+          "key": "E",
+          "text": "userLookup.join(streamingDF, [\"user_id\"], how=\"right\")\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/094_databricks_view_127268_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "095_databricks_view_126236_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 94,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 94 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126236-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Spill occurs as a result of executing various wide transformations. However, diagnosing spill requires one to proactively look for key indicators.\nWhere in the Spark UI are two of the primary indicators that a partition is spilling to disk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Query’s detail screen and Job’s detail screen"
+        },
+        {
+          "key": "B",
+          "text": "Stage’s detail screen and Executor’s log files"
+        },
+        {
+          "key": "C",
+          "text": "Driver’s and Executor’s log files"
+        },
+        {
+          "key": "D",
+          "text": "Executor’s detail screen and Executor’s log files"
+        },
+        {
+          "key": "E",
+          "text": "Stage’s detail screen and Query’s detail screen\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/095_databricks_view_126236_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "096_databricks_view_128995_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 95,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 95 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128995-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "task orchestrator has been configured to run two hourly tasks. First, an outside system writes Parquet data to a directory mounted at /mnt/raw_orders/. fter this data is written, a Databricks job containing the following code is executed:\nssume that the fields customer_id and order_id serve as a composite key to uniquely identify each order, and that the time field indicates when the record was queued in the source system.\nIf the upstream system is known to occasionally enqueue duplicate entries for a single order hours apart, which statement is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Duplicate records enqueued more than 2 hours apart may be retained and the orders table may contain duplicate records with the same customer_id and order_id."
+        },
+        {
+          "key": "B",
+          "text": "ll records will be held in the state store for 2 hours before being deduplicated and committed to the orders table."
+        },
+        {
+          "key": "C",
+          "text": "The orders table will contain only the most recent 2 hours of records and no duplicates will be present."
+        },
+        {
+          "key": "D",
+          "text": "Duplicate records arriving more than 2 hours apart will be dropped, but duplicates that arrive in the same batch may both be written to the orders table."
+        },
+        {
+          "key": "E",
+          "text": "The orders table will not contain duplicates, but records arriving more than 2 hours late will be ignored and missing from the table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/096_databricks_view_128995_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/096_databricks_view_128995_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "097_databricks_view_126259_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 96,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 96 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126259-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer is migrating a workload from a relational database system to the atabricks Lakehouse. The source system uses a star schema, leveraging foreign key constraints and multi-table inserts to validate records on write.\nWhich consideration will impact the decisions made by the engineer while migrating this workload?",
+      "options": [
+        {
+          "key": "A",
+          "text": "atabricks only allows foreign key constraints on hashed identifiers, which avoid collisions in highly-parallel writes."
+        },
+        {
+          "key": "B",
+          "text": "atabricks supports Spark SQL and JBC; all logic can be directly migrated from the source system without refactoring."
+        },
+        {
+          "key": "C",
+          "text": "Committing to multiple tables simultaneously requires taking out multiple table locks and can lead to a state of deadlock."
+        },
+        {
+          "key": "D",
+          "text": "All elta Lake transactions are ACI compliant against a single table, and atabricks does not enforce foreign key constraints."
+        },
+        {
+          "key": "E",
+          "text": "Foreign keys must reference a primary key field; multi-table inserts must leverage elta Lake’s upsert functionality.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/097_databricks_view_126259_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "098_databricks_view_126260_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 97,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 97 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126260-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data architect has heard about elta Lake’s built-in versioning and time travel capabilities. For auditing purposes, they have a requirement to maintain a full record of all valid street addresses as they appear in the customers table.\nThe architect is interested in implementing a Type 1 table, overwriting existing records with new values and relying on elta Lake time travel to support long-term auditing. A data engineer on the project feels that a Type 2 table will provide better performance and scalability.\nWhich piece of information is critical to this decision?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ata corruption can occur if a query fails in a partially completed state because Type 2 tables require setting multiple fields in a single update."
+        },
+        {
+          "key": "B",
+          "text": "Shallow clones can be combined with Type 1 tables to accelerate historic queries for long-term versioning."
+        },
+        {
+          "key": "C",
+          "text": "elta Lake time travel cannot be used to query previous versions of these tables because Type 1 changes modify data files in place."
+        },
+        {
+          "key": "D",
+          "text": "elta Lake time travel does not scale well in cost or latency to provide a long-term versioning solution."
+        },
+        {
+          "key": "E",
+          "text": "elta Lake only supports Type 0 tables; once records are inserted to a elta Lake table, they cannot be modified.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/098_databricks_view_126260_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "099_databricks_view_128986_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 98,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 98 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128986-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "table named user_ltv is being used to create a view that will be used by data analysts on various teams. Users in the workspace are configured into groups, which are used for setting up data access using CLs.\nThe user_ltv table has the following schema:\nemail STRING, age INT, ltv INT\nThe following view definition is executed:\nn analyst who is not a member of the auditing group executes the following query:\nSELECT * FROM user_ltv_no_minors\nWhich statement describes the results returned by this query?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ll columns will be displayed normally for those records that have an age greater than 17; records not meeting this condition will be omitted."
+        },
+        {
+          "key": "B",
+          "text": "ll age values less than 18 will be returned as null values, all other columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "C",
+          "text": "ll values for the age column will be returned as null values, all other columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "D",
+          "text": "ll records from all columns will be displayed with the values in user_ltv."
+        },
+        {
+          "key": "E",
+          "text": "ll columns will be displayed normally for those records that have an age greater than 18; records not meeting this condition will be omitted.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/099_databricks_view_128986_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/099_databricks_view_128986_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "100_databricks_view_126268_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 99,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 99 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126268-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team is reviewing code used for deleting records for compliance with GDPR. The following logic has been implemented to propagate delete requests from the user_lookup table to the user_aggregates table.\nAssuming that user_id is a unique identifying key and that all users that have requested deletion have been removed from the user_lookup table, which statement describes whether successfully executing the above logic guarantees that the records to be deleted from the user_aggregates table are no longer accessible and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No; the Delta Lake DELETE command only provides ACID guarantees when combined with the MERGE INTO command."
+        },
+        {
+          "key": "B",
+          "text": "No; files containing deleted records may still be accessible with time travel until a VACUUM command is used to remove invalidated data files."
+        },
+        {
+          "key": "C",
+          "text": "Yes; the change data feed uses foreign keys to ensure delete consistency throughout the Lakehouse."
+        },
+        {
+          "key": "D",
+          "text": "Yes; Delta Lake ACID guarantees provide assurance that the DELETE command succeeded fully and permanently purged these records."
+        },
+        {
+          "key": "E",
+          "text": "No; the change data feed only tracks inserts and updates, not deleted records.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/100_databricks_view_126268_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/100_databricks_view_126268_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "101_databricks_view_127269_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 100,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 100 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/127269-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team has been tasked with configuring connections to an external database that does not have a supported native connector with Databricks. The external database already has data security configured by group membership. These groups map directly to user groups already created in Databricks that represent various teams within the company.\nA new login credential has been created for each group in the external database. The Databricks Utilities Secrets module will be used to make these credentials available to Databricks users.\nAssuming that all the credentials are configured correctly on the external database and group membership is properly configured on Databricks, which statement describes how teams can be granted the minimum necessary access to using these credentials?",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"Manage\" permissions should be set on a secret key mapped to those credentials that will be used by a given team."
+        },
+        {
+          "key": "B",
+          "text": "\"Read\" permissions should be set on a secret key mapped to those credentials that will be used by a given team."
+        },
+        {
+          "key": "C",
+          "text": "\"Read\" permissions should be set on a secret scope containing only those credentials that will be used by a given team."
+        },
+        {
+          "key": "D",
+          "text": "\"Manage\" permissions should be set on a secret scope containing only those credentials that will be used by a given team.\nNo additional configuration is necessary as long as all users are configured as administrators in the workspace where secrets have been added.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/101_databricks_view_127269_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "102_databricks_view_132982_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 101,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 101 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/132982-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which indicators would you look for in the Spark UI’s Storage tab to signal that a cached table is not performing optimally? Assume you are using Spark’s MEMORY_ONLY storage level.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Size on Disk is < Size in Memory"
+        },
+        {
+          "key": "B",
+          "text": "The RDD Block Name includes the “*” annotation signaling a failure to cache"
+        },
+        {
+          "key": "C",
+          "text": "Size on Disk is > 0"
+        },
+        {
+          "key": "D",
+          "text": "The number of ached Partitions > the number of Spark Partitions"
+        },
+        {
+          "key": "E",
+          "text": "On Heap Memory Usage is within 75% of Off Heap Memory Usage\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/102_databricks_view_132982_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "103_databricks_view_126297_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 102,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 102 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126297-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is the first line of a Databricks Python notebook when viewed in a text editor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "%python"
+        },
+        {
+          "key": "B",
+          "text": "// Databricks notebook source"
+        },
+        {
+          "key": "C",
+          "text": "# Databricks notebook source"
+        },
+        {
+          "key": "D",
+          "text": "-- Databricks notebook source"
+        },
+        {
+          "key": "E",
+          "text": "# MAGI %python\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/103_databricks_view_126297_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "104_databricks_view_131948_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 103,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 103 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/131948-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes a key benefit of an end-to-end test?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Makes it easier to automate your test suite"
+        },
+        {
+          "key": "B",
+          "text": "Pinpoints errors in the building blocks of your application"
+        },
+        {
+          "key": "C",
+          "text": "Provides testing coverage for all code paths and branches"
+        },
+        {
+          "key": "D",
+          "text": "Closely simulates real world usage of your application"
+        },
+        {
+          "key": "E",
+          "text": "Ensures code is optimized for a real-life workflow\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/104_databricks_view_131948_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "105_databricks_view_131955_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 104,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 104 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/131955-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The Databricks CLI is used to trigger a run of an existing job by passing the job_id parameter. The response that the job run request has been submitted successfully includes a field run_id.\nWhich statement describes what the number alongside this field represents?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The job_id and number of times the job has been run are concatenated and returned."
+        },
+        {
+          "key": "B",
+          "text": "The total number of jobs that have been run in the workspace."
+        },
+        {
+          "key": "C",
+          "text": "The number of times the job definition has been run in this workspace."
+        },
+        {
+          "key": "D",
+          "text": "The job_id is returned in this field."
+        },
+        {
+          "key": "E",
+          "text": "The globally unique ID of the newly triggered run.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/105_databricks_view_131955_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "106_databricks_view_126298_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 105,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 105 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126298-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has created and logged a production model using MLflow. The model accepts a list of column names and returns a new column of type DOULE.\nThe following code correctly imports the production model, loads the customers table containing the customer_id key column into a DataFrame, and defines the feature columns needed for the model.\nWhich code block will output a DataFrame with the schema \"customer_id LONG, predictions DOULE\"?",
+      "options": [
+        {
+          "key": "A",
+          "text": "df.map(lambda x:model(x[columns])).select(\"customer_id, predictions\")"
+        },
+        {
+          "key": "B",
+          "text": "df.select(\"customer_id\", model(*columns).alias(\"predictions\"))"
+        },
+        {
+          "key": "C",
+          "text": "model.predict(df, columns)"
+        },
+        {
+          "key": "D",
+          "text": "df.select(\"customer_id\", pandas_udf(model, columns).alias(\"predictions\"))"
+        },
+        {
+          "key": "E",
+          "text": "df.apply(model, columns).select(\"customer_id, predictions\")\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/106_databricks_view_126298_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/106_databricks_view_126298_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "107_databricks_view_130120_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 106,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 106 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/130120-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "nightly batch job is configured to ingest all data files from a cloud object storage container where records are stored in a nested directory structure YYYY/MM/DD. The data for each date represents all records that were processed by the source system on that date, noting that some records may be delayed as they await moderator approval. Each entry represents a user review of a product and has the following schema:\nuser_id STRING, review_id BIGINT, product_id BIGINT, review_timestamp TIMESTMP, review_text STRING\nThe ingestion job is configured to append all data for the previous date to a target table reviews_raw with an identical schema to the source system. The next step in the pipeline is a batch write to propagate all new records inserted into reviews_raw to a table where data is fully deduplicated, validated, and enriched.\nWhich solution minimizes the compute costs to propagate this batch of data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Perform a batch read on the reviews_raw table and perform an insert-only merge using the natural composite key user_id, review_id, product_id, review_timestamp."
+        },
+        {
+          "key": "B",
+          "text": "Configure a Structured Streaming read against the reviews_raw table using the trigger once execution mode to process new records as a batch job."
+        },
+        {
+          "key": "C",
+          "text": "Use Delta Lake version history to get the difference between the latest version of reviews_raw and one version prior, then write these records to the next table."
+        },
+        {
+          "key": "D",
+          "text": "Filter all records in the reviews_raw table based on the review_timestamp; batch append those records produced in the last 48 hours."
+        },
+        {
+          "key": "E",
+          "text": "Reprocess all records in reviews_raw and overwrite the next table in the pipeline.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/107_databricks_view_130120_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "108_databricks_view_128996_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 107,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 107 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/128996-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes Delta Lake optimized writes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Before a Jobs cluster terminates, OPTIMIZ is executed on all tables modified during the most recent job."
+        },
+        {
+          "key": "B",
+          "text": "An asynchronous job runs after the write completes to detect if files could be further compacted; if yes, an OPTIMIZ job is executed toward a default of 1 GB."
+        },
+        {
+          "key": "C",
+          "text": "Data is queued in a messaging bus instead of committing data directly to memory; all data is committed from the messaging bus in one batch once the job is complete."
+        },
+        {
+          "key": "D",
+          "text": "Optimized writes use logical partitions instead of directory partitions; because partition boundaries are only represented in metadata, fewer small files are written."
+        },
+        {
+          "key": "E",
+          "text": "A shuffle occurs prior to writing to try to group similar data together resulting in fewer files instead of each executor writing multiple files based on directory partitions.\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/108_databricks_view_128996_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "109_databricks_view_132138_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 108,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 108 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/132138-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes the default execution mode for atabricks Auto Loader?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloud vendor-specific queue storage and notification services are configured to track newly arriving files; the target table is materialized by directly querying all valid files in the source directory."
+        },
+        {
+          "key": "B",
+          "text": "New files are identified by listing the input directory; the target table is materialized by directly querying all valid files in the source directory."
+        },
+        {
+          "key": "C",
+          "text": "Webhooks trigger a atabricks job to run anytime new data arrives in a source directory; new data are automatically merged into target tables using rules inferred from the data."
+        },
+        {
+          "key": "D",
+          "text": "New files are identified by listing the input directory; new files are incrementally and idempotently loaded into the target elta Lake table."
+        },
+        {
+          "key": "E",
+          "text": "Cloud vendor-specific queue storage and notification services are configured to track newly arriving files; new files are incrementally and idempotently loaded into the target elta Lake table.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/109_databricks_view_132138_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "110_databricks_view_132980_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 109,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 109 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/132980-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Delta Lake table representing metadata about content posts from users has the following schema:\nuser_id LONG, post_text STRING, post_id STRING, longitude FLOAT, latitude FLOAT, post_time TIMSTAMP, date DAT\nBased on the above schema, which column is a good candidate for partitioning the Delta Table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "post_time"
+        },
+        {
+          "key": "B",
+          "text": "latitude"
+        },
+        {
+          "key": "C",
+          "text": "post_id"
+        },
+        {
+          "key": "D",
+          "text": "user_id"
+        },
+        {
+          "key": "E",
+          "text": "date\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/110_databricks_view_132980_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "111_databricks_view_126796_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 110,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 110 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126796-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A large company seeks to implement a near real-time solution involving hundreds of pipelines with parallel updates of many tables with extremely high volume and high velocity data.\nWhich of the following solutions would you implement to achieve this requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Databricks High Concurrency clusters, which leverage optimized cloud storage connections to maximize data throughput."
+        },
+        {
+          "key": "B",
+          "text": "Partition ingestion tables by a small time duration to allow for many data files to be written in parallel."
+        },
+        {
+          "key": "C",
+          "text": "Configure Databricks to save all data to attached SSD volumes instead of object storage, increasing file I/O significantly."
+        },
+        {
+          "key": "D",
+          "text": "Isolate Delta Lake tables in their own storage containers to avoid API limits imposed by cloud vendors."
+        },
+        {
+          "key": "E",
+          "text": "Store all tables in a single database to ensure that the Databricks Catalyst Metastore can load balance overall throughput.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/111_databricks_view_126796_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "112_databricks_view_126313_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 111,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 111 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/126313-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which describes a method of installing a Python package scoped at the notebook level to all nodes in the currently active cluster?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Run source env/bin/activate in a notebook setup script"
+        },
+        {
+          "key": "B",
+          "text": "Use b in a notebook cell"
+        },
+        {
+          "key": "C",
+          "text": "Use %pip install in a notebook cell"
+        },
+        {
+          "key": "D",
+          "text": "Use %sh pip install in a notebook cell"
+        },
+        {
+          "key": "E",
+          "text": "Install libraries from PyPI using the cluster UI\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/112_databricks_view_126313_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "113_databricks_view_135995_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 112,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 112 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/135995-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Each configuration below is identical to the extent that each cluster has 400 G total of RAM 160 total cores and only one Executor per VM.\nGiven an extremely long-running job for which completion must be guaranteed, which cluster configuration will be able to guarantee completion of the job in light of one or more VM failures?",
+      "options": [
+        {
+          "key": "A",
+          "text": "• Total VMs: 8\n• 50 G per Executor\n• 20 Cores / Executor"
+        },
+        {
+          "key": "B",
+          "text": "• Total VMs: 16\n• 25 G per Executor\n• 10 Cores / Executor"
+        },
+        {
+          "key": "C",
+          "text": "• Total VMs: 1\n• 400 G per Executor\n• 160 Cores/Executor"
+        },
+        {
+          "key": "D",
+          "text": "• Total VMs: 4\n• 100 G per Executor\n• 40 Cores / Executor"
+        },
+        {
+          "key": "E",
+          "text": "• Total VMs: 2\n• 200 G per Executor\n• 80 Cores / Executor\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/113_databricks_view_135995_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "114_databricks_view_141545_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 113,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 113 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141545-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Delta Lake table in the Lakehouse named customer_churn_params is used in churn prediction by the machine learning team. The table contains information about customers derived from a number of upstream sources. Currently, the data engineering team populates this table nightly by overwriting the table with the current valid values derived from upstream data sources.\nImmediately after each update succeeds, the data engineering team would like to determine the difference between the new version and the previous version of the table.\nGiven the current implementation, which method can be used?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Execute a query to calculate the difference between the new version and the previous version using Delta Lake’s built-in versioning and lime travel functionality."
+        },
+        {
+          "key": "B",
+          "text": "Parse the Delta Lake transaction log to identify all newly written data files."
+        },
+        {
+          "key": "C",
+          "text": "Parse the Spark event logs to identify those rows that were updated, inserted, or deleted."
+        },
+        {
+          "key": "D",
+          "text": "Execute DESCRIBE HISTORY customer_churn_params to obtain the full operation metrics for the update, including a log of all records that have been added or modified."
+        },
+        {
+          "key": "E",
+          "text": "Use Delta Lake’s change data feed to identify those records that have been updated, inserted, or deleted.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/114_databricks_view_141545_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "115_databricks_view_141546_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 114,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 114 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141546-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data team’s Structured Streaming job is configured to calculate running aggregates for item sales to update a downstream marketing dashboard. The marketing team has introduced a new promotion, and they would like to add a new field to track the number of times this promotion code is used for each item. junior data engineer suggests updating the existing query as follows. Note that proposed changes are in bold.\nOriginal query:\nProposed query:\nWhich step must also be completed to put the proposed query into production?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Specify a new checkpointLocation"
+        },
+        {
+          "key": "B",
+          "text": "Remove .option('mergeSchema', 'true') from the streaming write"
+        },
+        {
+          "key": "C",
+          "text": "Increase the shuffle partitions to account for additional aggregates"
+        },
+        {
+          "key": "D",
+          "text": "Run REFRESH TBLE delta.‛/item_agg‛\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/115_databricks_view_141546_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/115_databricks_view_141546_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/115_databricks_view_141546_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "116_databricks_view_141547_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 115,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 115 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141547-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When using CLI or RST API to get results from jobs with multiple tasks, which statement correctly describes the response structure?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ach run of a job will have a unique job_id; all tasks within this job will have a unique job_id"
+        },
+        {
+          "key": "B",
+          "text": "ach run of a job will have a unique job_id; all tasks within this job will have a unique task_id"
+        },
+        {
+          "key": "C",
+          "text": "ach run of a job will have a unique orchestration_id; all tasks within this job will have a unique run_id"
+        },
+        {
+          "key": "D",
+          "text": "ach run of a job will have a unique run_id; all tasks within this job will have a unique task_id"
+        },
+        {
+          "key": "E",
+          "text": "ach run of a job will have a unique run_id; all tasks within this job will also have a unique run_id\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/116_databricks_view_141547_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "117_databricks_view_141548_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 116,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 116 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141548-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team is configuring environments for development, testing, and production before beginning migration on a new data pipeline. The team requires extensive testing on both the code and data resulting from code execution, and the team wants to develop and test against data as similar to production data as possible.\nA junior data engineer suggests that production data can be mounted to the development and testing environments, allowing pre-production code to execute against production data. ecause all users have admin privileges in the development environment, the junior data engineer has offered to configure permissions and mount this data for the team.\nWhich statement captures best practices for this situation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All development, testing, and production code and data should exist in a single, unified workspace; creating separate environments for testing and development complicates administrative overhead."
+        },
+        {
+          "key": "B",
+          "text": "In environments where interactive code will be executed, production data should only be accessible with read permissions; creating isolated databases for each environment further reduces risks."
+        },
+        {
+          "key": "C",
+          "text": "As long as code in the development environment declares USE dev_db at the top of each notebook, there is no possibility of inadvertently committing changes back to production data sources."
+        },
+        {
+          "key": "D",
+          "text": "ecause Delta Lake versions all data and supports time travel, it is not possible for user error or malicious actors to permanently delete production data; as such, it is generally safe to mount production data anywhere."
+        },
+        {
+          "key": "E",
+          "text": "ecause access to production data will always be verified using passthrough credentials, it is safe to mount data to any Databricks development environment.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/117_databricks_view_141548_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "118_databricks_view_141951_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 117,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 117 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141951-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer, User A, has promoted a pipeline to production by using the REST API to programmatically create several jobs. A DevOps engineer, User , has configured an external orchestration tool to trigger job runs through the REST API. oth users authorized the REST API calls using their personal access tokens.\nA workspace admin, User C, inherits responsibility for managing this pipeline. User C uses the Databricks Jobs UI to take \"Owner\" privileges of each job. Jobs continue to be triggered using the credentials and tooling configured by User .\nAn application has been configured to collect and parse run information returned by the REST API. Which statement describes the value returned in the creator_user_name field?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Once User C takes \"Owner\" privileges, their email address will appear in this field; prior to this, User A’s email address will appear in this field."
+        },
+        {
+          "key": "B",
+          "text": "User ’s email address will always appear in this field, as their credentials are always used to trigger the run."
+        },
+        {
+          "key": "C",
+          "text": "User A’s email address will always appear in this field, as they still own the underlying notebooks."
+        },
+        {
+          "key": "D",
+          "text": "Once User C takes \"Owner\" privileges, their email address will appear in this field; prior to this, User ’s email address will appear in this field."
+        },
+        {
+          "key": "E",
+          "text": "User C will only ever appear in this field if they manually trigger the job, otherwise it will indicate User .\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/118_databricks_view_141951_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "119_databricks_view_146882_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 118,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 118 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/146882-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A member of the data engineering team has submitted a short notebook that they wish to schedule as part of a larger data pipeline. Assume that the commands provided below produce the logically correct results when run as presented.\nWhich command should be removed from the notebook before scheduling it as a job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cmd 2"
+        },
+        {
+          "key": "B",
+          "text": "Cmd 3"
+        },
+        {
+          "key": "C",
+          "text": "Cmd 4"
+        },
+        {
+          "key": "D",
+          "text": "Cmd 5\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/119_databricks_view_146882_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/119_databricks_view_146882_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "120_databricks_view_144252_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 119,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 119 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144252-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement regarding Spark configuration on the atabricks platform is true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The atabricks REST API can be used to modify the Spark configuration properties for an interactive cluster without interrupting jobs currently running on the cluster."
+        },
+        {
+          "key": "B",
+          "text": "Spark configurations set within a notebook will affect all SparkSessions attached to the same interactive cluster."
+        },
+        {
+          "key": "C",
+          "text": "When the same Spark configuration property is set for an interactive cluster and a notebook attached to that cluster, the notebook setting will always be ignored."
+        },
+        {
+          "key": "D",
+          "text": "Spark configuration properties set for an interactive cluster with the Clusters UI will impact all notebooks attached to that cluster.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/120_databricks_view_144252_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "121_databricks_view_149442_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 120,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 120 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149442-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The business reporting team requires that data for their dashboards be updated every hour. The total processing time for the pipeline that extracts, transforms, and loads the data for their pipeline runs in 10 minutes.\nAssuming normal operating conditions, which configuration will meet their service-level agreement requirements with the lowest cost?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Configure a job that executes every time new data lands in a given directory"
+        },
+        {
+          "key": "B",
+          "text": "Schedule a job to execute the pipeline once an hour on a new job cluster"
+        },
+        {
+          "key": "C",
+          "text": "Schedule a Structured Streaming job with a trigger interval of 60 minutes"
+        },
+        {
+          "key": "D",
+          "text": "Schedule a job to execute the pipeline once an hour on a dedicated interactive cluster\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/121_databricks_view_149442_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "122_databricks_view_141583_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 121,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 121 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141583-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Databricks SQL dashboard has been configured to monitor the total number of records present in a collection of Delta Lake tables using the following query pattern:\nSELET OUNT (*) FROM table -\nWhich of the following describes how results are generated each time the dashboard is updated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The total count of rows is calculated by scanning all data files"
+        },
+        {
+          "key": "B",
+          "text": "The total count of rows will be returned from cached results unless REFRESH is run"
+        },
+        {
+          "key": "C",
+          "text": "The total count of records is calculated from the Delta transaction logs"
+        },
+        {
+          "key": "D",
+          "text": "The total count of records is calculated from the parquet file metadata\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/122_databricks_view_141583_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "123_databricks_view_141584_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 122,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 122 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141584-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Delta Lake table was created with the below query:\nonsider the following query:\nDROP TABLE prod.sales_by_store -\nIf this statement is executed by a workspace admin, which result will occur?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Data will be marked as deleted but still recoverable with Time Travel."
+        },
+        {
+          "key": "B",
+          "text": "The table will be removed from the catalog but the data will remain in storage."
+        },
+        {
+          "key": "C",
+          "text": "The table will be removed from the catalog and the data will be deleted."
+        },
+        {
+          "key": "D",
+          "text": "An error will occur because Delta Lake prevents the deletion of production data.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/123_databricks_view_141584_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/123_databricks_view_141584_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "124_databricks_view_142864_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 123,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 123 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142864-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "developer has successfully configured their credentials for Databricks Repos and cloned a remote Git repository. They do not have privileges to make changes to the main branch, which is the only branch currently visible in their workspace.\nWhich approach allows this user to share their code updates without the risk of overwriting the work of their teammates?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Repos to create a new branch, commit all changes, and push changes to the remote Git repository."
+        },
+        {
+          "key": "B",
+          "text": "Use Repos to create a fork of the remote repository, commit all changes, and make a pull request on the source repository."
+        },
+        {
+          "key": "C",
+          "text": "Use Repos to pull changes from the remote Git repository; commit and push changes to a branch that appeared as changes were pulled."
+        },
+        {
+          "key": "D",
+          "text": "Use Repos to merge all differences and make a pull request back to the remote repository.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/124_databricks_view_142864_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "125_databricks_view_141900_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 124,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 124 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141900-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The security team is exploring whether or not the Databricks secrets module can be leveraged for connecting to an external database.\nfter testing the code with all Python variables being defined with strings, they upload the password to the secrets module and configure the correct permissions for the currently active user. They then modify their code to the following (leaving all other variables unchanged).\nWhich statement describes what will happen when the above code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The connection to the external table will succeed; the string \"REDCTED\" will be printed."
+        },
+        {
+          "key": "B",
+          "text": "n interactive input box will appear in the notebook; if the right password is provided, the connection will succeed and the encoded password will be saved to DBFS."
+        },
+        {
+          "key": "C",
+          "text": "n interactive input box will appear in the notebook; if the right password is provided, the connection will succeed and the password will be printed in plain text."
+        },
+        {
+          "key": "D",
+          "text": "The connection to the external table will succeed; the string value of password will be printed in plain text.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/125_databricks_view_141900_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/125_databricks_view_141900_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "126_databricks_view_141740_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 125,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 125 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141740-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has created and logged a production model using MLflow. The model accepts a list of column names and returns a new column of type DOULE.\nThe following code correctly imports the production model, loads the customers table containing the customer_id key column into a DataFrame, and defines the feature columns needed for the model.\nWhich code block will output a DataFrame with the schema \"customer_id LONG, predictions DOULE\"?",
+      "options": [
+        {
+          "key": "A",
+          "text": "df.map(lambda x:model(x[columns])).select(\"customer_id, predictions\")"
+        },
+        {
+          "key": "B",
+          "text": "df.select(\"customer_id\",\nmodel(*columns).alias(\"predictions\"))"
+        },
+        {
+          "key": "C",
+          "text": "model.predict(df, columns)"
+        },
+        {
+          "key": "D",
+          "text": "df.apply(model, columns).select(\"customer_id, predictions\")\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/126_databricks_view_141740_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/126_databricks_view_141740_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "127_databricks_view_142366_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 126,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 126 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142366-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior member of the data engineering team is exploring the language interoperability of atabricks notebooks. The intended outcome of the below code is to register a view of all sales that occurred in countries on the continent of Africa that appear in the geo_lookup table.\nBefore executing the code, running SHOW TABLES on the current database indicates the database contains only two tables: geo_lookup and sales.\nWhat will be the outcome of executing these command cells m order m an interactive notebook?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both commands will succeed. Executing SHOW TABLES will show that countries_af and sales_af have been registered as views."
+        },
+        {
+          "key": "B",
+          "text": "Cmd 1 will succeed. Cmd 2 will search all accessible databases for a table or view named countries_af: if this entity exists, Cmd 2 will succeed."
+        },
+        {
+          "key": "C",
+          "text": "Cmd 1 will succeed and Cmd 2 will fail. countries_af will be a Python variable representing a PySpark ataFrame."
+        },
+        {
+          "key": "D",
+          "text": "Cmd 1 will succeed and Cmd 2 will fail. countries_af will be a Python variable containing a list of strings.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/127_databricks_view_142366_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/127_databricks_view_142366_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "128_databricks_view_149833_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 127,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 127 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149833-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has requested assistance in accelerating queries on free-form text from user reviews. The data is currently stored in Parquet with the below schema:\nitem_id INT, user_id INT, review_id INT, rating FLOT, review STRING\nThe review column contains the full text of the review left by the user. Specifically, the data science team is looking to identify if any of 30 key words exist in this field.\njunior data engineer suggests converting this data to Delta Lake will improve query performance.\nWhich response to the junior data engineer’s suggestion is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Delta Lake statistics are not optimized for free text fields with high cardinality."
+        },
+        {
+          "key": "B",
+          "text": "Delta Lake statistics are only collected on the first 4 columns in a table."
+        },
+        {
+          "key": "C",
+          "text": "ZORDER ON review will need to be run to see performance gains."
+        },
+        {
+          "key": "D",
+          "text": "The Delta log creates a term matrix for free text fields to support selective filtering.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/128_databricks_view_149833_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "129_databricks_view_142967_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 128,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 128 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142967-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team has configured a job to process customer requests to be forgotten (have their data deleted). All user data that needs to be deleted is stored in Delta Lake tables using default table settings.\nThe team has decided to process all deletions from the previous week as a batch job at 1am each Sunday. The total duration of this job is less than one hour. Every Monday at 3am, a batch job executes a series of VAUUM commands on all Delta Lake tables throughout the organization.\nThe compliance officer has recently learned about Delta Lake's time travel functionality. They are concerned that this might allow continued access to deleted data.\nAssuming all delete logic is correctly implemented, which statement correctly addresses this concern?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the VAUUM command permanently deletes all files containing deleted records, deleted records may be accessible with time travel for around 24 hours."
+        },
+        {
+          "key": "B",
+          "text": "Because the default data retention threshold is 24 hours, data files containing deleted records will be retained until the VAUUM job is run the following day."
+        },
+        {
+          "key": "C",
+          "text": "Because the default data retention threshold is 7 days, data files containing deleted records will be retained until the VAUUM job is run 8 days later."
+        },
+        {
+          "key": "D",
+          "text": "Because Delta Lake's delete statements have AID guarantees, deleted records will be permanently purged from all storage systems as soon as a delete job completes.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/129_databricks_view_142967_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "130_databricks_view_144256_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 129,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 129 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144256-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Assuming that the Databricks CLI has been installed and configured correctly, which Databricks CLI command can be used to upload a custom Python Wheel to object storage mounted with the DFS for use with a production job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "configure"
+        },
+        {
+          "key": "B",
+          "text": "fs"
+        },
+        {
+          "key": "C",
+          "text": "workspace"
+        },
+        {
+          "key": "D",
+          "text": "libraries\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/130_databricks_view_144256_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "131_databricks_view_141552_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 130,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 130 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141552-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The following table consists of items found in user carts within an e-commerce website.\nThe following MERGE statement is used to update this table using an updates view, with schema evolution enabled on this table.\nHow would the following update be handled?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The update throws an error because changes to existing columns in the target schema are not supported."
+        },
+        {
+          "key": "B",
+          "text": "The new nested Field is added to the target schema, and dynamically read as NULL for existing unmatched records."
+        },
+        {
+          "key": "C",
+          "text": "The update is moved to a separate \"rescued\" column because it is missing a column expected in the target schema."
+        },
+        {
+          "key": "D",
+          "text": "The new nested field is added to the target schema, and files underlying existing records are updated to include NULL values for the new field.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/131_databricks_view_141552_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/131_databricks_view_141552_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/131_databricks_view_141552_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png"
+      ],
+      "sourceFile": "output/batch/131_databricks_view_141552_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "132_databricks_view_141743_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 131,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 131 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141743-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream system is emitting change data capture (CC) logs that are being written to a cloud object storage directory. Each record in the log indicates the change type (insert, update, or delete) and the values for each field after the change. The source table has a primary key identified by the field pk_id.\nFor auditing purposes, the data governance team wishes to maintain a full record of all values that have ever been valid in the source system. For analytical purposes, only the most recent value for each record needs to be recorded. The atabricks job to ingest these records occurs once per hour, but each individual record may have changed multiple times over the course of an hour.\nWhich solution meets these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Iterate through an ordered set of changes to the table, applying each in turn to create the current state of the table, (insert, update, delete), timestamp of change, and the values."
+        },
+        {
+          "key": "B",
+          "text": "Use merge into to insert, update, or delete the most recent entry for each pk_id into a table, then propagate all changes throughout the system."
+        },
+        {
+          "key": "C",
+          "text": "eduplicate records in each batch by pk_id and overwrite the target table."
+        },
+        {
+          "key": "D",
+          "text": "Use elta Lake’s change data feed to automatically process CC data from an external system, propagating all changes to all dependent tables in the Lakehouse.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/132_databricks_view_141743_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "133_databricks_view_141744_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 132,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 132 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141744-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An hourly batch job is configured to ingest data files from a cloud object storage container where each batch represent all records produced by the source system in a given hour. The batch job to process these records into the Lakehouse is sufficiently delayed to ensure no late-arriving data is missed. The user_id field represents a unique key for the data, which has the following schema:\nuser_id BIGINT, username STRING, user_utc STRING, user_region STRING, last_login BIGINT, auto_pay BOOLEAN, last_updated BIGINT\nNew records are all ingested into a table named account_history which maintains a full record of all data in the same schema as the source. The next table in the system is named account_current and is implemented as a Type 1 table representing the most recent value for each unique user_id.\nWhich implementation can be used to efficiently update the described account_current table as part of each hourly batch job assuming there are millions of user accounts and tens of thousands of records processed hourly?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filter records in account_history using the last_updated field and the most recent hour processed, making sure to deduplicate on username; write a merge statement to update or insert the most recent value for each username."
+        },
+        {
+          "key": "B",
+          "text": "Use Auto Loader to subscribe to new files in the account_history directory; configure a Structured Streaming trigger available job to batch update newly detected files into the account_current table."
+        },
+        {
+          "key": "C",
+          "text": "Overwrite the account_current table with each batch using the results of a query against the account_history table grouping by user_id and filtering for the max value of last_updated."
+        },
+        {
+          "key": "D",
+          "text": "Filter records in account_history using the last_updated field and the most recent hour processed, as well as the max last_login by user_id write a merge statement to update or insert the most recent value for each user_id.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/133_databricks_view_141744_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "134_databricks_view_141553_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 133,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 133 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141553-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The business intelligence team has a dashboard configured to track various summary metrics for retail stores. This includes total sales for the previous day alongside totals and averages for a variety of time periods. The fields required to populate this dashboard have the following schema:\nFor demand forecasting, the Lakehouse contains a validated table of all itemized sales updated incrementally in near real-time. This table, named products_per_order, includes the following fields:\nBecause reporting on long-term sales trends is less volatile, analysts using the new dashboard only require data to be refreshed once daily. Because the dashboard will be queried interactively by many users throughout a normal business day, it should return results quickly and reduce total compute associated with each materialization.\nWhich solution meets the expectations of the end users while controlling and limiting possible costs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Populate the dashboard by configuring a nightly batch job to save the required values as a table overwritten with each update."
+        },
+        {
+          "key": "B",
+          "text": "Use Structured Streaming to configure a live dashboard against the products_per_order table within a Databricks notebook."
+        },
+        {
+          "key": "C",
+          "text": "Define a view against the products_per_order table and define the dashboard against this view."
+        },
+        {
+          "key": "D",
+          "text": "Use the Delta Cache to persist the products_per_order table in memory to quickly update the dashboard with each query.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/134_databricks_view_141553_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/134_databricks_view_141553_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/134_databricks_view_141553_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "135_databricks_view_149836_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 134,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 134 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149836-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Delta lake table with DF enabled table in the Lakehouse named customer_churn_params is used in churn prediction by the machine learning team. The table contains information about customers derived from a number of upstream sources. urrently, the data engineering team populates this table nightly by overwriting the table with the current valid values derived from upstream data sources.\nThe churn prediction model used by the ML team is fairly stable in production. The team is only interested in making predictions on records that have changed in the past 24 hours.\nWhich approach would simplify the identification of these changed records?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apply the churn model to all rows in the customer_churn_params table, but implement logic to perform an upsert into the predictions table that ignores rows where predictions have not changed."
+        },
+        {
+          "key": "B",
+          "text": "onvert the batch job to a Structured Streaming job using the complete output mode; configure a Structured Streaming job to read from the customer_churn_params table and incrementally predict against the churn model."
+        },
+        {
+          "key": "C",
+          "text": "Replace the current overwrite logic with a merge statement to modify only those records that have changed; write logic to make predictions on the changed records identified by the change data feed."
+        },
+        {
+          "key": "D",
+          "text": "Modify the overwrite logic to include a field populated by calling spark.sql.functions.current_timestamp() as data are being written; use this field to identify records written on a particular date.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/135_databricks_view_149836_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "136_databricks_view_141585_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 135,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 135 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141585-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A view is registered with the following code:\nBoth users and orders are elta Lake tables.\nWhich statement describes the results of querying recent_orders?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All logic will execute when the view is defined and store the result of joining tables to the BFS; this stored data will be returned when the view is queried."
+        },
+        {
+          "key": "B",
+          "text": "Results will be computed and cached when the view is defined; these cached results will incrementally update as new records are inserted into source tables."
+        },
+        {
+          "key": "C",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query finishes."
+        },
+        {
+          "key": "D",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query began.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/136_databricks_view_141585_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/136_databricks_view_141585_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "137_databricks_view_141745_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 136,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 136 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141745-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data ingestion task requires a one-TB JSON dataset to be written out to Parquet with a target part-file size of 512 MB. Because Parquet is being used instead of Delta Lake, built-in file-sizing features such as uto-Optimize & uto-Compaction cannot be used.\nWhich strategy will yield the best performance without shuffling data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set spark.sql.files.maxPartitionBytes to 512 MB, ingest the data, execute the narrow transformations, and then write to parquet."
+        },
+        {
+          "key": "B",
+          "text": "Set spark.sql.shuffle.partitions to 2,048 partitions (1TB*1024*1024/512), ingest the data, execute the narrow transformations, optimize the data by sorting it (which automatically repartitions the data), and then write to parquet."
+        },
+        {
+          "key": "C",
+          "text": "Set spark.sql.adaptive.advisoryPartitionSizeInBytes to 512 MB bytes, ingest the data, execute the narrow transformations, coalesce to 2,048 partitions (1TB*1024*1024/512), and then write to parquet."
+        },
+        {
+          "key": "D",
+          "text": "Ingest the data, execute the narrow transformations, repartition to 2,048 partitions (1TB* 1024*1024/512), and then write to parquet.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/137_databricks_view_141745_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "138_databricks_view_141554_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 137,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 137 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141554-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement regarding stream-static joins and static Delta tables is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The checkpoint directory will be used to track updates to the static Delta table."
+        },
+        {
+          "key": "B",
+          "text": "Each microbatch of a stream-static join will use the most recent version of the static Delta table as of the job's initialization."
+        },
+        {
+          "key": "C",
+          "text": "The checkpoint directory will be used to track state information for the unique keys present in the join."
+        },
+        {
+          "key": "D",
+          "text": "Stream-static joins cannot use static Delta tables because of consistency issues.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/138_databricks_view_141554_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "139_databricks_view_149854_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 138,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 138 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149854-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer has been asked to develop a streaming data pipeline with a grouped aggregation using DataFrame df. The pipeline needs to calculate the average humidity and average temperature for each non-overlapping five-minute interval. Events are recorded once per minute per device.\nStreaming DataFrame df has the following schema:\n\"device_id INT, event_time TIMESTAMP, temp FLOAT, humidity FLOAT\"\nCode block:\nWhich line of code correctly fills in the blank within the code block to complete this task?",
+      "options": [
+        {
+          "key": "A",
+          "text": "to_interval(\"event_time\", \"5 minutes\").alias(\"time\")"
+        },
+        {
+          "key": "B",
+          "text": "window(\"event_time\", \"5 minutes\").alias(\"time\")"
+        },
+        {
+          "key": "C",
+          "text": "\"event_time\""
+        },
+        {
+          "key": "D",
+          "text": "lag(\"event_time\", \"10 minutes\").alias(\"time\")\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/139_databricks_view_149854_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/139_databricks_view_149854_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "140_databricks_view_142392_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 139,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 139 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142392-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Structured Streaming job deployed to production has been resulting in higher than expected cloud storage costs. At present, during normal execution, each microbatch of data is processed in less than 3s; at least 12 times per minute, a microbatch is processed that contains 0 records. The streaming write was configured using the default trigger settings. The production job is currently scheduled alongside many other Databricks jobs in a workspace with instance pools provisioned to reduce start-up time for jobs with batch execution.\nHolding all other variables constant and assuming records need to be processed in less than 10 minutes, which adjustment will meet the requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the trigger interval to 3 seconds; the default trigger interval is consuming too many records per batch, resulting in spill to disk that can increase volume costs."
+        },
+        {
+          "key": "B",
+          "text": "Use the trigger once option and configure a Databricks job to execute the query every 10 minutes; this approach minimizes costs for both compute and storage."
+        },
+        {
+          "key": "C",
+          "text": "Set the trigger interval to 10 minutes; each batch calls APIs in the source storage account, so decreasing trigger frequency to maximum allowable threshold should minimize this cost."
+        },
+        {
+          "key": "D",
+          "text": "Set the trigger interval to 500 milliseconds; setting a small but non-zero trigger interval ensures that the source is not queried too frequently.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/140_databricks_view_142392_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "141_databricks_view_144257_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 140,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 140 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144257-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes Delta Lake optimized writes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Before a Jobs cluster terminates, OPTIMIZE is executed on all tables modified during the most recent job."
+        },
+        {
+          "key": "B",
+          "text": "An asynchronous job runs after the write completes to detect if files could be further compacted; if yes, an OPTIMIZE job is executed toward a default of 1 GB."
+        },
+        {
+          "key": "C",
+          "text": "A shuffle occurs prior to writing to try to group similar data together resulting in fewer files instead of each executor writing multiple files based on directory partitions."
+        },
+        {
+          "key": "D",
+          "text": "Optimized writes use logical partitions instead of directory partitions; because partition boundaries are only represented in metadata, fewer small files are written.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/141_databricks_view_144257_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "142_databricks_view_144258_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 141,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 141 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144258-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement characterizes the general programming model used by Spark Structured Streaming?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Structured Streaming leverages the parallel processing of GPUs to achieve highly parallel data throughput."
+        },
+        {
+          "key": "B",
+          "text": "Structured Streaming is implemented as a messaging bus and is derived from Apache Kafka."
+        },
+        {
+          "key": "C",
+          "text": "Structured Streaming relies on a distributed network of nodes that hold incremental state values for cached stages."
+        },
+        {
+          "key": "D",
+          "text": "Structured Streaming models new data arriving in a data stream as new rows appended to an unbounded table.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/142_databricks_view_144258_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "143_databricks_view_144259_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 142,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 142 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144259-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which configuration parameter directly affects the size of a spark-partition upon ingestion of data into Spark?",
+      "options": [
+        {
+          "key": "A",
+          "text": "spark.sql.files.maxPartitionBytes"
+        },
+        {
+          "key": "B",
+          "text": "spark.sql.autoBroadcastJoinThreshold"
+        },
+        {
+          "key": "C",
+          "text": "spark.sql.adaptive.advisoryPartitionSizeInBytes"
+        },
+        {
+          "key": "D",
+          "text": "spark.sql.adaptive.coalescePartitions.minPartitionNum\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/143_databricks_view_144259_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "144_databricks_view_144260_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 143,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 143 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144260-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Spark job is taking longer than expected. Using the Spark UI, a data engineer notes that the Min, Median, and Max urations for tasks in a particular stage show the minimum and median time to complete a task as roughly the same, but the max duration for a task to be roughly 100 times as long as the minimum.\nWhich situation is causing increased duration of the overall job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Task queueing resulting from improper thread pool assignment."
+        },
+        {
+          "key": "B",
+          "text": "Spill resulting from attached volume storage being too small."
+        },
+        {
+          "key": "C",
+          "text": "Network latency due to some cluster nodes being in different regions from the source data"
+        },
+        {
+          "key": "D",
+          "text": "Skew caused by more data being assigned to a subset of spark-partitions.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/144_databricks_view_144260_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "145_databricks_view_149859_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 144,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 144 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149859-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Each configuration below is identical to the extent that each cluster has 400 G total of RAM, 160 total cores and only one Executor per VM.\nGiven an extremely long-running job for which completion must be guaranteed, which cluster configuration will be able to guarantee completion of the job in light of one or more VM failures?",
+      "options": [
+        {
+          "key": "A",
+          "text": "• Total VMs: 8\n• 50 G per Executor\n• 20 Cores / Executor"
+        },
+        {
+          "key": "B",
+          "text": "• Total VMs: 16\n• 25 G per Executor\n• 10 Cores / Executor"
+        },
+        {
+          "key": "C",
+          "text": "• Total VMs: 1\n• 400 G per Executor\n• 160 Cores/Executor"
+        },
+        {
+          "key": "D",
+          "text": "• Total VMs: 4\n• 100 G per Executor\n• 40 Cores / Executor\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/145_databricks_view_149859_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "146_databricks_view_146974_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 145,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 145 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/146974-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "task orchestrator has been configured to run two hourly tasks. First, an outside system writes Parquet data to a directory mounted at /mnt/raw_orders/. fter this data is written, a Databricks job containing the following code is executed:\nssume that the fields customer_id and order_id serve as a composite key to uniquely identify each order, and that the time field indicates when the record was queued in the source system.\nIf the upstream system is known to occasionally enqueue duplicate entries for a single order hours apart, which statement is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Duplicate records enqueued more than 2 hours apart may be retained and the orders table may contain duplicate records with the same customer_id and order_id."
+        },
+        {
+          "key": "B",
+          "text": "ll records will be held in the state store for 2 hours before being deduplicated and committed to the orders table."
+        },
+        {
+          "key": "C",
+          "text": "The orders table will contain only the most recent 2 hours of records and no duplicates will be present."
+        },
+        {
+          "key": "D",
+          "text": "The orders table will not contain duplicates, but records arriving more than 2 hours late will be ignored and missing from the table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/146_databricks_view_146974_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/146_databricks_view_146974_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "147_databricks_view_149865_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 146,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 146 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149865-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is configuring a pipeline that will potentially see late-arriving, duplicate records.\nIn addition to de-duplicating records within the batch, which of the following approaches allows the data engineer to deduplicate data against previously processed records as it is inserted into a Delta table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rely on Delta Lake schema enforcement to prevent duplicate records."
+        },
+        {
+          "key": "B",
+          "text": "VAUUM the Delta table after each batch completes."
+        },
+        {
+          "key": "C",
+          "text": "Perform an insert-only merge with a matching condition on a unique key."
+        },
+        {
+          "key": "D",
+          "text": "Perform a full outer join on a unique key and overwrite existing data.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/147_databricks_view_149865_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "148_databricks_view_147917_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 147,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 147 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/147917-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer seeks to leverage Delta Lake's Change Data Feed functionality to create a Type 1 table representing all of the values that have ever been valid for all rows in a bronze table created with the property delta.enableChangeDataFeed = true. They plan to execute the following code as a daily job:\nWhich statement describes the execution and results of running the above query multiple times?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each time the job is executed, newly updated records will be merged into the target table, overwriting previous values with the same primary keys."
+        },
+        {
+          "key": "B",
+          "text": "Each time the job is executed, the entire available history of inserted or updated records will be appended to the target table, resulting in many duplicate entries."
+        },
+        {
+          "key": "C",
+          "text": "Each time the job is executed, only those records that have been inserted or updated since the last execution will be appended to the target table, giving the desired result."
+        },
+        {
+          "key": "D",
+          "text": "Each time the job is executed, the differences between the original and current versions are calculated; this may result in duplicate entries for some records.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/148_databricks_view_147917_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/148_databricks_view_147917_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "149_databricks_view_141556_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 148,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 148 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141556-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "DLT pipeline includes the following streaming tables:\n• raw_iot ingests raw device measurement data from a heart rate tracking device.\n• bpm_stats incrementally computes user statistics based on BPM measurements from raw_iot.\nHow can the data engineer configure this pipeline to be able to retain manually deleted or updated records in the raw_iot table, while recomputing the downstream table bpm_stats table when a pipeline update is run?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Set the pipelines.reset.allowed property to false on raw_iot"
+        },
+        {
+          "key": "B",
+          "text": "Set the skipChangeCommits flag to true on raw_iot"
+        },
+        {
+          "key": "C",
+          "text": "Set the pipelines.reset.allowed property to false on bpm_stats"
+        },
+        {
+          "key": "D",
+          "text": "Set the skipChangeCommits flag to true on bpm_stats\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/149_databricks_view_141556_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "150_databricks_view_149871_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 149,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 149 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149871-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data pipeline uses Structured Streaming to ingest data from pache Kafka to Delta Lake. Data is being stored in a bronze table, and includes the Kafka-generated timestamp, key, and value. Three months after the pipeline is deployed, the data engineering team has noticed some latency issues during certain times of the day.\nsenior data engineer updates the Delta Table's schema and ingestion logic to include the current timestamp (as recorded by pache Spark) as well as the Kafka topic and partition. The team plans to use these additional metadata fields to diagnose the transient processing delays.\nWhich limitation will the team face while diagnosing this problem?",
+      "options": [
+        {
+          "key": "A",
+          "text": "New fields will not be computed for historic records."
+        },
+        {
+          "key": "B",
+          "text": "Spark cannot capture the topic and partition fields from a Kafka source."
+        },
+        {
+          "key": "C",
+          "text": "Updating the table schema requires a default value provided for each field added."
+        },
+        {
+          "key": "D",
+          "text": "Updating the table schema will invalidate the Delta transaction log metadata.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/150_databricks_view_149871_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "151_databricks_view_141557_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 150,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 150 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141557-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "nightly job ingests data into a Delta Lake table using the following code:\nThe next step in the pipeline requires a function that returns an object that can be used to manipulate new records that have not yet been processed to the next table in the pipeline.\nWhich code snippet completes this function definition?\ndef new_records():",
+      "options": [
+        {
+          "key": "A",
+          "text": "return spark.readStream.table(\"bronze\")"
+        },
+        {
+          "key": "B",
+          "text": "return spark.read.option(\"readChangeFeed\", \"true\").table (\"bronze\")"
+        },
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/151_databricks_view_141557_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/151_databricks_view_141557_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/151_databricks_view_141557_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png"
+      ],
+      "sourceFile": "output/batch/151_databricks_view_141557_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "152_databricks_view_142393_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 151,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 151 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142393-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer is working to implement logic for a Lakehouse table named silver_device_recordings. The source data contains 100 unique fields in a highly nested JSON structure.\nThe silver_device_recordings table will be used downstream to power several production monitoring dashboards and a production model. At present, 45 of the 100 fields are being used in at least one of these applications.\nThe data engineer is trying to determine the best approach for dealing with schema declaration given the highly-nested structure of the data and the numerous fields.\nWhich of the following accurately presents information about elta Lake and atabricks that may impact their decision-making process?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The Tungsten encoding used by atabricks is optimized for storing string data; newly-added native support for querying JSON strings means that string types are always most efficient."
+        },
+        {
+          "key": "B",
+          "text": "Because elta Lake uses Parquet for data storage, data types can be easily evolved by just modifying file footer information in place."
+        },
+        {
+          "key": "C",
+          "text": "Schema inference and evolution on atabricks ensure that inferred types will always accurately match the data types used by downstream systems."
+        },
+        {
+          "key": "D",
+          "text": "Because atabricks will infer schema using types that allow all observed data to be processed, setting types manually provides greater assurance of data quality enforcement.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/152_databricks_view_142393_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "153_databricks_view_142394_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 152,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 152 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142394-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team maintains the following code:\nAssuming that this code produces logically correct results and the data in the source tables has been de-duplicated and validated, which statement describes what will occur when this code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A batch job will update the enriched_itemized_orders_by_account table, replacing only those rows that have different values than the current version of the table, using accountID as the primary key."
+        },
+        {
+          "key": "B",
+          "text": "The enriched_itemized_orders_by_account table will be overwritten using the current valid version of data in each of the three tables referenced in the join logic."
+        },
+        {
+          "key": "C",
+          "text": "No computation will occur until enriched_itemized_orders_by_account is queried; upon query materialization, results will be calculated using the current valid version of data in each of the three tables referenced in the join logic."
+        },
+        {
+          "key": "D",
+          "text": "An incremental job will detect if new rows have been written to any of the source tables; if new rows are detected, all results will be recalculated and used to overwrite the enriched_itemized_orders_by_account table.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/153_databricks_view_142394_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/153_databricks_view_142394_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "154_databricks_view_149874_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 153,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 153 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149874-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team is configuring environments for development, testing, and production before beginning migration on a new data pipeline. The team requires extensive testing on both the code and data resulting from code execution, and the team wants to develop and test against data as similar to production data as possible.\nA junior data engineer suggests that production data can be mounted to the development and testing environments, allowing pre-production code to execute against production data. ecause all users have admin privileges in the development environment, the junior data engineer has offered to configure permissions and mount this data for the team.\nWhich statement captures best practices for this situation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All development, testing, and production code and data should exist in a single, unified workspace; creating separate environments for testing and development complicates administrative overhead."
+        },
+        {
+          "key": "B",
+          "text": "In environments where interactive code will be executed, production data should only be accessible with read permissions; creating isolated databases for each environment further reduces risks."
+        },
+        {
+          "key": "C",
+          "text": "ecause access to production data will always be verified using passthrough credentials, it is safe to mount data to any Databricks development environment."
+        },
+        {
+          "key": "D",
+          "text": "ecause Delta Lake versions all data and supports time travel, it is not possible for user error or malicious actors to permanently delete production data; as such, it is generally safe to mount production data anywhere.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/154_databricks_view_149874_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "155_databricks_view_149876_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 154,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 154 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149876-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has mandated that all tables in the Lakehouse should be configured as external Delta Lake tables.\nWhich approach will ensure that this requirement is met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whenever a database is being created, make sure that the LOATION keyword is used."
+        },
+        {
+          "key": "B",
+          "text": "When the workspace is being configured, make sure that external cloud object storage has been mounted."
+        },
+        {
+          "key": "C",
+          "text": "Whenever a table is being created, make sure that the LOATION keyword is used."
+        },
+        {
+          "key": "D",
+          "text": "When tables are created, make sure that the UNMANAGED keyword is used in the REATE TABLE statement.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/155_databricks_view_149876_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "156_databricks_view_147232_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 155,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 155 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/147232-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The marketing team is looking to share data in an aggregate table with the sales organization, but the field names used by the teams do not match, and a number of marketing-specific fields have not been approved for the sales org.\nWhich of the following solutions addresses the situation while emphasizing simplicity?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a view on the marketing table selecting only those fields approved for the sales team; alias the names of any fields that should be standardized to the sales naming conventions."
+        },
+        {
+          "key": "B",
+          "text": "Create a new table with the required schema and use Delta Lake's DEEP CLONE functionality to sync up changes committed to one table to the corresponding table."
+        },
+        {
+          "key": "C",
+          "text": "Use a CTS statement to create a derivative table from the marketing table; configure a production job to propagate changes."
+        },
+        {
+          "key": "D",
+          "text": "dd a parallel table write to the current production pipeline, updating a new sales table that varies as required from the marketing table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/156_databricks_view_147232_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "157_databricks_view_144262_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 156,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 156 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144262-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A elta Lake table representing metadata about content posts from users has the following schema:\nuser_id LONG, post_text STRING, post_id STRING, longitude FLOAT, latitude FLOAT, post_time TIMESTAMP, date ATE\nThis table is partitioned by the date column. A query is run with the following filter:\nlongitude < 20 & longitude > -20\nWhich statement describes how data will be filtered?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Statistics in the elta Log will be used to identify partitions that might Include files in the filtered range."
+        },
+        {
+          "key": "B",
+          "text": "No file skipping will occur because the optimizer does not know the relationship between the partition column and the longitude."
+        },
+        {
+          "key": "C",
+          "text": "The elta Engine will scan the parquet file footers to identify each row that meets the filter criteria."
+        },
+        {
+          "key": "D",
+          "text": "Statistics in the elta Log will be used to identify data files that might include records in the filtered range.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/157_databricks_view_144262_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "158_databricks_view_142396_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 157,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 157 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142396-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A small company based in the United States has recently contracted a consulting firm in India to implement several new data engineering pipelines to power artificial intelligence applications. All the company's data is stored in regional cloud storage in the United States.\nThe workspace administrator at the company is uncertain about where the Databricks workspace used by the contractors should be deployed.\nAssuming that all data governance considerations are accounted for, which statement accurately informs this decision?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Databricks runs HDFS on cloud volume storage; as such, cloud virtual machines must be deployed in the region where the data is stored."
+        },
+        {
+          "key": "B",
+          "text": "Databricks workspaces do not rely on any regional infrastructure; as such, the decision should be made based upon what is most convenient for the workspace administrator."
+        },
+        {
+          "key": "C",
+          "text": "ross-region reads and writes can incur significant costs and latency; whenever possible, compute should be deployed in the same region the data is stored."
+        },
+        {
+          "key": "D",
+          "text": "Databricks notebooks send all executable code from the user’s browser to virtual machines over the open internet; whenever possible, choosing a workspace region near the end users is the most secure.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/158_databricks_view_142396_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "159_databricks_view_144263_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 158,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 158 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/144263-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A CHECK constraint has been successfully added to the Delta table named activity_details using the following logic:\nA batch job is attempting to insert new records to the table, including a record where latitude = 45.50 and longitude = 212.67.\nWhich statement describes the outcome of this batch insert?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The write will insert all records except those that violate the table constraints; the violating records will be reported in a warning log."
+        },
+        {
+          "key": "B",
+          "text": "The write will fail completely because of the constraint violation and no records will be inserted into the target table."
+        },
+        {
+          "key": "C",
+          "text": "The write will insert all records except those that violate the table constraints; the violating records will be recorded to a quarantine table."
+        },
+        {
+          "key": "D",
+          "text": "The write will include all records in the target table; any violations will be indicated in the boolean column named valid_coordinates.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/159_databricks_view_144263_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/159_databricks_view_144263_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "160_databricks_view_142397_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 159,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 159 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142397-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer is migrating a workload from a relational database system to the atabricks Lakehouse. The source system uses a star schema, leveraging foreign key constraints and multi-table inserts to validate records on write.\nWhich consideration will impact the decisions made by the engineer while migrating this workload?",
+      "options": [
+        {
+          "key": "A",
+          "text": "atabricks only allows foreign key constraints on hashed identifiers, which avoid collisions in highly-parallel writes."
+        },
+        {
+          "key": "B",
+          "text": "Foreign keys must reference a primary key field; multi-table inserts must leverage elta Lake’s upsert functionality."
+        },
+        {
+          "key": "C",
+          "text": "Committing to multiple tables simultaneously requires taking out multiple table locks and can lead to a state of deadlock."
+        },
+        {
+          "key": "D",
+          "text": "All elta Lake transactions are ACI compliant against a single table, and atabricks does not enforce foreign key constraints.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/160_databricks_view_142397_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "161_databricks_view_142398_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 160,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 160 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/142398-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data architect has heard about elta Lake’s built-in versioning and time travel capabilities. For auditing purposes, they have a requirement to maintain a full record of all valid street addresses as they appear in the customers table.\nThe architect is interested in implementing a Type 1 table, overwriting existing records with new values and relying on elta Lake time travel to support long-term auditing. A data engineer on the project feels that a Type 2 table will provide better performance and scalability.\nWhich piece of information is critical to this decision?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ata corruption can occur if a query fails in a partially completed state because Type 2 tables require setting multiple fields in a single update."
+        },
+        {
+          "key": "B",
+          "text": "Shallow clones can be combined with Type 1 tables to accelerate historic queries for long-term versioning."
+        },
+        {
+          "key": "C",
+          "text": "elta Lake time travel cannot be used to query previous versions of these tables because Type 1 changes modify data files in place."
+        },
+        {
+          "key": "D",
+          "text": "elta Lake time travel does not scale well in cost or latency to provide a long-term versioning solution.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/161_databricks_view_142398_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "162_databricks_view_149882_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 161,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 161 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/149882-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer wants to join a stream of advertisement impressions (when an ad was shown) with another stream of user clicks on advertisements to correlate when impressions led to monetizable clicks.\nIn the code below, Impressions is a streaming DataFrame with a watermark (\"event_time\", \"10 minutes\")\nThe data engineer notices the query slowing down significantly.\nWhich solution would improve the performance?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Joining on event time constraint: clickTime >= impressionTime ND clickTime <= impressionTime interval 1 hour"
+        },
+        {
+          "key": "B",
+          "text": "Joining on event time constraint: clickTime + 3 hours < impressionTime - 2 hours"
+        },
+        {
+          "key": "C",
+          "text": "Joining on event time constraint: clickTime == impressionTime using a leftOuter join"
+        },
+        {
+          "key": "D",
+          "text": "Joining on event time constraint: clickTime >= impressionTime - interval 3 hours and removing watermarks\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/162_databricks_view_149882_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/162_databricks_view_149882_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "163_databricks_view_141710_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 162,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 162 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141710-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "junior data engineer has manually configured a series of jobs using the Databricks Jobs UI. Upon reviewing their work, the engineer realizes that they are listed as the \"Owner\" for each job. They attempt to transfer \"Owner\" privileges to the \"DevOps\" group, but cannot successfully accomplish this task.\nWhich statement explains what is preventing this privilege transfer?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Databricks jobs must have exactly one owner; \"Owner\" privileges cannot be assigned to a group."
+        },
+        {
+          "key": "B",
+          "text": "The creator of a Databricks job will always have \"Owner\" privileges; this configuration cannot be changed."
+        },
+        {
+          "key": "C",
+          "text": "Only workspace administrators can grant \"Owner\" privileges to a group."
+        },
+        {
+          "key": "D",
+          "text": "user can only transfer job ownership to a group if they are also a member of that group.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/163_databricks_view_141710_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "164_databricks_view_141558_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 163,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 163 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141558-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "table named user_ltv is being used to create a view that will be used by data analysts on various teams. Users in the workspace are configured into groups, which are used for setting up data access using CLs.\nThe user_ltv table has the following schema:\nemail STRING, age INT, ltv INT\nThe following view definition is executed:\nn analyst who is not a member of the auditing group executes the following query:\nSELECT * FROM user_ltv_no_minors\nWhich statement describes the results returned by this query?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ll columns will be displayed normally for those records that have an age greater than 17; records not meeting this condition will be omitted."
+        },
+        {
+          "key": "B",
+          "text": "ll age values less than 18 will be returned as null values, all other columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "C",
+          "text": "ll values for the age column will be returned as null values, all other columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "D",
+          "text": "ll columns will be displayed normally for those records that have an age greater than 18; records not meeting this condition will be omitted.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/164_databricks_view_141558_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/164_databricks_view_141558_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "165_databricks_view_141709_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 164,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 164 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141709-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "All records from an Apache Kafka producer are being ingested into a single Delta Lake table with the following schema:\nkey BINARY, value BINARY, topic STRING, partition LONG, offset LONG, timestamp LONG\nThere are 5 unique topics being ingested. Only the \"registration\" topic contains Personal Identifiable Information (PII). The company wishes to restrict access to PII. The company also wishes to only retain records containing PII in this table for 14 days after initial ingestion. However, for non-PII information, it would like to retain these records indefinitely.\nWhich solution meets the requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All data should be deleted biweekly; Delta Lake's time travel functionality should be leveraged to maintain a history of non-PII information."
+        },
+        {
+          "key": "B",
+          "text": "Data should be partitioned by the registration field, allowing ALs and delete statements to be set for the PII directory."
+        },
+        {
+          "key": "C",
+          "text": "Data should be partitioned by the topic field, allowing ALs and delete statements to leverage partition boundaries."
+        },
+        {
+          "key": "D",
+          "text": "Separate object storage containers should be specified based on the partition field, allowing isolation at the storage level.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/165_databricks_view_141709_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "166_databricks_view_141708_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 165,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 165 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141708-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team is reviewing code used for deleting records for compliance with GDPR. The following logic has been implemented to propagate delete requests from the user_lookup table to the user_aggregates table.\nAssuming that user_id is a unique identifying key and that all users that have requested deletion have been removed from the user_lookup table, which statement describes whether successfully executing the above logic guarantees that the records to be deleted from the user_aggregates table are no longer accessible and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No; the Delta Lake DELETE command only provides ACID guarantees when combined with the MERGE INTO command."
+        },
+        {
+          "key": "B",
+          "text": "No; files containing deleted records may still be accessible with time travel until a VACUUM command is used to remove invalidated data files."
+        },
+        {
+          "key": "C",
+          "text": "No; the change data feed only tracks inserts and updates, not deleted records."
+        },
+        {
+          "key": "D",
+          "text": "Yes; Delta Lake ACID guarantees provide assurance that the DELETE command succeeded fully and permanently purged these records.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/166_databricks_view_141708_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/166_databricks_view_141708_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "167_databricks_view_141559_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 166,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 166 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141559-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An external object storage container has been mounted to the location /mnt/finance_eda_bucket.\nThe following logic was executed to create a database for the finance team:\nAfter the database was successfully created and permissions configured, a member of the finance team runs the following code:\nIf all users on the finance team are members of the finance group, which statement describes how the tx_sales table will be created?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A logical table will persist the query plan to the Hive Metastore in the atabricks control plane."
+        },
+        {
+          "key": "B",
+          "text": "An external table will be created in the storage container mounted to /mnt/finance_eda_bucket."
+        },
+        {
+          "key": "C",
+          "text": "A managed table will be created in the BFS root storage container."
+        },
+        {
+          "key": "D",
+          "text": "An managed table will be created in the storage container mounted to /mnt/finance_eda_bucket.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/167_databricks_view_141559_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/167_databricks_view_141559_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/167_databricks_view_141559_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "168_databricks_view_141707_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 168,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 168 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141707-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is the retention of job run history?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is retained until you export or delete job run logs"
+        },
+        {
+          "key": "B",
+          "text": "It is retained for 30 days, during which time you can deliver job run logs to DBFS or S3"
+        },
+        {
+          "key": "C",
+          "text": "It is retained for 60 days, during which you can export notebook run results to HTML"
+        },
+        {
+          "key": "D",
+          "text": "It is retained for 60 days, after which logs are archived\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/168_databricks_view_141707_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "169_databricks_view_141706_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 169,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 169 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141706-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer, User A, has promoted a new pipeline to production by using the REST API to programmatically create several jobs. A DevOps engineer, User B, has configured an external orchestration tool to trigger job runs through the REST API. Both users authorized the REST API calls using their personal access tokens.\nWhich statement describes the contents of the workspace audit logs concerning these events?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because the REST API was used for job creation and triggering runs, a Service Principal will be automatically used to identify these events."
+        },
+        {
+          "key": "B",
+          "text": "Because User A created the jobs, their identity will be associated with both the job creation events and the job run events."
+        },
+        {
+          "key": "C",
+          "text": "Because these events are managed separately, User A will have their identity associated with the job creation events and User B will have their identity associated with the job run events."
+        },
+        {
+          "key": "D",
+          "text": "Because the REST API was used for job creation and triggering runs, user identity will not be captured in the audit logs.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/169_databricks_view_141706_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "170_databricks_view_141705_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 170,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 170 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141705-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A distributed team of data analysts share computing resources on an interactive cluster with autoscaling configured. In order to better manage costs and query throughput, the workspace administrator is hoping to evaluate whether cluster upscaling is caused by many concurrent users or resource-intensive queries.\nIn which location can one review the timeline for cluster resizing events?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Workspace audit logs"
+        },
+        {
+          "key": "B",
+          "text": "river's log file"
+        },
+        {
+          "key": "C",
+          "text": "Ganglia"
+        },
+        {
+          "key": "D",
+          "text": "Cluster Event Log\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/170_databricks_view_141705_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "171_databricks_view_141704_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 171,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 171 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141704-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When evaluating the Ganglia Metrics for a given cluster with 3 executor nodes, which indicator would signal proper utilization of the VM's resources?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The five Minute Load Average remains consistent/flat"
+        },
+        {
+          "key": "B",
+          "text": "CPU Utilization is around 75%"
+        },
+        {
+          "key": "C",
+          "text": "Network I/O never spikes"
+        },
+        {
+          "key": "D",
+          "text": "Total Disk Space remains constant\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/171_databricks_view_141704_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "172_databricks_view_141561_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 172,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 172 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141561-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineer is using Spark's MEMORY_ONLY storage level.\nWhich indicators should the data engineer look for in the Spark UI's Storage tab to signal that a cached table is not performing optimally?",
+      "options": [
+        {
+          "key": "A",
+          "text": "On Heap Memory Usage is within 75% of Off Heap Memory Usage"
+        },
+        {
+          "key": "B",
+          "text": "The RDD Block Name includes the “*” annotation signaling a failure to cache"
+        },
+        {
+          "key": "C",
+          "text": "Size on Disk is > 0"
+        },
+        {
+          "key": "D",
+          "text": "The number of ached Partitions > the number of Spark Partitions\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/172_databricks_view_141561_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "173_databricks_view_141703_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 173,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 173 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141703-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Review the following error traceback:\nWhich statement describes the error being raised?",
+      "options": [
+        {
+          "key": "A",
+          "text": "There is a syntax error because the heartrate column is not correctly identified as a column."
+        },
+        {
+          "key": "B",
+          "text": "There is no column in the table named heartrateheartrateheartrate"
+        },
+        {
+          "key": "C",
+          "text": "There is a type error because a column object cannot be multiplied."
+        },
+        {
+          "key": "D",
+          "text": "There is a type error because a DataFrame object cannot be multiplied.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/173_databricks_view_141703_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/173_databricks_view_141703_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "174_databricks_view_141702_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 174,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 174 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141702-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is a method of installing a Python package scoped at the notebook level to all nodes in the currently active cluster?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Run source env/bin/activate in a notebook setup script"
+        },
+        {
+          "key": "B",
+          "text": "Install libraries from PyPI using the cluster UI"
+        },
+        {
+          "key": "C",
+          "text": "Use %pip install in a notebook cell"
+        },
+        {
+          "key": "D",
+          "text": "Use %sh pip install in a notebook cell\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/174_databricks_view_141702_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "175_databricks_view_141701_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 175,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 175 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141701-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is the first line of a Databricks Python notebook when viewed in a text editor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "%python"
+        },
+        {
+          "key": "B",
+          "text": "// Databricks notebook source"
+        },
+        {
+          "key": "C",
+          "text": "# Databricks notebook source"
+        },
+        {
+          "key": "D",
+          "text": "-- Databricks notebook source\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/175_databricks_view_141701_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "176_databricks_view_141700_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 176,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 176 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141700-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Incorporating unit tests into a PySpark application requires upfront attention to the design of your jobs, or a potentially significant refactoring of existing code.\nWhich benefit offsets this additional effort?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Improves the quality of your data"
+        },
+        {
+          "key": "B",
+          "text": "Validates a complete use case of your application"
+        },
+        {
+          "key": "C",
+          "text": "Troubleshooting is easier since all steps are isolated and tested individually"
+        },
+        {
+          "key": "D",
+          "text": "Ensures that all steps interact correctly to achieve the desired end result\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/176_databricks_view_141700_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "177_databricks_view_141699_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 177,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 177 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141699-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What describes integration testing?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It validates an application use case."
+        },
+        {
+          "key": "B",
+          "text": "It validates behavior of individual elements of an application,"
+        },
+        {
+          "key": "C",
+          "text": "It requires an automated testing framework."
+        },
+        {
+          "key": "D",
+          "text": "It validates interactions between subsystems of your application.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/177_databricks_view_141699_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "178_databricks_view_141698_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 178,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 178 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141698-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The Databricks CLI is used to trigger a run of an existing job by passing the job_id parameter. The response that the job run request has been submitted successfully includes a field run_id.\nWhich statement describes what the number alongside this field represents?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The job_id and number of times the job has been run are concatenated and returned."
+        },
+        {
+          "key": "B",
+          "text": "The globally unique ID of the newly triggered run."
+        },
+        {
+          "key": "C",
+          "text": "The number of times the job definition has been run in this workspace."
+        },
+        {
+          "key": "D",
+          "text": "The job_id is returned in this field.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/178_databricks_view_141698_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "179_databricks_view_141697_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 179,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 179 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/141697-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Databricks job has been configured with three tasks, each of which is a Databricks notebook. Task does not depend on other tasks. Tasks B and C run in parallel, with each having a serial dependency on task .\nWhat will be the resulting state if tasks and B complete successfully but task C fails during a scheduled run?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ll logic expressed in the notebook associated with tasks and B will have been successfully completed; some operations in task C may have completed successfully."
+        },
+        {
+          "key": "B",
+          "text": "Unless all tasks complete successfully, no changes will be committed to the Lakehouse; because task C failed, all commits will be rolled back automatically."
+        },
+        {
+          "key": "C",
+          "text": "Because all tasks are managed as a dependency graph, no changes will be committed to the Lakehouse until all tasks have successfully been completed."
+        },
+        {
+          "key": "D",
+          "text": "ll logic expressed in the notebook associated with tasks and B will have been successfully completed; any changes made in task C will be rolled back due to task failure.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/179_databricks_view_141697_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "180_databricks_view_154490_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 180,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 180 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154490-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When scheduling Structured Streaming jobs for production, which configuration automatically recovers from query failures and keeps costs low?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cluster: New Job Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: 1"
+        },
+        {
+          "key": "B",
+          "text": "Cluster: New Job Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: Unlimited"
+        },
+        {
+          "key": "C",
+          "text": "Cluster: Existing ll-Purpose Cluster;\nRetries: Unlimited;\nMaximum Concurrent Runs: 1"
+        },
+        {
+          "key": "D",
+          "text": "Cluster: New Job Cluster;\nRetries: None;\nMaximum Concurrent Runs: 1\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/180_databricks_view_154490_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "181_databricks_view_154677_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 181,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 181 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154677-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Delta Lake table was created with the below query:\nRealizing that the original query had a typographical error, the below code was executed:\nLTER TBLE prod.sales_by_stor RENME TO prod.sales_by_store\nWhich result will occur after running the second command?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The table reference in the metastore is updated."
+        },
+        {
+          "key": "B",
+          "text": "ll related files and metadata are dropped and recreated in a single CID transaction."
+        },
+        {
+          "key": "C",
+          "text": "The table name change is recorded in the Delta transaction log."
+        },
+        {
+          "key": "D",
+          "text": "new Delta transaction log is created for the renamed table.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/181_databricks_view_154677_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/181_databricks_view_154677_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "182_databricks_view_152629_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 182,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 182 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152629-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team has configured a Databricks SQL query and alert to monitor the values in a Delta Lake table. The recent_sensor_recordings table contains an identifying sensor_id alongside the timestamp and temperature for the most recent 5 minutes of recordings.\nThe below query is used to create the alert:\nThe query is set to refresh each minute and always completes in less than 10 seconds. The alert is set to trigger when mean (temperature) > 120. Notifications are triggered to be sent at most every 1 minute.\nIf this alert raises notifications for 3 consecutive minutes and then stops, which statement must be true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The total average temperature across all sensors exceeded 120 on three consecutive executions of the query"
+        },
+        {
+          "key": "B",
+          "text": "The average temperature recordings for at least one sensor exceeded 120 on three consecutive executions of the query"
+        },
+        {
+          "key": "C",
+          "text": "The source query failed to update properly for three consecutive minutes and then restarted"
+        },
+        {
+          "key": "D",
+          "text": "The maximum temperature recording for at least one sensor exceeded 120 on three consecutive executions of the query\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/182_databricks_view_152629_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/182_databricks_view_152629_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "183_databricks_view_303224_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 183,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 183 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303224-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior developer complains that the code in their notebook isn't producing the correct results in the development environment. A shared screenshot reveals that while they're using a notebook versioned with Databricks Repos, they're using a personal branch that contains old logic. The desired branch named dev-2.3.9 is not available from the branch selection dropdown.\nWhich approach will allow this developer to review the current logic for this notebook?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Repos to make a pull request use the Databricks REST API to update the current branch to dev-2.3.9"
+        },
+        {
+          "key": "B",
+          "text": "Use Repos to pull changes from the remote Git repository and select the dev-2.3.9 branch."
+        },
+        {
+          "key": "C",
+          "text": "Use Repos to checkout the dev-2.3.9 branch and auto-resolve conflicts with the current branch"
+        },
+        {
+          "key": "D",
+          "text": "Use Repos to merge the current branch and the dev-2.3.9 branch, then make a pull request to sync with the remote repository\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/183_databricks_view_303224_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "184_databricks_view_303225_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 184,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 184 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303225-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Two of the most common data locations on Databricks are the DBFS root storage and external object storage mounted with dbutils.fs.mount().\nWhich of the following statements is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "DBFS is a file system protocol that allows users to interact with files stored in object storage using syntax and guarantees similar to Unix file systems."
+        },
+        {
+          "key": "B",
+          "text": "By default, both the DBFS root and mounted data sources are only accessible to workspace administrators."
+        },
+        {
+          "key": "C",
+          "text": "The DBFS root is the most secure location to store data, because mounted storage volumes must have full public read and write permissions."
+        },
+        {
+          "key": "D",
+          "text": "The DBFS root stores files in ephemeral block volumes attached to the driver, while mounted directories will always persist saved data to external storage between sessions.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/184_databricks_view_303225_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "185_databricks_view_154493_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 185,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 185 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154493-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream system has been configured to pass the date for a given batch of data to the atabricks Jobs API as a parameter. The notebook to be scheduled will use this parameter to load data with the following code:\ndf = spark.read.format(\"parquet\").load(f\"/mnt/source/(date)\")\nWhich code block should be used to create the date Python variable used in the above code block?",
+      "options": [
+        {
+          "key": "A",
+          "text": "date = spark.conf.get(\"date\")"
+        },
+        {
+          "key": "B",
+          "text": "import sys\ndate = sys.argv[1]"
+        },
+        {
+          "key": "C",
+          "text": "date = dbutils.notebooks.getParam(\"date\")"
+        },
+        {
+          "key": "D",
+          "text": "dbutils.widgets.text(\"date\", \"null\")\ndate = dbutils.widgets.get(\"date\")\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/185_databricks_view_154493_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "186_databricks_view_152574_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 186,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 186 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152574-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The atabricks workspace administrator has configured interactive clusters for each of the data engineering groups. To control costs, clusters are set to terminate after 30 minutes of inactivity. Each user should be able to execute workloads against their assigned clusters at any time of the day.\nAssuming users have been added to a workspace but not granted any permissions, which of the following describes the minimal permissions a user would need to start and attach to an already configured cluster.",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"Can Manage\" privileges on the required cluster"
+        },
+        {
+          "key": "B",
+          "text": "Cluster creation allowed, \"Can Restart\" privileges on the required cluster"
+        },
+        {
+          "key": "C",
+          "text": "Cluster creation allowed, \"Can Attach To\" privileges on the required cluster"
+        },
+        {
+          "key": "D",
+          "text": "\"Can Restart\" privileges on the required cluster\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/186_databricks_view_152574_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "187_databricks_view_152575_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 187,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 187 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152575-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data science team has created and logged a production model using MLflow. The following code correctly imports and applies the production model to output the predictions as a new DataFrame named preds with the schema \"customer_id LONG, predictions DOUBLE, date DTE\".\nThe data science team would like predictions saved to a Delta Lake table with the ability to compare all predictions across time. Churn predictions will be made at most once per day.\nWhich code block accomplishes this task while minimizing potential compute costs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "preds.write.mode(\"append\").savesTable(\"churn_preds\")"
+        },
+        {
+          "key": "B",
+          "text": "preds.write.format(\"delta\").save(\"/preds/churn_preds\")"
+        },
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/187_databricks_view_152575_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/187_databricks_view_152575_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/187_databricks_view_152575_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png"
+      ],
+      "sourceFile": "output/batch/187_databricks_view_152575_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "188_databricks_view_303226_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 188,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 188 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303226-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The following code has been migrated to a atabricks notebook from a legacy workload:\nThe code executes successfully and provides the logically correct results, however, it takes over 20 minutes to extract and load around 1 GB of data.\nWhich statement is a possible explanation for this behavior?",
+      "options": [
+        {
+          "key": "A",
+          "text": "%sh triggers a cluster restart to collect and install Git. Most of the latency is related to cluster startup time."
+        },
+        {
+          "key": "B",
+          "text": "Instead of cloning, the code should use %sh pip install so that the Python code can get executed in parallel across all nodes in a cluster."
+        },
+        {
+          "key": "C",
+          "text": "%sh does not distribute file moving operations; the final line of code should be updated to use %fs instead."
+        },
+        {
+          "key": "D",
+          "text": "%sh executes shell code on the driver node. The code does not take advantage of the worker nodes or atabricks optimized Spark.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/188_databricks_view_303226_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/188_databricks_view_303226_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "189_databricks_view_152577_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 189,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 189 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152577-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A elta table of weather records is partitioned by date and has the below schema:\ndate ATE, device_id INT, temp FLOAT, latitude FLOAT, longitude FLOAT\nTo find all the records from within the Arctic Circle, you execute a query with the below filter:\nlatitude > 66.3\nWhich statement describes how the elta engine identifies which files to load?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All records are cached to an operational database and then the filter is applied"
+        },
+        {
+          "key": "B",
+          "text": "The Parquet file footers are scanned for min and max statistics for the latitude column"
+        },
+        {
+          "key": "C",
+          "text": "The Hive metastore is scanned for min and max statistics for the latitude column"
+        },
+        {
+          "key": "D",
+          "text": "The elta log is scanned for min and max statistics for the latitude column\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/189_databricks_view_152577_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "190_databricks_view_154494_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 190,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 190 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154494-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "In order to prevent accidental commits to production data, a senior data engineer has instituted a policy that all development work will reference clones of elta Lake tables. After testing both EEP and SHALLOW CLONE, development tables are created using SHALLOW CLONE.\nA few weeks after initial table creation, the cloned versions of several tables implemented as Type 1 Slowly Changing imension (SC) stop working. The transaction logs for the source tables show that VACUUM was run the day before.\nWhich statement describes why the cloned tables are no longer working?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because Type 1 changes overwrite existing records, elta Lake cannot guarantee data consistency for cloned tables."
+        },
+        {
+          "key": "B",
+          "text": "Running VACUUM automatically invalidates any shallow clones of a table; EEP CLONE should always be used when a cloned table will be repeatedly queried."
+        },
+        {
+          "key": "C",
+          "text": "The data files compacted by VACUUM are not tracked by the cloned metadata; running REFRESH on the cloned table will pull in recent changes."
+        },
+        {
+          "key": "D",
+          "text": "The metadata created by the CLONE operation is referencing data files that were purged as invalid by the VACUUM command.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/190_databricks_view_154494_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "191_databricks_view_152579_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 191,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 191 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152579-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer has configured a workload that posts the following JSON to the Databricks REST API endpoint 2.0/jobs/create.\nAssuming that all configurations and referenced resources are available, which statement describes the result of executing this workload three times?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The logic defined in the referenced notebook will be executed three times on the referenced existing all purpose cluster."
+        },
+        {
+          "key": "B",
+          "text": "The logic defined in the referenced notebook will be executed three times on new clusters with the configurations of the provided cluster ID."
+        },
+        {
+          "key": "C",
+          "text": "Three new jobs named \"Ingest new data\" will be defined in the workspace, but no jobs will be executed."
+        },
+        {
+          "key": "D",
+          "text": "One new job named \"Ingest new data\" will be defined in the workspace, but it will not be executed.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/191_databricks_view_152579_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/191_databricks_view_152579_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "192_databricks_view_303227_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 192,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 192 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303227-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Delta Lake table in the Lakehouse named customer_churn_params is used in churn prediction by the machine learning team. The table contains information about customers derived from a number of upstream sources. Currently, the data engineering team populates this table nightly by overwriting the table with the current valid values derived from upstream data sources.\nImmediately after each update succeeds, the data engineering team would like to determine the difference between the new version and the previous version of the table.\nGiven the current implementation, which method can be used?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Execute a query to calculate the difference between the new version and the previous version using Delta Lake’s built-in versioning and lime travel functionality."
+        },
+        {
+          "key": "B",
+          "text": "Parse the Delta Lake transaction log to identify all newly written data files."
+        },
+        {
+          "key": "C",
+          "text": "Parse the Spark event logs to identify those rows that were updated, inserted, or deleted."
+        },
+        {
+          "key": "D",
+          "text": "Execute DESCRIBE HISTORY customer_churn_params to obtain the full operation metrics for the update, including a log of all records that have been added or modified.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/192_databricks_view_303227_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "193_databricks_view_152580_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 193,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 193 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152580-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A view is registered with the following code:\nBoth users and orders are elta Lake tables.\nWhich statement describes the results of querying recent_orders?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The versions of each source table will be stored in the table transaction log; query results will be saved to BFS with each query."
+        },
+        {
+          "key": "B",
+          "text": "All logic will execute when the table is defined and store the result of joining tables to the BFS; this stored data will be returned when the table is queried."
+        },
+        {
+          "key": "C",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query finishes."
+        },
+        {
+          "key": "D",
+          "text": "All logic will execute at query time and return the result of joining the valid versions of the source tables at the time the query began.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/193_databricks_view_152580_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/193_databricks_view_152580_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "194_databricks_view_152581_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 194,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 194 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152581-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is performing a join operation to combine values from a static userLookup table with a streaming ataFrame streamingF.\nWhich code block attempts to perform an invalid stream-static join?",
+      "options": [
+        {
+          "key": "A",
+          "text": "userLookup.join(streamingF, [\"user_id\"], how=\"right\")"
+        },
+        {
+          "key": "B",
+          "text": "streamingF.join(userLookup, [\"user_id\"], how=\"inner\")"
+        },
+        {
+          "key": "C",
+          "text": "userLookup.join(streamingF, [\"user_id\"), how=\"inner\")"
+        },
+        {
+          "key": "D",
+          "text": "userLookup.join(streamingF, [\"user_id\"], how=\"left\")\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/194_databricks_view_152581_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "195_databricks_view_303297_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 195,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 195 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303297-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "junior data engineer has been asked to develop a streaming data pipeline with a grouped aggregation using DataFrame df. The pipeline needs to calculate the average humidity and average temperature for each non-overlapping five-minute interval. Incremental state information should be maintained for 10 minutes for late-arriving data.\nStreaming DataFrame df has the following schema:\n\"device_id INT, event_time TIMESTMP, temp FLOT, humidity FLOT\"\nCode block:\nChoose the response that correctly fills in the blank within the code block to complete this task.",
+      "options": [
+        {
+          "key": "A",
+          "text": "withWatermark(\"event_time\", \"10 minutes\")"
+        },
+        {
+          "key": "B",
+          "text": "awaitrrival(\"event_time\", \"10 minutes\")"
+        },
+        {
+          "key": "C",
+          "text": "await(\"event_time + ‘10 minutes'\")"
+        },
+        {
+          "key": "D",
+          "text": "slidingWindow(\"event_time\", \"10 minutes\")\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/195_databricks_view_303297_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/195_databricks_view_303297_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "196_databricks_view_152615_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 196,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 196 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152615-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data architect has designed a system in which two Structured Streaming jobs will concurrently write to a single bronze elta table. Each job is subscribing to a different topic from an Apache Kafka source, but they will write data with the same schema. To keep the directory structure simple, a data engineer has decided to nest a checkpoint directory to be shared by both streams.\nThe proposed directory structure is displayed below:\nWhich statement describes whether this checkpoint directory structure is valid for the given scenario and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No; elta Lake manages streaming checkpoints in the transaction log."
+        },
+        {
+          "key": "B",
+          "text": "Yes; both of the streams can share a single checkpoint directory."
+        },
+        {
+          "key": "C",
+          "text": "No; only one stream can write to a elta Lake table."
+        },
+        {
+          "key": "D",
+          "text": "No; each of the streams needs to have its own checkpoint directory.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/196_databricks_view_152615_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/196_databricks_view_152615_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "197_databricks_view_303298_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 197,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 197 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303298-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Structured Streaming job deployed to production has been experiencing delays during peak hours of the day. At present, during normal execution, each microbatch of data is processed in less than 3 seconds. During peak hours of the day, execution time for each microbatch becomes very inconsistent, sometimes exceeding 30 seconds. The streaming write is currently configured with a trigger interval of 10 seconds.\nHolding all other variables constant and assuming records need to be processed in less than 10 seconds, which adjustment will meet the requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decrease the trigger interval to 5 seconds; triggering batches more frequently allows idle executors to begin processing the next batch while longer running tasks from previous batches finish."
+        },
+        {
+          "key": "B",
+          "text": "Decrease the trigger interval to 5 seconds; triggering batches more frequently may prevent records from backing up and large batches from causing spill."
+        },
+        {
+          "key": "C",
+          "text": "The trigger interval cannot be modified without modifying the checkpoint directory; to maintain the current stream state, increase the number of shuffle partitions to maximize parallelism."
+        },
+        {
+          "key": "D",
+          "text": "Use the trigger once option and configure a Databricks job to execute the query every 10 seconds; this ensures all backlogged records are processed with each batch.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/197_databricks_view_303298_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "198_databricks_view_152616_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 198,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 198 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152616-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes the default execution mode for atabricks Auto Loader?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloud vendor-specific queue storage and notification services are configured to track newly arriving files; new files are incrementally and idempotently loaded into the target elta Lake table."
+        },
+        {
+          "key": "B",
+          "text": "New files are identified by listing the input directory; the target table is materialized by directly querying all valid files in the source directory."
+        },
+        {
+          "key": "C",
+          "text": "Webhooks trigger a atabricks job to run anytime new data arrives in a source directory; new data are automatically merged into target tables using rules inferred from the data."
+        },
+        {
+          "key": "D",
+          "text": "New files are identified by listing the input directory; new files are incrementally and idempotently loaded into the target elta Lake table.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/198_databricks_view_152616_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "199_databricks_view_303301_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 199,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 199 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303301-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which statement describes the correct use of pyspark.sql.functions.broadcast?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It marks a column as having low enough cardinality to properly map distinct values to available partitions, allowing a broadcast join."
+        },
+        {
+          "key": "B",
+          "text": "It marks a column as small enough to store in memory on all executors, allowing a broadcast join."
+        },
+        {
+          "key": "C",
+          "text": "It caches a copy of the indicated table on all nodes in the cluster for use in all future queries during the cluster lifetime."
+        },
+        {
+          "key": "D",
+          "text": "It marks a ataFrame as small enough to store in memory on all executors, allowing a broadcast join.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/199_databricks_view_303301_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "200_databricks_view_303303_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 200,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 200 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303303-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Spill occurs as a result of executing various wide transformations. However, diagnosing spill requires one to proactively look for key indicators.\nWhere in the Spark UI are two of the primary indicators that a partition is spilling to disk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stage’s detail screen and Query’s detail screen"
+        },
+        {
+          "key": "B",
+          "text": "Stage’s detail screen and Executor’s log files"
+        },
+        {
+          "key": "C",
+          "text": "Driver’s and Executor’s log files"
+        },
+        {
+          "key": "D",
+          "text": "Executor’s detail screen and Executor’s log files\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/200_databricks_view_303303_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "201_databricks_view_154495_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 201,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 201 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154495-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An upstream source writes Parquet data as hourly batches to directories named with the current date. A nightly batch job runs the following code to ingest all data from the previous day as indicated by the date variable:\nAssume that the fields customer_id and order_id serve as a composite key to uniquely identify each order.\nIf the upstream system is known to occasionally produce duplicate entries for a single order hours apart, which statement is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each write to the orders table will only contain unique records, and only those records without duplicates in the target table will be written."
+        },
+        {
+          "key": "B",
+          "text": "Each write to the orders table will only contain unique records, but newly written records may have duplicates already present in the target table."
+        },
+        {
+          "key": "C",
+          "text": "Each write to the orders table will only contain unique records; if existing records with the same key are present in the target table, these records will be overwritten."
+        },
+        {
+          "key": "D",
+          "text": "Each write to the orders table will run deduplication over the union of new and existing records, ensuring no duplicate records are present.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/201_databricks_view_154495_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/201_databricks_view_154495_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "202_databricks_view_169466_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 202,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 202 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/169466-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer on your team has implemented the following code block.\nThe view new_events contains a batch of records with the same schema as the events Delta table. The event_id field serves as a unique key for this table.\nWhen this query is executed, what will happen with new records that have the same event_id as an existing record?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They are merged."
+        },
+        {
+          "key": "B",
+          "text": "They are ignored."
+        },
+        {
+          "key": "C",
+          "text": "They are updated."
+        },
+        {
+          "key": "D",
+          "text": "They are inserted.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/202_databricks_view_169466_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/202_databricks_view_169466_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "203_databricks_view_303304_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 203,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 203 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303304-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A new data engineer notices that a critical field was omitted from an application that writes its Kafka source to elta Lake. This happened even though the critical field was in the Kafka source. That field was further missing from data written to dependent, long-term storage. The retention threshold on the Kafka service is seven days. The pipeline has been in production for three months.\nWhich describes how elta Lake can help to avoid data loss of this nature in the future?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The elta log and Structured Streaming checkpoints record the full history of the Kafka producer."
+        },
+        {
+          "key": "B",
+          "text": "elta Lake schema evolution can retroactively calculate the correct value for newly added fields, as long as the data was in the original source."
+        },
+        {
+          "key": "C",
+          "text": "elta Lake automatically checks that all fields present in the source data are included in the ingestion layer."
+        },
+        {
+          "key": "D",
+          "text": "Ingesting all raw data and metadata from Kafka to a bronze elta table creates a permanent, replayable history of the data state.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/203_databricks_view_303304_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "204_databricks_view_154496_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 204,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 204 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/154496-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team maintains the following code:\nAssuming that this code produces logically correct results and the data in the source table has been de-duplicated and validated, which statement describes what will occur when this code is executed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The silver_customer_sales table will be overwritten by aggregated values calculated from all records in the gold_customer_lifetime_sales_summary table as a batch job."
+        },
+        {
+          "key": "B",
+          "text": "A batch job will update the gold_customer_lifetime_sales_summary table, replacing only those rows that have different values than the current version of the table, using customer_id as the primary key."
+        },
+        {
+          "key": "C",
+          "text": "The gold_customer_lifetime_sales_summary table will be overwritten by aggregated values calculated from all records in the silver_customer_sales table as a batch job."
+        },
+        {
+          "key": "D",
+          "text": "An incremental job will detect if new rows have been written to the silver_customer_sales table; if new rows are detected, all aggregates will be recalculated and used to overwrite the gold_customer_lifetime_sales_summary table.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/204_databricks_view_154496_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/204_databricks_view_154496_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "205_databricks_view_303311_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 205,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 205 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303311-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data engineering team is migrating an enterprise system with thousands of tables and views into the Lakehouse. They plan to implement the target architecture using a series of bronze, silver, and gold tables. Bronze tables will almost exclusively be used by production data engineering workloads, while silver tables will be used to support both data engineering and machine learning workloads. Gold tables will largely serve business intelligence and reporting purposes. While personal identifying information (PII) exists in all tiers of data, pseudonymization and anonymization rules are in place for all data at the silver and gold levels.\nThe organization is interested in reducing security concerns while maximizing the ability to collaborate across diverse teams.\nWhich statement exemplifies best practices for implementing this system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Isolating tables in separate databases based on data quality tiers allows for easy permissions management through database CLs and allows physical separation of default storage locations for managed tables."
+        },
+        {
+          "key": "B",
+          "text": "Because databases on Databricks are merely a logical construct, choices around database organization do not impact security or discoverability in the Lakehouse."
+        },
+        {
+          "key": "C",
+          "text": "Storing all production tables in a single database provides a unified view of all data assets available throughout the Lakehouse, simplifying discoverability by granting all users view privileges on this database."
+        },
+        {
+          "key": "D",
+          "text": "Working in the default Databricks database provides the greatest security when working with managed tables, as these will be created in the DBFS root.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/205_databricks_view_303311_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "206_databricks_view_303314_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 206,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 206 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303314-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has mandated that all tables in the Lakehouse should be configured as external (also known as \"unmanaged\") Delta Lake tables.\nWhich approach will ensure that this requirement is met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "When a database is being created, make sure that the LOATION keyword is used."
+        },
+        {
+          "key": "B",
+          "text": "When the workspace is being configured, make sure that external cloud object storage has been mounted."
+        },
+        {
+          "key": "C",
+          "text": "When data is saved to a table, make sure that a full file path is specified alongside the USING DELTA clause."
+        },
+        {
+          "key": "D",
+          "text": "When tables are created, make sure that the UNMANAGED keyword is used in the REATE TABLE statement.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/206_databricks_view_303314_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "207_databricks_view_303315_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 207,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 207 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303315-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "To reduce storage and compute costs, the data engineering team has been tasked with curating a series of aggregate tables leveraged by business intelligence dashboards, customer-facing applications, production machine learning models, and ad hoc analytical queries.\nThe data engineering team has been made aware of new requirements from a customer-facing application, which is the only downstream workload they manage entirely. As a result, an aggregate table used by numerous teams across the organization will need to have a number of fields renamed, and additional fields will also be added.\nWhich of the solutions addresses the situation while minimally interrupting other teams in the organization without increasing the number of tables that need to be managed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Send all users notice that the schema for the table will be changing; include in the communication the logic necessary to revert the new table schema to match historic queries."
+        },
+        {
+          "key": "B",
+          "text": "Configure a new table with all the requisite fields and new names and use this as the source for the customer-facing application; create a view that maintains the original data schema and table name by aliasing select fields from the new table."
+        },
+        {
+          "key": "C",
+          "text": "Create a new table with the required schema and new fields and use Delta Lake's deep clone functionality to sync up changes committed to one table to the corresponding table."
+        },
+        {
+          "key": "D",
+          "text": "Replace the current table definition with a logical view defined with the query logic currently writing the aggregate table; create a new table to power the customer-facing application.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/207_databricks_view_303315_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "208_databricks_view_303316_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 208,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 208 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303316-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Delta Lake table representing metadata about content posts from users has the following schema:\nuser_id LONG, post_text STRING, post_id STRING, longitude FLOAT, latitude FLOAT, post_time TIMESTAMP, date DATE\nased on the above schema, which column is a good candidate for partitioning the Delta Table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "post_time"
+        },
+        {
+          "key": "B",
+          "text": "date"
+        },
+        {
+          "key": "C",
+          "text": "post_id"
+        },
+        {
+          "key": "D",
+          "text": "user_id\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/208_databricks_view_303316_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "209_databricks_view_303317_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 209,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 209 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303317-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The downstream consumers of a Delta Lake table have been complaining about data quality issues impacting performance in their applications. Specifically, they have complained that invalid latitude and longitude values in the activity_details table have been breaking their ability to use other geolocation processes.\nA junior engineer has written the following code to add HEK constraints to the Delta Lake table:\nA senior engineer has confirmed the above logic is correct and the valid ranges for latitude and longitude are provided, but the code fails when executed.\nWhich statement explains the cause of this failure?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The current table schema does not contain the field valid_coordinates; schema evolution will need to be enabled before altering the table to add a constraint."
+        },
+        {
+          "key": "B",
+          "text": "The activity_details table already exists; HEK constraints can only be added during initial table creation."
+        },
+        {
+          "key": "C",
+          "text": "The activity_details table already contains records that violate the constraints; all existing data must pass HEK constraints in order to add them to an existing table."
+        },
+        {
+          "key": "D",
+          "text": "The activity_details table already contains records; HEK constraints can only be added prior to inserting values into a table.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/209_databricks_view_303317_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/209_databricks_view_303317_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "210_databricks_view_303318_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 210,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 210 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303318-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is true for Delta Lake?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Views in the Lakehouse maintain a valid cache of the most recent versions of source tables at all times."
+        },
+        {
+          "key": "B",
+          "text": "Primary and foreign key constraints can be leveraged to ensure duplicate values are never entered into a dimension table."
+        },
+        {
+          "key": "C",
+          "text": "Delta Lake automatically collects statistics on the first 32 columns of each table which are leveraged in data skipping based on query filters."
+        },
+        {
+          "key": "D",
+          "text": "Z-order can only be applied to numeric values stored in Delta Lake tables.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/210_databricks_view_303318_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "211_databricks_view_303319_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 211,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 211 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303319-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The view updates represents an incremental batch of all newly ingested data to be inserted or updated in the customers table.\nThe following logic is used to process these records.\nWhich statement describes this implementation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The customers table is implemented as a Type 2 table; old values are overwritten and new customers are appended."
+        },
+        {
+          "key": "B",
+          "text": "The customers table is implemented as a Type 2 table; old values are maintained but marked as no longer current and new values are inserted."
+        },
+        {
+          "key": "C",
+          "text": "The customers table is implemented as a Type 0 table; all writes are append only with no changes to existing values."
+        },
+        {
+          "key": "D",
+          "text": "The customers table is implemented as a Type 1 table; old values are overwritten by new values and no history is maintained.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/211_databricks_view_303319_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/211_databricks_view_303319_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "212_databricks_view_152709_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 212,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 212 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152709-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A team of data engineers are adding tables to a LT pipeline that contain repetitive expectations for many of the same data quality checks. One member of the team suggests reusing these data quality rules across all tables defined for this pipeline.\nWhat approach would allow them to do this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Add data quality constraints to tables in this pipeline using an external job with access to pipeline configuration files."
+        },
+        {
+          "key": "B",
+          "text": "Use global Python variables to make expectations visible across LT notebooks included in the same pipeline."
+        },
+        {
+          "key": "C",
+          "text": "Maintain data quality rules in a separate atabricks notebook that each LT notebook or file can import as a library."
+        },
+        {
+          "key": "D",
+          "text": "Maintain data quality rules in a elta table outside of this pipeline's target schema, providing the schema name as a pipeline parameter.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/212_databricks_view_152709_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "213_databricks_view_303320_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 213,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 213 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303320-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The evOps team has configured a production workload as a collection of notebooks scheduled to run daily using the Jobs UI. A new data engineering hire is onboarding to the team and has requested access to one of these notebooks to review the production logic.\nWhat are the maximum notebook permissions that can be granted to the user without allowing accidental changes to production code or data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Can manage"
+        },
+        {
+          "key": "B",
+          "text": "Can edit"
+        },
+        {
+          "key": "C",
+          "text": "Can run"
+        },
+        {
+          "key": "D",
+          "text": "Can read\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/213_databricks_view_303320_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "214_databricks_view_303322_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 214,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 214 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303322-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A table named user_ltv is being used to create a view that will be used by data analysts on various teams. Users in the workspace are configured into groups, which are used for setting up data access using ACLs.\nThe user_ltv table has the following schema:\nemail STRING, age INT, ltv INT\nThe following view definition is executed:\nAn analyst who is not a member of the marketing group executes the following query:\nSELECT * FROM email_ltv -\nWhich statement describes the results returned by this query?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Three columns will be returned, but one column will be named \"REACTE\" and contain only null values."
+        },
+        {
+          "key": "B",
+          "text": "Only the email and ltv columns will be returned; the email column will contain all null values."
+        },
+        {
+          "key": "C",
+          "text": "The email and ltv columns will be returned with the values in user_ltv."
+        },
+        {
+          "key": "D",
+          "text": "Only the email and ltv columns will be returned; the email column will contain the string \"REACTE\" in each row.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/214_databricks_view_303322_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/214_databricks_view_303322_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "215_databricks_view_303323_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 215,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 215 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303323-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team has instituted a requirement that all tables containing Personal Identifiable Information (PII) must be clearly annotated. This includes adding column comments, table comments, and setting the custom table property \"contains_pii\" = true.\nThe following SQL DDL statement is executed to create a new table:\nWhich command allows manual confirmation that these three requirements have been met?",
+      "options": [
+        {
+          "key": "A",
+          "text": "DESCRIBE EXTENDED dev.pii_test"
+        },
+        {
+          "key": "B",
+          "text": "DESCRIBE DETIL dev.pii_test"
+        },
+        {
+          "key": "C",
+          "text": "SHOW TBLPROPERTIES dev.pii_test"
+        },
+        {
+          "key": "D",
+          "text": "DESCRIBE HISTORY dev.pii_test\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/215_databricks_view_303323_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/215_databricks_view_303323_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "216_databricks_view_303324_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 216,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 216 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303324-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team is reviewing code used for deleting records for compliance with GDPR. They note the following logic is used to delete records from the Delta Lake table named users.\nAssuming that user_id is a unique identifying key and that delete_requests contains all users that have requested deletion, which statement describes whether successfully executing the above logic guarantees that the records to be deleted are no longer accessible and why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yes; Delta Lake ACID guarantees provide assurance that the DELETE command succeeded fully and permanently purged these records."
+        },
+        {
+          "key": "B",
+          "text": "No; files containing deleted records may still be accessible with time travel until a VACUUM command is used to remove invalidated data files."
+        },
+        {
+          "key": "C",
+          "text": "Yes; the Delta cache immediately updates to reflect the latest data files recorded to disk."
+        },
+        {
+          "key": "D",
+          "text": "No; the Delta Lake DELETE command only provides ACID guarantees when combined with the MERGE INTO command.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/216_databricks_view_303324_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/216_databricks_view_303324_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "217_databricks_view_303325_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 217,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 217 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303325-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data architect has decided that once data has been ingested from external sources into the\natabricks Lakehouse, table access controls will be leveraged to manage permissions for all production tables and views.\nThe following logic was executed to grant privileges for interactive queries on a production database to the core engineering group.\nGRANT USAGE ON ATABASE prod TO eng;\nGRANT SELECT ON ATABASE prod TO eng;\nAssuming these are the only privileges that have been granted to the eng group and that these users are not workspace administrators, which statement describes their privileges?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Group members are able to create, query, and modify all tables and views in the prod database, but cannot define custom functions."
+        },
+        {
+          "key": "B",
+          "text": "Group members are able to list all tables in the prod database but are not able to see the results of any queries on those tables."
+        },
+        {
+          "key": "C",
+          "text": "Group members are able to query and modify all tables and views in the prod database, but cannot create new tables or views."
+        },
+        {
+          "key": "D",
+          "text": "Group members are able to query all tables and views in the prod database, but cannot create or edit anything in the database.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/217_databricks_view_303325_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "218_databricks_view_152712_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 218,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 218 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152712-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "user wants to use DLT expectations to validate that a derived table report contains all records from the source, included in the table validation_copy.\nThe user attempts and fails to accomplish this by adding an expectation to the report table definition.\nWhich approach would allow using DLT expectations to validate all expected records are present in this table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Define a temporary table that performs a left outer join on validation_copy and report, and define an expectation that no report key values are null"
+        },
+        {
+          "key": "B",
+          "text": "Define a SQL UDF that performs a left outer join on two tables, and check if this returns null values for report key values in a DLT expectation for the report table"
+        },
+        {
+          "key": "C",
+          "text": "Define a view that performs a left outer join on validation_copy and report, and reference this view in DLT expectations for the report table"
+        },
+        {
+          "key": "D",
+          "text": "Define a function that performs a left outer join on validation_copy and report, and check against the result in a DLT expectation for the report table\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/218_databricks_view_152712_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/218_databricks_view_152712_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "219_databricks_view_153569_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 219,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 219 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/153569-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A user new to atabricks is trying to troubleshoot long execution times for some pipeline logic they are working on. Presently, the user is executing code cell-by-cell, using display() calls to confirm code is producing the logically correct results as new transformations are added to an operation. To get a measure of average time to execute, the user is running each cell multiple times interactively.\nWhich of the following adjustments will get a more accurate measure of how code is likely to perform in production?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The Jobs UI should be leveraged to occasionally run the notebook as a job and track execution time during incremental code development because Photon can only be enabled on clusters launched for scheduled jobs."
+        },
+        {
+          "key": "B",
+          "text": "The only way to meaningfully troubleshoot code execution times in development notebooks is to use production-sized data and production-sized clusters with Run All execution."
+        },
+        {
+          "key": "C",
+          "text": "Production code development should only be done using an IE; executing code against a local build of open source Spark and elta Lake will provide the most accurate benchmarks for how code will perform in production."
+        },
+        {
+          "key": "D",
+          "text": "Calling display() forces a job to trigger, while many transformations will only add to the logical query plan; because of caching, repeated execution of the same logic does not provide meaningful results.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/219_databricks_view_153569_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "220_databricks_view_152713_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 220,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 220 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152713-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Where in the Spark UI can one diagnose a performance problem induced by not leveraging predicate push-down?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In the Executor’s log file, by grepping for \"predicate push-down\""
+        },
+        {
+          "key": "B",
+          "text": "In the Stage’s Detail screen, in the ompleted Stages table, by noting the size of data read from the Input column"
+        },
+        {
+          "key": "C",
+          "text": "In the Query Detail screen, by interpreting the Physical Plan"
+        },
+        {
+          "key": "D",
+          "text": "In the Delta Lake transaction log. by noting the column statistics\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/220_databricks_view_152713_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "221_databricks_view_152716_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 221,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 221 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152716-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer needs to capture pipeline settings from an existing setting in the workspace, and use them to create and version a JSON file to create a new pipeline.\nWhich command should the data engineer enter in a web terminal configured with the Databricks LI?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use list pipelines to get the specs for all pipelines; get the pipeline spec from the returned results; parse and use this to create a pipeline"
+        },
+        {
+          "key": "B",
+          "text": "Stop the existing pipeline; use the returned settings in a reset command"
+        },
+        {
+          "key": "C",
+          "text": "Use the get command to capture the settings for the existing pipeline; remove the pipeline_id and rename the pipeline; use this in a create command"
+        },
+        {
+          "key": "D",
+          "text": "Use the clone command to create a copy of an existing pipeline; use the get JSON command to get the pipeline definition; save this to git\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/221_databricks_view_152716_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "222_databricks_view_155084_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 222,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 222 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/155084-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which Python variable contains a list of directories to be searched when trying to locate required modules?",
+      "options": [
+        {
+          "key": "A",
+          "text": "importlib.resource_path"
+        },
+        {
+          "key": "B",
+          "text": "sys.path"
+        },
+        {
+          "key": "C",
+          "text": "os.path"
+        },
+        {
+          "key": "D",
+          "text": "pypi.path\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/222_databricks_view_155084_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "223_databricks_view_303326_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 223,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 223 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303326-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "You are testing a collection of mathematical functions, one of which calculates the area under a curve as described by another function.\nassert(myIntegrate(lambda x: x*x, 0, 3) [0] == 9)\nWhich kind of test would the above line exemplify?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Unit"
+        },
+        {
+          "key": "B",
+          "text": "Manual"
+        },
+        {
+          "key": "C",
+          "text": "Functional"
+        },
+        {
+          "key": "D",
+          "text": "Integration\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/223_databricks_view_303326_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "224_databricks_view_303327_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 224,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 224 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/303327-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What is a key benefit of an end-to-end test?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It makes it easier to automate your test suite"
+        },
+        {
+          "key": "B",
+          "text": "It pinpoints errors in the building blocks of your application"
+        },
+        {
+          "key": "C",
+          "text": "It provides testing coverage for all code paths and branches"
+        },
+        {
+          "key": "D",
+          "text": "It closely simulates real world usage of your application\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/224_databricks_view_303327_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "225_databricks_view_152622_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 225,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 225 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152622-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which REST API call can be used to review the notebooks configured to run as tasks in a multi-task job?",
+      "options": [
+        {
+          "key": "A",
+          "text": "/jobs/runs/list"
+        },
+        {
+          "key": "B",
+          "text": "/jobs/list"
+        },
+        {
+          "key": "C",
+          "text": "/jobs/runs/get"
+        },
+        {
+          "key": "D",
+          "text": "/jobs/get\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/225_databricks_view_152622_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "226_databricks_view_152717_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 226,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 226 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152717-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Data Engineer wants to run unit tests using common Python testing frameworks on Python functions defined across several Databricks notebooks currently used in production.\nHow can the data engineer run unit tests against functions that work with data in production?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Define and import unit test functions from a separate Databricks notebook"
+        },
+        {
+          "key": "B",
+          "text": "Define and unit test functions using Files in Repos"
+        },
+        {
+          "key": "C",
+          "text": "Run unit tests against non-production data that closely mirrors production"
+        },
+        {
+          "key": "D",
+          "text": "Define unit tests and functions within the same notebook\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/226_databricks_view_152717_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "227_databricks_view_152742_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 227,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 227 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/152742-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer wants to refactor the following DLT code, which includes multiple table definitions with very similar code.\nIn an attempt to programmatically create these tables using a parameterized table definition, the data engineer writes the following code.\nThe pipeline runs an update with this refactored code, but generates a different DAG showing incorrect configuration values for these tables.\nHow can the data engineer fix this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Wrap the for loop inside another table definition, using generalized names and properties to replace with those from the inner table definition."
+        },
+        {
+          "key": "B",
+          "text": "onvert the list of configuration values to a dictionary of table settings, using table names as keys."
+        },
+        {
+          "key": "C",
+          "text": "Move the table definition into a separate function, and make calls to this function using different input parameters inside the for loop."
+        },
+        {
+          "key": "D",
+          "text": "Load the configuration values for these tables from a separate file, located at a path provided by a pipeline parameter.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/227_databricks_view_152742_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/227_databricks_view_152742_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png"
+      ],
+      "sourceFile": "output/batch/227_databricks_view_152742_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "228_databricks_view_316704_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 228,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 228 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316704-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer has created a 'transactions' elta table on atabricks that should be used by the analytics team. The analytics team wants to use the table with another tool which requires Apache Iceberg format.\nWhat should the data engineer do?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Require the analytics team to use a tool which supports elta table."
+        },
+        {
+          "key": "B",
+          "text": "Create an Iceberg copy of the 'transactions' elta table which can be used by the analytics team."
+        },
+        {
+          "key": "C",
+          "text": "Convert the 'transactions' elta to Iceberg and enable uniform so that the table can be read as a elta table."
+        },
+        {
+          "key": "D",
+          "text": "Enable uniform on the transactions table to 'iceberg' so that the table can be read as an Iceberg table.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/228_databricks_view_316704_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "229_databricks_view_316893_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 229,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 229 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316893-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A junior data engineer is working to implement logic for a Lakehouse table named silver_device_recordings. The source data contains 100 unique fields in a highly nested JSON structure.\nThe silver_device_recordings table will be used downstream for highly selective joins on a number of fields, and will also be leveraged by the machine learning team to filter on a handful of relevant fields. In total, 15 fields have been identified that will often be used for filter and join logic.\nThe data engineer is trying to determine the best approach for dealing with these nested fields before declaring the table schema.\nWhich of the following accurately presents information about elta Lake and atabricks that may impact their decision-making process?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Because elta Lake uses Parquet for data storage, remel encoding information for nesting can be directly referenced by the elta transaction log."
+        },
+        {
+          "key": "B",
+          "text": "Schema inference and evolution on atabricks ensure that inferred types will always accurately match the data types used by downstream systems."
+        },
+        {
+          "key": "C",
+          "text": "The Tungsten encoding used by atabricks is optimized for storing string data; newly-added native support for querying JSON strings means that string types are always most efficient."
+        },
+        {
+          "key": "D",
+          "text": "By default, elta Lake collects statistics on the first 32 columns in a table; these statistics are leveraged for data skipping when executing selective queries.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/229_databricks_view_316893_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "230_databricks_view_316892_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 230,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 230 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316892-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "platform engineer is creating catalogs and schemas for the development team to use.\nThe engineer has created an initial catalog, Catalog_, and initial schema, Schema_. The engineer has also granted USE CTLOG, USE SCHEM, and CRETE TBLE to the development team so that the engineer can begin populating the schema with new tables.\nDespite being owner of the catalog and schema, the engineer noticed that they do not have access to the underlying tables in Schema_.\nWhat explains the engineer's lack of access to the underlying tables?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The owner of the schema does not automatically have permission to tables within the schema, but can grant them to themselves at any point."
+        },
+        {
+          "key": "B",
+          "text": "Users granted with USE CTLOG can modify the owner's permissions to downstream tables."
+        },
+        {
+          "key": "C",
+          "text": "Permissions explicitly given by the table creator are the only way the Platform Engineer could access the underlying tables in their schema."
+        },
+        {
+          "key": "D",
+          "text": "The platform engineer needs to execute a REFRESH statement as the table permissions did not automatically update for owners.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/230_databricks_view_316892_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "231_databricks_view_316705_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 231,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 231 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316705-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer has created a new cluster using shared access mode with default configurations. The data engineer needs to allow the development team access to view the driver logs if needed.\nWhat are the minimal cluster permissions that allow the development team to accomplish this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CAN VIEW"
+        },
+        {
+          "key": "B",
+          "text": "CAN RESTART"
+        },
+        {
+          "key": "C",
+          "text": "CAN ATTACH TO"
+        },
+        {
+          "key": "D",
+          "text": "CAN MANAGE\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/231_databricks_view_316705_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "232_databricks_view_316867_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 232,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 232 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316867-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer wants to create a cluster using the Databricks CLI for a big ETL pipeline. The cluster should have five workers and one driver of type i3.xlarge and should use the '14.3.x-scala2.12' runtime.\nWhich command should the data engineer use?",
+      "options": [
+        {
+          "key": "A",
+          "text": "databricks compute add 14.3.x-scala2.12 --num-workers 5 --node-type-id i3.xlarge --cluster-name Data Engineer_cluster"
+        },
+        {
+          "key": "B",
+          "text": "databricks clusters create 14.3.x-scala2.12 --num-workers 5 --node-type-id i3.xlarge --cluster-name Data Engineer_cluster"
+        },
+        {
+          "key": "C",
+          "text": "databricks compute create 14.3.x-scala2.12 --num-workers 5 --node-type-id i3.xlarge --cluster-name Data Engineer_cluster"
+        },
+        {
+          "key": "D",
+          "text": "databricks clusters add 14.3.x-scala2.12 --num-workers 5 --node-type-id i3.xlarge --cluster-name Data Engineer_cluster\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/232_databricks_view_316867_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "233_databricks_view_316707_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 233,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 233 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316707-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A 'transactions' table has been liquid clustered on the columns 'product_id’, ’user_id' and 'event_date'.\nWhich operation lacks support for cluster on write?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CTAS and RTAS statements"
+        },
+        {
+          "key": "B",
+          "text": "spark.writeStream.format(’delta').mode(’append’)"
+        },
+        {
+          "key": "C",
+          "text": "spark.write.format('delta’).mode('append')"
+        },
+        {
+          "key": "D",
+          "text": "INSERT INTO operations\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/233_databricks_view_316707_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "234_databricks_view_316713_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 234,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 234 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316713-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "The data governance team has instituted a requirement that the \"user\" table containing Personal Identifiable Information (PII) must have the appropriate masking on the SSN column. This means that anyone outside of the HRAdminGroup should see masked social security numbers as ***-**-****.\nThe team created a masking function:\nWhat does the data governance team need to do next to achieve this goal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CREATE TABLE users -\n(name STRING);\nALTER TABLE users CREATE COLUMN ssn CREATE MASK ssn_mask;"
+        },
+        {
+          "key": "B",
+          "text": "CREATE TABLE users -\n(name STRING, int STRING);\nALTER TABLE users ALTER COLUMN ssn CREATE MASK if is_member('HRAdminGroup');"
+        },
+        {
+          "key": "C",
+          "text": "CREATE TABLE users -\n(name STRING, ssn INT MASKE ssn_mask);"
+        },
+        {
+          "key": "D",
+          "text": "CREATE TABLE users -\n(name STRING, ssn STRING);\nALTER TABLE users ALTER COLUMN ssn SET MASK ssn_mask;\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/234_databricks_view_316713_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/234_databricks_view_316713_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "235_databricks_view_316708_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 235,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 235 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316708-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer needs to create an application that will collect information about the latest job run including the repair history.\nHow should the data engineer format the request?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Call/api/2.1/jobs/runs/list with the run_id and include_history parameters"
+        },
+        {
+          "key": "B",
+          "text": "Call/api/2.1/jobs/runs/get with the run_id and include_history parameters"
+        },
+        {
+          "key": "C",
+          "text": "Call/api/2.1/jobs/runs/get with the job_id and include_history parameters"
+        },
+        {
+          "key": "D",
+          "text": "Call/api/2.1/jobs/runs/list with the job_id and include_history parameters\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/235_databricks_view_316708_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "236_databricks_view_316714_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 236,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 236 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316714-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is working in an interactive notebook with many transformations before outputting the result from display(df.collect() ). The notebook includes wide transformations and a cross join.\nThe data engineer is getting the following error: \"The spark driver has stopped unexpectedly and is restarting. Your notebook will be automatically reattached.\"\nWhich action should the data engineer take?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Run the notebook on a single node cluster to keep driver from falling."
+        },
+        {
+          "key": "B",
+          "text": "Rewrite their code to avoid putting memory pressure on the driver node."
+        },
+        {
+          "key": "C",
+          "text": "Check into the Spark UI to see how many jobs are assigned to each stage as they are employing fewer executors."
+        },
+        {
+          "key": "D",
+          "text": "Look at the compute metrics UI to see if the executors have higher than 90% memory utilization.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/236_databricks_view_316714_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "237_databricks_view_316715_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 237,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 237 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316715-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "An analytics team wants run an experiment in the short term on the customer transaction Delta table (with 20 billions records) created by the data engineering team in Databricks SQL.\nWhich strategy should the data engineering team use to ensure minimal downtime and no impact on the ongoing ETL processes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Deep clone the table for the analytics team."
+        },
+        {
+          "key": "B",
+          "text": "reate a new table for the analytics team using a TAS statement."
+        },
+        {
+          "key": "C",
+          "text": "Shallow clone the table for the analytics team."
+        },
+        {
+          "key": "D",
+          "text": "Give access to the table for the analytics team.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/237_databricks_view_316715_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "238_databricks_view_316716_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 238,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 238 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/316716-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data team is working to optimize an existing large, fast-growing table 'orders' with high cardinality columns, which experiences significant data skew and requires frequent concurrent writes. The team notice that the columns 'user_id', 'event_timestamp' and 'product_id' are heavily used in analytical queries and filters, although those keys may be subject to change in the future due to different business requirements.\nWhich partitioning strategy should the team choose to optimize the table for immediate data skipping, incremental management over time, and flexibility?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Partition the table with: ALTER TABLE orders PARTITION BY user_id, product_id, event_timestamp"
+        },
+        {
+          "key": "B",
+          "text": "Use z-order after partitiing the table: OPTIMIZE orders ZORDER BY (user_id, product_id) WHERE event_timestamp = current date () - 1 DAY"
+        },
+        {
+          "key": "C",
+          "text": "luster the table with: ALTER TABLE orders LUSTER BY user_id, product_id, event_timestamp"
+        },
+        {
+          "key": "D",
+          "text": "Z-order the table with OPTIMIZE orders ZORDER BY (user_id, product_id, event_timestamp)\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/238_databricks_view_316716_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "239_databricks_view_382804_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 239,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 239 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382804-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A faulty IoT sensor in a factory reports a temperature of -500, causing the LDP pipeline to fail the expectation, which only allows values between -100 and 200 degrees elsius. The data engineer would like to further analyze the faulty data to better understand the reason behind this.\nHow should the data engineer resolve the faulty data while ensuring data quality standards are maintained?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Remove all expectations form the pipeline to prevent any future failures, regardless of data quality."
+        },
+        {
+          "key": "B",
+          "text": "Ignore the error and simply re-run the pipeline, as Databricks will automatically skip the problematic record on the next run."
+        },
+        {
+          "key": "C",
+          "text": "Fix the pipeline code and implement a quarantine logic to isolate the faulty data before re-running the pipeline."
+        },
+        {
+          "key": "D",
+          "text": "hange the expectation action from fail to warn so that invalid records are included in the output and the pipeline does not fail.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/239_databricks_view_382804_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "240_databricks_view_382805_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 240,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 240 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382805-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is optimizing a managed table that suffers from data skew and frequently changing query filter columns. The engineer needs to avoid costly data rewrites when query patterns evolve. The table size is under 1TB.\nHow should data engineer meet this requirement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Hive-style partitioning, as it provides efficient data skipping and is easy to change partition columns at any time."
+        },
+        {
+          "key": "B",
+          "text": "ombine partitioning and Z-ordering to maximize flexibility and minimize maintenance as query patterns change."
+        },
+        {
+          "key": "C",
+          "text": "Enable liquid clustering, as it efficiently handles data skew, allows clustering keys to be changed without rewriting existing data, and adapts to evolving query patterns."
+        },
+        {
+          "key": "D",
+          "text": "Apply Z-ordering, since it allows flexible reorganization of data layout without rewriting existing and adapts easily to new filter columns.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/240_databricks_view_382805_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "241_databricks_view_382837_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 241,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 241 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382837-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "security team wants to enforce data protection for a customer table containing customer PII data. To comply with local policies, sales team members should only see customers from their region, while non-admin users should have email addresses masked.\nWhich implementation approach should be used when using Unity Catalog row filters and column masks?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create SQL UDFs for row filtering based on user region and column masking based on group membership, then apply them using LTER TBLE SET ROW FILTER and LTER COLUMN SET MSK commands."
+        },
+        {
+          "key": "B",
+          "text": "Use table CLs to restrict access using tags with GRNT SELECT ON table_name WITH TG command, and rely on application-level filtering for sensitive data based on user region."
+        },
+        {
+          "key": "C",
+          "text": "Create a view with dynamic WHERE clauses for region filtering and use string replacement functions for email masking using LTER COLUMN SET MSK command."
+        },
+        {
+          "key": "D",
+          "text": "Implement row filters with SQL UDFs based on user region only since column masks cannot be combined with row filters on the same table, then apply them be recreating the table with DROP TBLE and CRETE TBLE SET ROW FILTER commands.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/241_databricks_view_382837_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "242_databricks_view_382836_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 242,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 242 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382836-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is evaluating tools to build a production-grade data pipeline. The team must process change data from cloud object storage, filter out or isolate invalid records, and ensure the timely delivery of clean data to downstream consumers. The team is small, under tight deadlines, and wants to minimize operational overhead while keeping pipelines auditable and maintainable.\nWhich approach should the data engineer implement?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ingest data directly into elta tables via Spark jobs, apply data quality filters using UFs, and use LP for creating Materialized Views."
+        },
+        {
+          "key": "B",
+          "text": "Use a hybrid approach: Ingest with Auto Loader into Bronze tables, then process using SQL queries in atabricks Workflows to generate cleaned Silver and Gold tables on a schedule."
+        },
+        {
+          "key": "C",
+          "text": "Implement ingestion using Auto Loader with Structured Streaming, and manage invalid data handling and table updates using checkpointing and merge logic."
+        },
+        {
+          "key": "D",
+          "text": "Use LP to build declarative pipelines with Streaming Tables and Materialized Views, leveraging built-in support for data expectations and incremental processing.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/242_databricks_view_382836_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "243_databricks_view_382822_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 243,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 243 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382822-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is using Structured Streaming to read in transaction data from a bronze elta table. It was discovered that the data has quality issues where sometimes the transaction value is negative, and when that occurs, the rows need to be routed to a separate quarantine table. They have low latency requirements for the good data since it is used by downstream systems, but the bad data will only be analyzed periodically and has no production dependencies. The quarantine job needs to be implemented so that it cannot affect the production processes that depend on the good data, and the cost of the job needs to be minimized.\nHow should the quarantine process be implemented in order to satisfy these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The streaming job for the good data needs to be modified to filter out records with a transaction value less than 0 before writing. The streaming job for the quarantine data needs to filter out records with a transaction value greater than or equal to 0 before writing. Both should run as separate streams on the same cluster to minimize cost."
+        },
+        {
+          "key": "B",
+          "text": "The existing streaming job for the good data should be updated to incorporate the quarantining of the bad data. A new boolean column called “quarantine” should be added to the dataframe, and its value should be set to true if the transaction value is less than 0 and false if the transaction value is greater than or equal to 0. Processing and storing all the data together will save costs."
+        },
+        {
+          "key": "C",
+          "text": "The existing streaming job for the good data should be updated to incorporate the quarantining of the bad data. Inside a foreachBatch function, the dataframe should be filtered so that records with a transaction value greater than or equal to 0 are written to the good data table and records with a transaction value less than 0 are written to a quarantine table. Try/Catch can be added around the writes in the foreachBatch function so that the stream can’t fail."
+        },
+        {
+          "key": "D",
+          "text": "The streaming job for the good data needs to be modified to filter out records with a transaction value less than 0 before writing, and should not share compute with other processes. The streaming job for the quarantine data needs to filter out records with a transaction value greater than or equal to 0 before writing, and should be implemented on a separate small cluster and only run once a day to minimize cost.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/243_databricks_view_382822_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "244_databricks_view_382818_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 244,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 244 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382818-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When monitoring a complex workload, being able to see the query plan is critical to understanding what the workload is doing.\nWhere can the visualization of the query plan be found?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In the Spart UI, under the Jobs tab"
+        },
+        {
+          "key": "B",
+          "text": "In the Query Profiler, under Query Source"
+        },
+        {
+          "key": "C",
+          "text": "In the Spark UI, under the SQL/DataFrame tab"
+        },
+        {
+          "key": "D",
+          "text": "In the Query Profiler, under the Stages tab\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/244_databricks_view_382818_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "245_databricks_view_382828_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 245,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 245 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382828-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer is troubleshooting a slow-running Delta Lake query on Databricks SQL involves complex joins and large datasets. They need to identify whether the root cause is related to poor data skipping, inefficient join strategies, or excessive data shuffling.\nWhich approach should identify the specific bottlenecks using native Databricks tools?",
+      "options": [
+        {
+          "key": "A",
+          "text": "nalyze the Top Operators panel in the Query Profile to identify high-cost operations like BroadcastNestedLoopJoin"
+        },
+        {
+          "key": "B",
+          "text": "Check the query’s execution time in the Jobs UI and correlate it with cluster resource utilization metrics."
+        },
+        {
+          "key": "C",
+          "text": "Enable the EXPLIN command to review the parsed logical plan and manually estimate shuffle sizes."
+        },
+        {
+          "key": "D",
+          "text": "Use the LIMIT clause to run a subset of the query and compare execution times with the full dataset.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/245_databricks_view_382828_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "246_databricks_view_382813_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 246,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 246 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382813-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer is designing a secure data sharing strategy for their organization. The company needs to share sensitive customer analytics data with two different partners. Partner uses Databricks with Unity Catalog enabled, while Partner B uses pache Spark on WS without Databricks.\nHow should the company implement secure data sharing for these scenarios?",
+      "options": [
+        {
+          "key": "A",
+          "text": "For Partner , implement Databricks-to-Databricks sharing (D2D) with Unit Catalog integration and no-token exchange system. For Partner B, use open sharing protocol (D2O) with either bearer tokens or OIDC federation for authentication, ensuring both approaches maintain robust security and governance."
+        },
+        {
+          "key": "B",
+          "text": "Both partners should use the same Delta Sharing approach since security requirements are identical. You should create bearer tokens for both partners and use the open sharing protocol (D2O) for maximum compatibility."
+        },
+        {
+          "key": "C",
+          "text": "Open sharing protocol (D2O) should be used for both partners because it provides better security than D2D sharing. The bearer token approach is always more secure than Unity Catalog’s native authentication."
+        },
+        {
+          "key": "D",
+          "text": "Databricks-to-Databricks sharing (D2D) can only be used within the same cloud provider, so you must use open sharing (D2O) for any cross-cloud scenarios. Unit Catalog governance is not available when sharing with external platforms.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/246_databricks_view_382813_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 247,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 247 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382833-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Which approach demonstrates a modular and testable way to use DataFrame transform for ETL code in PySpark?",
+      "options": [
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/247_databricks_view_382833_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "248_databricks_view_382855_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 248,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 248 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382855-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A company stores account transactions in a elta Lake table. The company needs to apply frequent account-level correlations (e.g., UPATE statements) but wants to avoid rewriting entire Parquet files for each change to reduce file churn and improve write performance.\nWhich elta Lake feature should they enable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enable automatic file compaction on writes"
+        },
+        {
+          "key": "B",
+          "text": "Enable change data feed on the elta table"
+        },
+        {
+          "key": "C",
+          "text": "Partition the elta table by account_id"
+        },
+        {
+          "key": "D",
+          "text": "Enable deletion vectors on the elta table\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/248_databricks_view_382855_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 249,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 249 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382859-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "In a Databricks sset Bundle project, in the file resources/app.yml, the data engineer would like to deploy a Databricks pps databricks_app_deployed and Volume volume_deployed and grant the Service Principal behind Databricks pps permissions to RED and WRITE to the Volume.\nHow should the data engineer achieve the deployment?",
+      "options": [
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/249_databricks_view_382859_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "250_databricks_view_382824_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 250,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 250 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382824-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineering teams needs to implement a tagging system for their tables as part of an automated ETL process, and needs to apply tags programmatically to tables in Unity Catalog.\nWhich SQL command adds tags to a table programmatically?",
+      "options": [
+        {
+          "key": "A",
+          "text": "LTER TBLE table_name SET TGS (‘key1’ = ‘value1’, ‘key2’ = ‘value2’);"
+        },
+        {
+          "key": "B",
+          "text": "PPLY TGS ON table_name VLUES (‘key1’ = ‘value1’, ‘key2’ = ‘value2’)"
+        },
+        {
+          "key": "C",
+          "text": "COMMENT ON TBLE table_name TGS (‘key1’ = ‘value1’, ‘key2’ = ‘value2’)"
+        },
+        {
+          "key": "D",
+          "text": "SET TGS FOR table_name S (‘key1’ = ‘value1’, ‘key2’ = ‘value2’)\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/250_databricks_view_382824_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 251,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 251 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382806-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A platform engineer needs to report the resource consumption, categorized by SKU tier, across all workspaces. The engineer decides to use the system.billing.usage system table to create a query.\nWhich SQL query will accurately return the daily usage by product?",
+      "options": [
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/251_databricks_view_382806_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "252_databricks_view_382814_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 252,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 252 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382814-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is running a groupBy aggregation on a massive user activity log grouped by user_id. A few users have millions of records, causing task skew and long runtimes.\nWhich technique will fix the skew in this aggregation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Increase the Spark driver memory and retry."
+        },
+        {
+          "key": "B",
+          "text": "Filter out the skewed users before the aggregation"
+        },
+        {
+          "key": "C",
+          "text": "Use salting by adding a random prefix to skewed keys before aggregation, then aggregate again after removing the prefix."
+        },
+        {
+          "key": "D",
+          "text": "Use reduceByKey instead of groupBy to avoid shuffles.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/252_databricks_view_382814_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "253_databricks_view_382810_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 253,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 253 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382810-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A job runs four independent tasks (X, Y, Z, W) in parallel to process regional sales data. The Data Engineering team recently updated its cluster policy to ban cost-prohibitive instance types. Task Y now fails due to the newly enforced cluster policy restricting the use of a specific instance type. A data engineer needs to resolve the failure quickly without disrupting the other tasks.\nHow should the data engineer resolve the failure of tasks?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Delete the failed run, disable the cluster policy, and re-execute all tasks."
+        },
+        {
+          "key": "B",
+          "text": "Manually create a new cluster for Task Y, update the job configuration, and trigger a full re-run."
+        },
+        {
+          "key": "C",
+          "text": "Use “Repair run”, override the cluster configuration for Task Y to use a permitted instance type, and let Databricks re-run only Task Y."
+        },
+        {
+          "key": "D",
+          "text": "Edit the global cluster policy to allow the restricted instance type, then re-run the entire job.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/253_databricks_view_382810_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 254,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 254 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382826-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is analyzing a large, partitioned retail dataset in atabricks, where each row represents a sale made by a salesperson. The dataset contains millions of records with the following schema:\nsales_df: [salesperson_id: string, region: string, sale_amount: double, sale_date: date]\nThe data engineer needs to generate a ataFrame that ranks salespeople within each region based on their total cumulative sales, with the highest seller ranked as 1. If multiple salespeople have the same total sales, they should share the same rank.\nThe data engineer wants to implement this logic using a PySpark window function and the dense_rank () function.\nWhich code snippet will perform this ranking?",
+      "options": [
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [
+        "output/batch/254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/254_databricks_view_382826_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "255_databricks_view_382834_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 255,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 255 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382834-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "What describes a primary technical challenge in ensuring consistent PII masking across all nodes in large-scale, distributed Databricks batch and streaming pipelines?",
+      "options": [
+        {
+          "key": "A",
+          "text": "PII masking is only required for direct identifiers."
+        },
+        {
+          "key": "B",
+          "text": "Dynamic data masking is applied only at rest, so it does not affect query performance."
+        },
+        {
+          "key": "C",
+          "text": "Masking functions must be standardized and managed through Unity atalog, with enforcement applied across all relevant datasets to avoid any data inconsistency."
+        },
+        {
+          "key": "D",
+          "text": "Native masking in Databricks automatically synchronizes with all downstream external Databricks systems.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/255_databricks_view_382834_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "256_databricks_view_382835_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 256,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 256 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382835-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is working on a Databricks notebook that requires several third-party Python libraries. Some of these are available on PyPI, while others are custom-developed and stored as local.wheel (.whl) and source (.tar.gz) files in an S3 bucket. The goal is to ensure all dependencies are installed and correctly available across multiple jobs running on any automated cluster in a Unity atalog-enabled workspace. The engineer needs to install the required dependencies in a way that ensures a consistent environment setup across interactive notebooks and jobs and complies with workspace security policies (no internet access).\nWhich approach should the engineer use to install and manage these dependencies while also ensuring reproducibility and compliance?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use an init script on the cluster to install all dependencies using pip, referencing the local file system."
+        },
+        {
+          "key": "B",
+          "text": "Install all dependencies manually in the driver node of an interactive cluster, then export the environment and reimport on job clusters using %conda."
+        },
+        {
+          "key": "C",
+          "text": "reate a Python wheel file for the entire project, upload it to the Databricks Workspace Files or Volumes, and install it using a luster Library or pip install in a requirements.txt declared within a Databricks Asset Bundle."
+        },
+        {
+          "key": "D",
+          "text": "Use %pip install in every notebook and job to install packages directly from PyPl and custom S3 paths.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/256_databricks_view_382835_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "257_databricks_view_382860_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 257,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 257 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382860-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer is using uto Loader to read in JSON data as it arrives. They have configured uto Loader to quarantine invalid JSON records. They are noticing that over time, some records are being quarantined even though they are well-formed JSON.\nThe snippet of code is:\nWhat is the cause of the missing data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The source data is valid JSON, but doesn’t conform to their defined schema in some way"
+        },
+        {
+          "key": "B",
+          "text": "The badRecordsPath location is accumulating many small files"
+        },
+        {
+          "key": "C",
+          "text": "The engineer forgot to set the option “cloudFiles.quarantineMode”, “rescue”."
+        },
+        {
+          "key": "D",
+          "text": "t some point, the upstream data provider switched everything to multi-line JSON.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/257_databricks_view_382860_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/257_databricks_view_382860_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "258_databricks_view_382847_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 258,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 258 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382847-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer wants to enforce the principle of least privilege when configuring CLs for Databricks jobs in a collaborative workspace.\nWhich approach should the data engineer use?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ssign users only the minimum permission level (e.g., CN RUN or CN VIEW) required for their role on each job."
+        },
+        {
+          "key": "B",
+          "text": "Use only folder-level permissions and avoid setting permissions on individual jobs."
+        },
+        {
+          "key": "C",
+          "text": "Grant CN RUN permission to everyone and CN MNGE to a single admin group."
+        },
+        {
+          "key": "D",
+          "text": "Grant all users CN MNGE permission on all jobs to avoid access issues.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/258_databricks_view_382847_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "259_databricks_view_382807_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 259,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 259 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382807-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineering workspace was automatically enabled for Unity Catalog, creating a workspace catalog. New team members report they can create tables in the default schema but cannot access table in other schemas within the same workspace catalog.\nWhy are the new team members unable to access tables in other schemas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Workspace catalog permissions are not subject to inheritance rules."
+        },
+        {
+          "key": "B",
+          "text": "Workspace users receive USE CATALOG and specific privileges on default schema only."
+        },
+        {
+          "key": "C",
+          "text": "Tables in other schemas require additional ROWSE privileges that new users don’t receive automatically"
+        },
+        {
+          "key": "D",
+          "text": "New users only receive CREATE TALE privileges on the default schema.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/259_databricks_view_382807_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "260_databricks_view_382816_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 260,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 260 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382816-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer is implementing a job to download multiple PDF files from a third-party provided REST PI endpoint by specifying different report types. The REST PI is time-consuming and encounters intermittent errors, so the engineer wants to track each download activity to know when it fails and to retry partially, while providing scalable throughput. The engineer needs to download ten report types, and the list can be changed over time.\nHow should the data engineer achieve this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use a foreach task with a list of report types as its inputs."
+        },
+        {
+          "key": "B",
+          "text": "Define ten Notebook tasks to clearly track which report download failed."
+        },
+        {
+          "key": "C",
+          "text": "Use a Delta Lake table to track each report download status as 10 rows, and use it as a source table to execute the download function as a Pandas UDF."
+        },
+        {
+          "key": "D",
+          "text": "Define a list variable within a Notebook to loop through the report types to download them, and print the download results. Execute it as a Notebook tasks.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/260_databricks_view_382816_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "261_databricks_view_382819_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 261,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 261 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382819-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer and a platform engineer are working together to automate their system tasks. A script needs to be executed outside of atabricks only if a particular daily atabricks job finishes successfully for the day. atabricks CLI command was used to check the last execution of the job.\nWhat are the required command options for that task?",
+      "options": [
+        {
+          "key": "A",
+          "text": "databricks jobs list-runs --job-id JOB_I --start-time-to TOAY_MINIGHT_EPOCH_MS --completed-only"
+        },
+        {
+          "key": "B",
+          "text": "databricks jobs list-runs --job-id JOB_I --start-time-from TOAY_MINIGHT_EPOCH_MS --active-only"
+        },
+        {
+          "key": "C",
+          "text": "databricks jobs list-runs --job-id JOB_I --start-time-to TOAY_MINIGHT_EPOCH_MS --active-only"
+        },
+        {
+          "key": "D",
+          "text": "databricks jobs list-runs --job-id JOB_I --start-time-from TOAY_MINIGHT_EPOCH_MS --completed-only\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/261_databricks_view_382819_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "262_databricks_view_382844_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 262,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 262 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382844-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineering team needs to create a SQL Alert that monitors data quality across multiple columns in their customer table. They want to trigger an alert when both the percentage of customers with missing email addresses exceeds 15% AND the percentage of customers with invalid phone number formats exceeds 10%.\nWhich SQL query pattern is appropriate for implementing this multi-column alert condition?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SELET OUNT (*) FROM customers WHERE email IS NULL OR phone_format_invalid = true"
+        },
+        {
+          "key": "B",
+          "text": "SELET email, phone FROM customers WHERE email IS NULL AND phone NOT RLIKE ‘ˆ[0-9-+()\\\\s]+$’"
+        },
+        {
+          "key": "C",
+          "text": "SELET email_null_pct, phone_invalid_pct FROM (SELET (OUNT(ASE WHEN email IS NULL THEN 1 END) *\n100.0/OUNT (*)) as email_null_pct, (OUNT(ASE WHEN phone NOT RLIKE ‘ˆ[0-9-+()\\\\s]+$’ THEN 1 END)*\n100.0/OUNT (*)) as phone_invalid_pct FROM customers)"
+        },
+        {
+          "key": "D",
+          "text": "SELET ASE WHEN email_null_pct >15 AND phone_invalid_pct> 10 THEN 1 ELSE 0 END FROM (SELET (OUNT (ASE WHEN email IS NULL THEN 1 END) * 100.0 / OUNT (*)) as phone_invalid_pct FROM customers) metrics\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/262_databricks_view_382844_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "263_databricks_view_382821_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 263,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 263 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382821-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is brining an existing production atabricks job under asset bundle management and wants to ensure that:\n• The job’s current configuration is captured as YAML, and all referenced files are included in their bundle project.\n• Future changes to the bundle’s YAML will update the existing job in-place (not create a new job)\nHow should the data engineer successfully move the production job under asset bundle management?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Run atabricks bundle generate job --existing-job-id to generate the YAML and download referenced files. Then, run atabricks bundle deploy to deploy the bundle, which will always update the existing job automatically."
+        },
+        {
+          "key": "B",
+          "text": "Export the job definition as JSON, convert it to YAML, and place it in your bundle. Then, run atabricks bundle deploy to update the existing job."
+        },
+        {
+          "key": "C",
+          "text": "Manually create the YAML configuration for the job in your bundle project, ensuring all settings match the existing job. Then, run atabricks bundle deploy the bundle, which will update the existing job in your workspace."
+        },
+        {
+          "key": "D",
+          "text": "Run databricks bundle generate job --existing-job-id to generate the YAML and download referenced files. Then, run atabricks bundle deployment, bind to link the bundle’s job resource to the existing job in atabricks.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/263_databricks_view_382821_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "264_databricks_view_382808_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 264,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 264 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382808-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data architect is implementing Delta Sharing as part of their data governance strategy to enable secure data collaboration with external partners and internal business units. The architect must establish a permission framework that allows designated data stewards to create shares for their respective domains while maintaining security boundaries and audit compliance.\nWhich specific permissions and roles must be assigned to enable users to create, configure, and manage Delta Shares while maintaining proper security governance and access controls?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only workspace admins can create and manage shares"
+        },
+        {
+          "key": "B",
+          "text": "Users need the MANAGE SHARES permission on the workspace"
+        },
+        {
+          "key": "C",
+          "text": "Users need to be metastore admins or have REATE SHARE privilege for the metastore"
+        },
+        {
+          "key": "D",
+          "text": "Any user with USE_ATALOG privilege can create shares\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/264_databricks_view_382808_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "265_databricks_view_382811_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 265,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 265 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382811-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer manages a production Lakeflow Spark Declarative Pipeline that processes customer transaction data. The pipeline includes several data quality expectations, such as: transaction_amount > 0 and customer_id IS NOT NULL.\nThese expectations are defined using the EXPECT clause in SQL. The engineer aims to monitor the pipeline’s data quality by analyzing the number of records that passed or failed each expectation during the latest pipeline update. The Lakeflow Spark Declarative Pipelines event logs are stored in a Delta table named event_log_table.\nFor the most recent pipeline update, determine a programmatically approach to extract information like the name of each expectation, associated dataset, count of records that passed the expectation, and count of records that failed the expectation.\nWhich method retrieves the desired data quality metrics from the Lakeflow Spark Declarative Pipelines event log?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ccess the event_log_table, filter for events where event_type = ‘flow progress’, and parse the details.flow_progress.data_quality.expectations field to extract the required metrics."
+        },
+        {
+          "key": "B",
+          "text": "Use the Lakeflow Spark Declarative Pipelines UI to navigate to the specific pipeline, select the dataset, and view the Data Quality tab to manually retrieve the expectation metrics."
+        },
+        {
+          "key": "C",
+          "text": "Query the event_log_table for events with event_type = ‘data_quality’ and directly select the passed_records and failed_records fields."
+        },
+        {
+          "key": "D",
+          "text": "ccess the event_log_table, filter for events where event_type = ‘expectatation_result’, and extract the expectation metrics from the details field.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/265_databricks_view_382811_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "266_databricks_view_382856_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 266,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 266 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382856-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Predictive Optimization is an automated Databricks service enabled by default for Unity Catalog Managed tables. It helps maintain Delta tables by continuously optimizing them to ensure optimal performance and costs.\nWhich two operations does Predictive Optimization run to maintain the Delta tables? (Choose two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "PARTITION BY"
+        },
+        {
+          "key": "B",
+          "text": "COMPACT"
+        },
+        {
+          "key": "C",
+          "text": "ANALYZE"
+        },
+        {
+          "key": "D",
+          "text": "OPTIMIZE"
+        },
+        {
+          "key": "E",
+          "text": "BUCKETING\n🗳️"
+        }
+      ],
+      "answer": "CD",
+      "images": [],
+      "sourceFile": "output/batch/266_databricks_view_382856_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "267_databricks_view_382858_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 267,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 267 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382858-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is building a customer data pipeline in Lakeflow Spark Declarative Pipelines. The source is a cloud-based event stream with limited retention containing inserts, updates, and deletes for customer records. These changes are being applied using the AUTO CDC INTO syntax to maintain an SCD Type 1 table as the target table, customer_dim.\nHow should the data engineer build a downstream job that streams from the customer_dim table to only act on updates and delete events, processing data incrementally?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use ignoreChanges flag while streaming from customer_dim to avoid breaking the pipeline during updates and deletes."
+        },
+        {
+          "key": "B",
+          "text": "Read change data feed from customer_dim table and apply filters to incrementally act on the change events."
+        },
+        {
+          "key": "C",
+          "text": "Streaming from customer_dim table would only be possible in the case of SCD 2 retention."
+        },
+        {
+          "key": "D",
+          "text": "When stored as SCD 1, the target of AUTO CDC INTO includes updates and deletes. Streaming from customer_dim can fail due to these operations. Instead, build another stream from the original source.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/267_databricks_view_382858_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "268_databricks_view_382803_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 268,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 268 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382803-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is designing a system leveraging Lakeflow Declarative Pipeline technology to process real-time truck telemetry data ingested from JSON files in S3 using Auto Loader. The data includes truck_id, timestamp, location, speed, and fuel_level. The system must support two use cases:\n1. Near-real-time monitoring of the latest location, speed, and fuel_level per truck_id for the operations team.\n2. Daily aggregated reports of total distance traveled and average fuel efficiency per truck_id for the management team.\nWhich approach should the data engineer use for streaming tables and materialized views in the Lakeflow Declarative Pipeline to meet these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Define a streaming table to ingest and store the raw telemetry data, and create a streaming table to compute the daily aggregated distance and fuel efficiency per truck_id reporting. reate a materialized view to compute the latest location, speed, and fuel_level per truck_id for real-time monitoring."
+        },
+        {
+          "key": "B",
+          "text": "Define a streaming table to ingest and store the raw telemetry data, and create a materialized view to compute the latest location, speed, and fuel_level per truck_id for real-time monitoring. reate another materialized view to compute the daily aggregated distance and fuel efficiency per truck_id for reporting."
+        },
+        {
+          "key": "C",
+          "text": "Define a streaming table to ingest and store the raw telemetry data, and create a streaming table to incrementally compute the latest location, speed, and fuel_level per truck_id for real-time monitoring. reate a materialized view to compute the daily aggregated distance and fuel efficiency per truck_id for reporting."
+        },
+        {
+          "key": "D",
+          "text": "Define a materialized view to ingest and store the raw telemetry data, and create a streaming table to compute the latest location, speed, and fuel_level per truck_id for real-time monitoring. reate another materialized view to compute the daily aggregated distance and fuel efficiency per truck_id for reporting.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/268_databricks_view_382803_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "269_databricks_view_382830_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 269,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 269 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382830-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A platform team lead is responsible for automating the individual teams attribution towards SQL Warehouse usage. The requirement is to identify the SQL warehouse usage at the individual user’s level and generate a daily report to be shared with an executive team that includes leaders from all business units.\nHow should the platform lead generate an automated report that can be shared daily?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use the system tables to capture the audit and billing usage data and share the queries with the executive team. This enables the executives to execute the query and see the latest results any time."
+        },
+        {
+          "key": "B",
+          "text": "Use the system tables to capture the audit and billing usage data and create a dashboard with daily refresh schedules and shared with the executive team."
+        },
+        {
+          "key": "C",
+          "text": "Restrict users from running any SQL query unless they provide all the query details so that the attribution can be calculated and shared with the executive team."
+        },
+        {
+          "key": "D",
+          "text": "Let the users run the SQL query and then directly report the usage to the executives. The ownership of the SQL warehouse usage will be with the individual teams.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/269_databricks_view_382830_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "270_databricks_view_382845_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 270,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 270 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382845-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineering team is collaborating on a Databricks project where each team member needs to develop and test code independently before merging changes into the main branch.\nThey want to avoid accidental overwrites or branch switching issues while ensuring that all work is version- controlled and can be integrated into their CI/CD pipeline.\nHow should the data engineer achieve collaboration?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each team member creates their own Databricks Git folder, mapped to the same remote Git repository, and works in their own development branch within their personal folder."
+        },
+        {
+          "key": "B",
+          "text": "ll team members work in the same Databricks Git folder and perform Git operations (pull, push, commit, branch switching) directly in that shared folder."
+        },
+        {
+          "key": "C",
+          "text": "Team members edit notebooks directly in the workspace’s shared folder and periodically copy changes into a Git folder for version control."
+        },
+        {
+          "key": "D",
+          "text": "Team members use the Databricks CLI to clone the Git repository and perform Git operations from a cluster’s web terminal.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/270_databricks_view_382845_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "271_databricks_view_382848_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 271,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 271 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382848-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is using the AUTO CC API in Lakeflow Spark eclarative Pipeline to propagate deletions from a source table (orders_source) to a target table (orders_target). The source has Change ata Feed (CF) enabled, but some delete events arrive out of order due to upstream delays.\nHow does the AUTO CC API internally ensure deletions are applied correctly despite out-of-order events?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It ignores deletions if they arrive after updates for the same key."
+        },
+        {
+          "key": "B",
+          "text": "It manually sorts incoming events by timestamp before applying changes."
+        },
+        {
+          "key": "C",
+          "text": "It runs VACUUM on the target table to purge conflicting records."
+        },
+        {
+          "key": "D",
+          "text": "It uses sequence_by to order events and retains tombstones for deleted rows until older sequences are processed.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/271_databricks_view_382848_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "272_databricks_view_382842_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 272,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 272 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382842-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data governance team at a large enterprise is improving data discoverability across its organization. The team has hundreds of tables in their Databricks Lakehouse with thousands of columns that lack proper documentation. Many of these tables were created by different teams over several years, with missing context about column meanings and business logic. The data governance team needs to quickly generate comprehensive column descriptions for all existing tables to meet compliance requirements and improve data literacy across the organization. They want to leverage modern capabilities to automatically generate meaningful descriptions rather than manually documenting each column, which would take months to complete. The team is looking for a solution that can understand data patterns, column names, and sample values to create intelligent descriptions.\nWhich approach should the team use in Databricks to automatically generate column comments and descriptions for existing tables?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Write custom PySpark code using df.describe () and df.schema to programmatically generate basic statistical descriptions for each column."
+        },
+        {
+          "key": "B",
+          "text": "Navigate to the table in Databricks Catalog Explorer, select the table schema view, and use the “AI Generate” option which leverages artificial intelligence to automatically create meaningful column descriptions based on column names, data types, sample values, and data patterns."
+        },
+        {
+          "key": "C",
+          "text": "Use the DESCRIE TALE command to extract existing schema information and manually write descriptions based on column names and data types."
+        },
+        {
+          "key": "D",
+          "text": "Use Delta Lake’s DESCRIE HISTORY command to analyze table evolution and infer column purposes from historical changes.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/272_databricks_view_382842_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "273_databricks_view_382846_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 273,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 273 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382846-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A company processes semi-structured JSON files from an external source using Auto Loader in a classic atabricks job. Occasionally, records arrive with null critical fields, invalid types, or unexpected nested schema variations. The engineer must ensure that malformed or non-conforming records are not dropped silently and are captured in a separate quarantine table. The pipeline should continue processing good records into the Bronze layer without failing the job, and the approach must support both batch and streaming ingestion.\nThe data engineer needs to build a robust ingestion pattern that automatically routes bad records to a quarantine elta table, while still ingesting good records into the Bronze layer for further processing.\nWhich approach fulfills the quarantine mechanism in this ingestion architecture?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a notebook job with inferSchema= True, write a streaming query with .foreachBatch() and catch exceptions using try/except to redirect failed batches to quarantine."
+        },
+        {
+          "key": "B",
+          "text": "Use Auto Loader with failFast mode to set to false, and enable schema evolution; invalid records will be silently ignored during ingestion."
+        },
+        {
+          "key": "C",
+          "text": "Use Lakeflow Spark eclarative Pipelines with a SQL pipeline; configure it to drop rows with nulls using where critical_fields is not null, and rely on audit logs for malformed data."
+        },
+        {
+          "key": "D",
+          "text": "Use Auto Loader with LP and implement an EXPECT () constraint with a record audit logic to route bad records.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/273_databricks_view_382846_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 274,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 274 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382832-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is analyzing transactional data in a PySpark DataFrame df containing customer_id, transaction_timestamp (precise to milliseconds), and amount_spent. The objective is to compute a cumulative sum of amount_spent per customer, strictly ordered by transaction_timestamp. The cumulative sum must include all transactions from the earliest timestamp up to and including the current row, respecting temporal ordering within each customer partition.\nWhich PySpark code snippet most accurately constructs the appropriate window specification and applies the aggregation to yield the correct cumulative expenditure per customer?",
+      "options": [
+        {
+          "key": "D",
+          "text": "🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [
+        "output/batch/274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png",
+        "output/batch/274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question/images/image_02.png",
+        "output/batch/274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question/images/image_03.png",
+        "output/batch/274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question/images/image_04.png"
+      ],
+      "sourceFile": "output/batch/274_databricks_view_382832_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "275_databricks_view_382852_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 275,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 275 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382852-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data team is implementing an append-only elta Lake pipeline that needs to handle both and streaming data. They want to ensure that schema changes in the source data can be automatically incorporated without breaking the pipeline.\nWhich configuration should the team use when writing data to the elta table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ignoreChanges = false"
+        },
+        {
+          "key": "B",
+          "text": "validateSchema= false"
+        },
+        {
+          "key": "C",
+          "text": "overwriteSchema=true"
+        },
+        {
+          "key": "D",
+          "text": "mergeSchema=true\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/275_databricks_view_382852_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "276_databricks_view_382850_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 276,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 276 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382850-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A senior data engineer is planning large-scale data workflows. The current task is to identify the considerations that form a foundation for creating scalable data models that are essential for effective management of large datsets. The data engineering team has identified the core capabilities as part of a scalable data model to build a modern data platform and provided their reasoning for considering elta Lake for review. The senior data engineer is responsible for identifying the recommendations that are not valid.\nWhich key features can be ignored while evaluating elta Lake?",
+      "options": [
+        {
+          "key": "A",
+          "text": "elta Lake works with various data formats (e.g., Parquet, JSON, CSV) and integrates well with Spark and atabricks tools:"
+        },
+        {
+          "key": "B",
+          "text": "elta Lake optimizes metadata handling, efficiently managing billions of files and facilitating scalability to petabyte-scale datasets."
+        },
+        {
+          "key": "C",
+          "text": "elta Lake’s capability to process data in both batch and streaming modes seamlessly, providing flexibility in data ingestion and processing."
+        },
+        {
+          "key": "D",
+          "text": "elta Lake provides limited support for monitoring and troubleshooting data pipelines, so relevant partner tools have to be identified and set up for enhanced operational efficiency.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/276_databricks_view_382850_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "277_databricks_view_382829_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 277,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 277 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382829-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineering team is implementing an append-only data pipeline using Delta Lake, and wants to ensure that data is never modified or deleted once written.\nWhich Delta Lake feature should the data engineer enable to prevent modifications to existing data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Delta PPEND_ONLY"
+        },
+        {
+          "key": "B",
+          "text": "Delta VCUUM"
+        },
+        {
+          "key": "C",
+          "text": "Delta OPTIMIZE"
+        },
+        {
+          "key": "D",
+          "text": "Delta Time Travel\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/277_databricks_view_382829_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "278_databricks_view_382839_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 278,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 278 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382839-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineering team is setting up a Git project to automate integration tests using Databricks Asset undles and the Git provider’s CI/CD functionalities. When a pull containing changes to their pipleline is sent, they need to run a Job to test their data pipeline.\nWhat is the correct databricks bundle command sequence to be executed from the Git provider’s CI/CD automation for this task?",
+      "options": [
+        {
+          "key": "A",
+          "text": "init, deploy, run, validate"
+        },
+        {
+          "key": "B",
+          "text": "validate, deploy, run"
+        },
+        {
+          "key": "C",
+          "text": "init, validate, deploy, run"
+        },
+        {
+          "key": "D",
+          "text": "deploy, run, validate\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/278_databricks_view_382839_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "279_databricks_view_382823_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 279,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 279 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382823-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is attempting to execute the following PySpark code:\ndf=spark.read.table(“sales”)\nresult=df.groupBy(“region”).agg(sum(“revenue”))\nHowever, upon inspecting the execution plan and profiling the Spark job, they observe excessive data shuffling during the aggregation phase.\nWhich technique should be applied to reduce shuffling during the groupBy aggregation operation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use.coalesce(1) after the aggregation"
+        },
+        {
+          "key": "B",
+          "text": "Caching the ataFrame df"
+        },
+        {
+          "key": "C",
+          "text": "Use broadcast join"
+        },
+        {
+          "key": "D",
+          "text": "Repartition by region before aggregation\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/279_databricks_view_382823_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "280_databricks_view_382857_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 280,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 280 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382857-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "While reviewing a query’s execution in the eatricks Query Profile, a data engineer observes that the “Top operators” panel shows a sort operator with high “Time spent” and “Memory peak” metrics, and the Spark UI reports frequent data spilling.\nHow should the data engineering address this issue?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Repartition the ataFrame to a single partition before sorting."
+        },
+        {
+          "key": "B",
+          "text": "Convert the sort operation to a filter operation."
+        },
+        {
+          "key": "C",
+          "text": "Switch to a broadcast join to reduce memory usage."
+        },
+        {
+          "key": "D",
+          "text": "Increase the number of shuffle partitions to better distribute data.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/280_databricks_view_382857_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "281_databricks_view_382843_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 281,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 281 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382843-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer manages a Unity Catalog table customer_data in schema finance that includes sensitive fields like ssn and credit_score. Intern Group should only see masked values, while nalyst Group should only access rows for their assigned region. The data engineer needs to restrict access based on user role and region without duplicating data.\nHow should the data engineer enforce this security policy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Unity Catalog’s row filters based on the region and column masks based on user roles."
+        },
+        {
+          "key": "B",
+          "text": "Create views using current_user() and is_account_group_member() functions, and apply masking logic inside the SQL SELECT clause for each sensitive column."
+        },
+        {
+          "key": "C",
+          "text": "Create dynamic views for each user role and manage access with CLs."
+        },
+        {
+          "key": "D",
+          "text": "Use Unity Catalog’s row filters based on the user roles and column masks based on the region.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/281_databricks_view_382843_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "282_databricks_view_382809_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 282,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 282 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382809-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer us ingesting JSON files from cloud object storage using Databricks uto Loader. The source folder may occasionally receive large files of data, which risks overwhelming the stream. To ensure predictable micro-batch sizes, the team wants to throttle ingestion based on the volume of data scanned at 1 GB, regardless of the number of files.\nWhich uto Loader configuration should the data engineer used to achieve this?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Configure cloudFiles.maxBytesPerTrigger with 1 GB to place a limit."
+        },
+        {
+          "key": "B",
+          "text": "Configure cloudFiles.maxSizePerTrigger with 1 GB to place a limit."
+        },
+        {
+          "key": "C",
+          "text": "Configure cloudFiles.maxFilesPerTrigger and estimate the average file size to approximate a size-based throttle of 1 GB."
+        },
+        {
+          "key": "D",
+          "text": "Configure cloudFiles.maxPartitionBytes with 1GB to limit data in each partition.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/282_databricks_view_382809_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "283_databricks_view_382812_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 283,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 283 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382812-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data company uses Databricks Unity Catalog and has multiple enterprise data sources, including PostgreSQL, Snowflake, and SQL Server. The central data platform team wants to configure Lakehouse Federation so analysts can query external tables directly in Databricks using Databricks SQL, without duplicating data.\nWhich steps are necessary to configure Lakehouse Federation in a secure and governed manner?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mirror the external datasets into Delta Lake using Auto Loader, and govern them using Data Lineage and System Tables."
+        },
+        {
+          "key": "B",
+          "text": "Configure connections and foreign catalog in Unity Catalog, then grant access to foreign catalogs, schemas, and tables using Unity Catalog permissions."
+        },
+        {
+          "key": "C",
+          "text": "Use Partner Connect to create linked datasets, and apply table ACLs at the source system to govern access through Databricks."
+        },
+        {
+          "key": "D",
+          "text": "Create external locations and storage credentials to connect to each database, then register foreign tables in Unity Catalog.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/283_databricks_view_382812_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "284_databricks_view_382841_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 284,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 284 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382841-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Why are Pandas UDFs often preferred over traditional PySpark UDFs in performance-critical applications involving large datasets?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They minimize memory usage by streaming each row individually through a lightweight Python wrapper, avoiding batch processing overhead."
+        },
+        {
+          "key": "B",
+          "text": "They leverage Apache Arrow to enable vectorized operations between the JVM and Python runtimes, reducing serialization costs and improving computational efficiency."
+        },
+        {
+          "key": "C",
+          "text": "They allow row-level execution of functions in Python with native Spark optimization, removing the need for columnar execution."
+        },
+        {
+          "key": "D",
+          "text": "They eliminate the JVM-Python boundary by bypassing serialization entirely, thereby avoiding data conversion overhead.\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/284_databricks_view_382841_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "285_databricks_view_382820_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 285,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 285 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382820-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is setting up a pipeline to ingest data from a message bus system that occasionally delivers duplicate messages. The duplicate messages can be a week apart. The target is a atabricks elta Lake table where each record should appear exactly once.\nWhich atabricks ingestion pattern should be implemented to handle potential duplicates where events can arrive outside of the configured watermark?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use elta Lake’s change data feed to filter duplicate records"
+        },
+        {
+          "key": "B",
+          "text": "Use elta Lake time travel to identify and remove duplicates"
+        },
+        {
+          "key": "C",
+          "text": "Configure Structured Streaming with dropuplicates transformation"
+        },
+        {
+          "key": "D",
+          "text": "Implement a write operation using MERGE INTO with a unique key\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/285_databricks_view_382820_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "286_databricks_view_382853_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 286,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 286 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382853-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer needs to design an efficient pipeline that automatically processes new CSV files as they arrive in S3 storage.\nWhich atabricks feature should the data engineer use to meet these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Streaming from cloud storage using standard Spark readStream with format (“csv”) and format (“json”)"
+        },
+        {
+          "key": "B",
+          "text": "COPY INTO SQL command with parameters to track processed files"
+        },
+        {
+          "key": "C",
+          "text": "Traditional batch processing with scheduled atabricks Jobs"
+        },
+        {
+          "key": "D",
+          "text": "Auto Loader with schema inference and evolution enabled\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/286_databricks_view_382853_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "287_databricks_view_382838_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 287,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 287 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382838-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is implementing liquid clustering on a elta Lale table and needs to understand how it affects data management operations. The table will be updated frequently with new data. The table is an external table and not managed by Unity Catalog.\nHow does liquid clustering in elta Lake handle new data that is inserted after the initial table creation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "New data is rejected if it doesn’t match the clustering pattern."
+        },
+        {
+          "key": "B",
+          "text": "New data is automatically clustered during write operations."
+        },
+        {
+          "key": "C",
+          "text": "New data is written to a staging area and clustered during scheduled maintenance."
+        },
+        {
+          "key": "D",
+          "text": "New data remains unclustered until the next OPTIMIZE operation.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/287_databricks_view_382838_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "288_databricks_view_382825_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 288,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 288 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382825-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is optimizing a MERGE operation on an 800GB UC-managed table that experiences frequent updates and deletions.\nWhich two actions should the engineer prioritize to improve MERGE performance? (Choose two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apply liquid clustering using the merge join keys."
+        },
+        {
+          "key": "B",
+          "text": "Enable deletion vectors on the table if not already enabled."
+        },
+        {
+          "key": "C",
+          "text": "Partition the table by date."
+        },
+        {
+          "key": "D",
+          "text": "Use ZORDER on high-cardinality columns."
+        },
+        {
+          "key": "E",
+          "text": "Overwrite the table instead of Merge.\n🗳️"
+        }
+      ],
+      "answer": "AB",
+      "images": [],
+      "sourceFile": "output/batch/288_databricks_view_382825_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "289_databricks_view_382854_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 289,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 289 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382854-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is building a streaming data pipeline to ingest JSON files from cloud storage into a Delta Lake table. The pipeline must process files incrementally, handle schema evolution automatically, ensure exactly-once processing, and minimize manual infrastructure management.\nHow should the data engineer fulfill these requirements?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Lakeflow Spark Declarative Pipelines with a static DataFrame read, merge schema with spark.conf.set (“spark.databricks.delta.schema.autoMerge.enabled”, “true”)"
+        },
+        {
+          "key": "B",
+          "text": "Use Auto Loader in batch mode with a daily job to overwrite the Delta table."
+        },
+        {
+          "key": "C",
+          "text": "Use Lakeflow Spart Declarative Pipelines with Auto Loader and enabling schema inference with “cloudFiles.schemaEvolutionMode”= “addNewolumns”"
+        },
+        {
+          "key": "D",
+          "text": "Use traditional Spark Structured Streaming with Auto Loader, manually configuring checkpoints location and enabling schema inference with “mergeSchema”= “true”\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/289_databricks_view_382854_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "290_databricks_view_382831_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 290,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 290 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382831-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "Given the following PySpark code snippet in a atabricks notebook:\nfiltered_df=spark.read.format(“delta”).load(“/mnt/daya/large_table”) \\\n.filter (“event_date> ‘2024-01-01’”)\nfiltered_df.count ()\nThe data engineer notices from the Query Profile that the scan operator for filtered_df is reading almost all files, despite a filter being applied.\nWhat is the probable reason for poor data skipping?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The elta table lacks optimization that enables dynamic file pruning."
+        },
+        {
+          "key": "B",
+          "text": "The filter condition involves a data type that is excluded from data skipping support."
+        },
+        {
+          "key": "C",
+          "text": "The filter is executed only after the full data scan, which prevents data skipping from taking place."
+        },
+        {
+          "key": "D",
+          "text": "The event_date column is outside the table’s partitioning and Z-ordering scheme.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/290_databricks_view_382831_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "291_databricks_view_382721_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 291,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 291 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382721-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "When a new Databricks project starts, the central IP team provisions the required infrastructure using Terraform and a Service Principal. This includes creating a Databricks workspace, a Unity Catalog linked to an External Location, and a Databricks group containing all project team members. Project teams must store all assets – e.g., tables and volumes, as Managed assets in Unity Catalog. This model hides infrastructure complexity while giving teams autonomy within their catalog. They can create and manage schemas, tables, volumes, and related objects but cannot rename, delete, or change catalog permissions, those remain under IT’s control.\nWhich rights should the project group be granted to enable this model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The group needs to have USE CTLOG and USE SCHEM on the catalog."
+        },
+        {
+          "key": "B",
+          "text": "The group needs to have LL PRIVILEGES and the MNGE on the catalog."
+        },
+        {
+          "key": "C",
+          "text": "The group needs to have LL PRIVILEGES on the catalog."
+        },
+        {
+          "key": "D",
+          "text": "The group should be made OWNER of the catalog.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/291_databricks_view_382721_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "292_databricks_view_382840_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 292,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 292 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382840-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer needs to productionize a new Spark application written by teammate. This application has numerous external dependencies, including libraries, and requires custom environment variables and Spark configuration parameters to be set.\nWhich two methods will help the data engineer accomplish the task? (Choose two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Install libraries on DBFS"
+        },
+        {
+          "key": "B",
+          "text": "Add libraries to compute policies"
+        },
+        {
+          "key": "C",
+          "text": "Use secrets in init scripts to store configuration data"
+        },
+        {
+          "key": "D",
+          "text": "Use compute policies to set system properties, environment variables, and Spark configuration parameters."
+        },
+        {
+          "key": "E",
+          "text": "Create init scripts on DBFS.\n🗳️"
+        }
+      ],
+      "answer": "DE",
+      "images": [],
+      "sourceFile": "output/batch/292_databricks_view_382840_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "293_databricks_view_382817_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 293,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 293 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382817-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A healthcare analytics team is implementing a dimensional model in Delta Lake for patient care analysis. They have a date dimension table and are evaluating design options to ensure it supports a wide range of time-based analyses.\nWhich design approach for the date dimension will support efficient time-based querying and aggregation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Store the date as string in ISO format (YYYY-MM-DD) for readability."
+        },
+        {
+          "key": "B",
+          "text": "Pre-calculate attributes like fiscal_period, quarter, month_name, day_of_week, and holiday."
+        },
+        {
+          "key": "C",
+          "text": "Store only the date value and calculate all time attributes in queries."
+        },
+        {
+          "key": "D",
+          "text": "Create separate dimension tables for different calendar systems (fiscal, academic, etc.)\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [],
+      "sourceFile": "output/batch/293_databricks_view_382817_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "294_databricks_view_382827_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 294,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 294 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382827-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "data engineer is tasked with ensuring that a Delta table in Databricks continuously retains deleted files for 15 days (instead of the default 7 days), in order to permanently comply with the organization’s data retention policy.\nWhich code snippet correctly sets this retention period for deleted files?",
+      "options": [
+        {
+          "key": "A",
+          "text": "spark.sql(“LTER TBLE my_table SET TBLPROPERTIES (‘delta.deletedFileRetentionDuration’ = ‘interval 15 days’)”)"
+        },
+        {
+          "key": "C",
+          "text": "spark.sql(“VCUUM my_table RETIN HOURS”)"
+        },
+        {
+          "key": "D",
+          "text": "spark.conf.set(“spark.databricks.delta.deletedFileRetemtionDuration”, “15 days”)\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [
+        "output/batch/294_databricks_view_382827_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/294_databricks_view_382827_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "295_databricks_view_382815_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 295,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 295 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382815-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A Data Engineer is building a fraud detection pipeline that calls out to Open AI, via a Python library, and needs to include an access token when using the API.\nWhich Databricks LI command should the Data Engineer use to create the secret?",
+      "options": [
+        {
+          "key": "A",
+          "text": "databricks secrets put-secret KEY SOPE; dbutils.secrets.get (KEY, SOPE)"
+        },
+        {
+          "key": "B",
+          "text": "databricks tokens put-token SOPE KEY; dbutils.tokens.get (SOPE, KEY)"
+        },
+        {
+          "key": "C",
+          "text": "databricks secrets put-secret SOPE KEY; dbutils.secrets.get (SOPE, KEY)"
+        },
+        {
+          "key": "D",
+          "text": "databricks tokens put-token KEY SOPE; dbutils.secrets.get (KEY, SOPE)\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/295_databricks_view_382815_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "296_databricks_view_382849_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 296,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 296 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382849-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "company has a task management system that tracks the most recent status of tasks. The system takes task events as input and processes events in near real-time using Lakeflow Spark Declarative Pipelines. new task event is ingested into the system when a task is created or the status is changed. Lakeflow Spark Declarative Pipelines provides a streaming table (table name: tasks_status) for the BI users to query. The table represents the latest status of all tasks and includes 5 columns: task_id(unique for each task), task_name, task_owner, task_status, task_event_time. The table enables 3 properties: deletion vectors, row tracking, and change data feed.\ndata engineer is asked to create a new Lakeflow Spark Declarative Pipelines to enrich the “task_status” table in near real-time by adding one additional column representing task_owner’s department, which can be looked up from a static dimension table (table name: employee).\nHow should this enrichment be implemented?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Create a new Lakeflow Spark Declarative Pipelines: use readStream() function with option readChangeFeed to read tasks_status table CDF; enrich with the employee table; create a new streaming table as the result table and use apply_changes() function to process the changes from the enriched CDF."
+        },
+        {
+          "key": "B",
+          "text": "Create a new Lakeflow Spark Declarative pipeline: use the readStream()function to read tasks_status table, enrich with the employee table; store the result in a new streaming table."
+        },
+        {
+          "key": "C",
+          "text": "Create a new Lakeflow Spark Declarative Pipeline: use the readStream() function with the option skipChangeCommits to read the tasks_status table; enrich with the employee table; store the result in a new streaming table."
+        },
+        {
+          "key": "D",
+          "text": "Create a new Lakeflow Spark Declarative Pipeline: use the read () function to read tasks_status table; enrich with employee table; store the result in a materialized view.\n🗳️"
+        }
+      ],
+      "answer": "A",
+      "images": [],
+      "sourceFile": "output/batch/296_databricks_view_382849_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "297_databricks_view_382851_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 297,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 297 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/382851-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is reviewing the PySpark code to copy a part of the production dataset to the sandbox environment, and needs to be sure that no PII(Personally Identifiable Information) data is being copied. After checking the sales table, the data engineer notices that it has user emails as the only PII data included as well as being the only column to identify the user.\nfrom pyspark.sql import functions as F\nWhich anonymised code should be used to achieve the required outcome?",
+      "options": [
+        {
+          "key": "A",
+          "text": "df.withColumn (“user_emai”, F.expr(“uuid()”))"
+        },
+        {
+          "key": "B",
+          "text": "df.withColumn (“user_email”, F.sha2 (“user_email”))"
+        },
+        {
+          "key": "C",
+          "text": "df.withColumn (“hashed_email”, sha2 (“user_email”))"
+        },
+        {
+          "key": "D",
+          "text": "df.withColumn (“user_email”, F.regexp_replace (“user_eamail”, “@*”, “@anonymized.com”))\n🗳️"
+        }
+      ],
+      "answer": "B",
+      "images": [
+        "output/batch/297_databricks_view_382851_exam_certified_data_engineer_professional_topic_1_question/images/image_01.png"
+      ],
+      "sourceFile": "output/batch/297_databricks_view_382851_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "298_databricks_view_383296_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 298,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 298 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/383296-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer wants to ingest a large collection of image files (JPEG and PNG) from cloud object storage into Unity Catalog-managed table for further analysis and visualization.\nWhich two configurations and practices are recommended to incrementally ingest these images into the table? (Choose two.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use Auto loader and set cloudFiles.format to \"TEXT\""
+        },
+        {
+          "key": "B",
+          "text": "Use Auto loader and set cloudFiles.format to \"BINARYFILE\""
+        },
+        {
+          "key": "C",
+          "text": "Use Auto loader and set cloudFiles.format to \"IMAGE\""
+        },
+        {
+          "key": "D",
+          "text": "Use the pathGlobFilter option to select only image files (e.g.. \"*.jpg, *.png\")"
+        },
+        {
+          "key": "E",
+          "text": "Move files to a volume and read with SQL editor\n🗳️"
+        }
+      ],
+      "answer": "BD",
+      "images": [],
+      "sourceFile": "output/batch/298_databricks_view_383296_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "299_databricks_view_383290_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 299,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 299 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/383290-exam-certified-data-engineer-professional-topic-1-question/",
+      "stem": "A data engineer is configuring Delta Sharing for a Databricks-to-Databricks scenario to optimize read performance. The recipient needs to perform time travel queries and streaming reads on shared sales data.\nWhich configuration will provide the optimal performance while enabling these capabilities?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use the open sharing protocol instead of Databricks-to Databricks sharing for better performance."
+        },
+        {
+          "key": "B",
+          "text": "Share tables WITHOUT HISTORY and enable partitioning for better query performance."
+        },
+        {
+          "key": "C",
+          "text": "Share tables WITH HISTORY, ensure tables don't have partitioning enabled. and enable DF before sharing."
+        },
+        {
+          "key": "D",
+          "text": "Share the entire schema WITHOUT HISTORY and rely on recipient-side caching for performance.\n🗳️"
+        }
+      ],
+      "answer": "C",
+      "images": [],
+      "sourceFile": "output/batch/299_databricks_view_383290_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "300_databricks_view_383293_exam_certified_data_engineer_professional_topic_1_question",
+      "questionNumber": 300,
+      "title": "Exam Certified Data Engineer Professional topic 1 question 300 discussion",
+      "url": "https://www.examtopics.com/discussions/databricks/view/383293-exam-certified-data-engineer-professional-topic-1-question",
+      "stem": "A data organization has adopted elta Sharing to securely distribute curated datasets from a Unity Catalog-enabled workspace. The data engineering team is sharing large elta tables with an internal partner via atabricks-to-atabricks and aggregated reports with an external client via Open Sharing. While testing new sharing workflows, the data engineering team encounters challenges related to access control, data update visibility, and shareable object types.\nWhat is a limitation of the elta Sharing protocol or implementation when used with atabricks-to-atabricks or Open Sharing?",
+      "options": [
+        {
+          "key": "A",
+          "text": "elta Sharing does not support Unity Catalog enabled tables; only legacy Hive Metastore tables are shareable."
+        },
+        {
+          "key": "B",
+          "text": "With atabricks-to-atabricks sharing. Unity Catalog recipients must re-ingest data manually using COPY INTO or REST APIs."
+        },
+        {
+          "key": "C",
+          "text": "elta Sharing (both atabricks-to-atabricks and Open sharing) allows recipients to modify the source data if they have SELECT privileges."
+        },
+        {
+          "key": "D",
+          "text": "With Open sharing, recipients cannot access Volumes, Models, or notebooks — only static elta tables are supported.\n🗳️"
+        }
+      ],
+      "answer": "D",
+      "images": [],
+      "sourceFile": "output/batch/300_databricks_view_383293_exam_certified_data_engineer_professional_topic_1_question/result.json"
+    },
+    {
+      "id": "001_databricks_certified_data_engineer_professional_view",
+      "questionNumber": null,
+      "title": "Certified Data Engineer Professional Exam - Free Actual Q&As, Page 1 | ExamTopics",
+      "url": "https://www.examtopics.com/exams/databricks/certified-data-engineer-professional/view/",
+      "stem": "An upstream system has been configured to pass the date for a given batch of data to the Databricks Jobs API as a parameter. The notebook to be scheduled will use this parameter to load data with the following code: df = spark.read.format(\"parquet\").load(f\"/mnt/source/(date)\")\nWhich code block should be used to create the date Python variable used in the above code block?",
+      "options": [
+        {
+          "key": "A",
+          "text": "date = spark.conf.get(\"date\")"
+        },
+        {
+          "key": "B",
+          "text": "input_dict = input()\ndate= input_dict[\"date\"]"
+        },
+        {
+          "key": "C",
+          "text": "import sys\ndate = sys.argv[1]"
+        },
+        {
+          "key": "D",
+          "text": "date = dbutils.notebooks.getParam(\"date\")"
+        },
+        {
+          "key": "E",
+          "text": "dbutils.widgets.text(\"date\", \"null\")\ndate = dbutils.widgets.get(\"date\")\n🗳️"
+        }
+      ],
+      "answer": "E",
+      "images": [],
+      "sourceFile": "output/batch/001_databricks_certified_data_engineer_professional_view/result.json"
+    }
+  ]
+};

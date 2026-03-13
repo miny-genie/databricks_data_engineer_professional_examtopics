@@ -1,0 +1,1 @@
+﻿window.__QUESTION_BANK_TRANSLATIONS__ = {};

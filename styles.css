@@ -1,0 +1,359 @@
+﻿:root {
+  --bg: #f4efe6;
+  --bg-strong: #e9e0d2;
+  --panel: rgba(255, 252, 245, 0.86);
+  --panel-strong: #fffaf2;
+  --text: #1e1a16;
+  --muted: #6e6256;
+  --line: rgba(60, 44, 25, 0.12);
+  --accent: #0e7c66;
+  --accent-strong: #0a5d4d;
+  --warm: #c96d32;
+  --danger: #8f3333;
+  --shadow: 0 18px 45px rgba(56, 38, 17, 0.12);
+  --radius: 22px;
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Segoe UI", "Noto Sans KR", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(201, 109, 50, 0.18), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(14, 124, 102, 0.16), transparent 28%),
+    linear-gradient(135deg, #f8f2e8 0%, #efe6d7 45%, #e7dcc9 100%);
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 24px;
+  border-right: 1px solid var(--line);
+  background: rgba(255, 248, 238, 0.68);
+  backdrop-filter: blur(18px);
+  overflow: auto;
+}
+
+.content {
+  padding: 28px;
+}
+
+.brand h1 {
+  margin: 6px 0 10px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--warm);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.subtitle,
+.meta,
+.empty-state {
+  color: var(--muted);
+}
+
+.panel,
+.card,
+.question-item {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  font: inherit;
+}
+
+.stats {
+  display: grid;
+  gap: 8px;
+}
+
+.stats strong {
+  font-size: 1.4rem;
+  font-family: var(--font-display);
+}
+
+.question-list {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.question-item {
+  width: 100%;
+  padding: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.question-item:hover,
+.question-item.active {
+  transform: translateY(-1px);
+  border-color: rgba(14, 124, 102, 0.42);
+  background: var(--panel-strong);
+}
+
+.question-item .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-strong);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.pill.correct {
+  background: rgba(14, 124, 102, 0.12);
+  color: var(--accent-strong);
+}
+
+.pill.incorrect {
+  background: rgba(143, 51, 51, 0.12);
+  color: var(--danger);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.button {
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button.secondary {
+  background: #3e4e69;
+}
+
+.button.accent {
+  background: var(--warm);
+}
+
+.button.ghost {
+  background: rgba(62, 78, 105, 0.12);
+  color: #2f3b4f;
+}
+
+.button.small {
+  padding: 9px 12px;
+  font-size: 0.88rem;
+}
+
+.button.is-active {
+  outline: 3px solid rgba(201, 109, 50, 0.25);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.list-pager {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.pager-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  padding: 28px;
+  background: rgba(255, 252, 246, 0.92);
+}
+
+.card h2 {
+  margin: 0 0 14px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+.stem {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+.stem-original {
+  font-weight: 600;
+}
+
+.stem-translation {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.image-gallery {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.options {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.option {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease, background 120ms ease;
+}
+
+.option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(14, 124, 102, 0.4);
+}
+
+.option.selected {
+  border-color: rgba(201, 109, 50, 0.55);
+  background: rgba(201, 109, 50, 0.09);
+}
+
+.option.correct {
+  border-color: rgba(14, 124, 102, 0.52);
+  background: rgba(14, 124, 102, 0.09);
+}
+
+.option.incorrect {
+  border-color: rgba(143, 51, 51, 0.45);
+  background: rgba(143, 51, 51, 0.08);
+}
+
+.option-key {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.option-text {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+
+.option-translation {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.answer-panel {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(14, 124, 102, 0.08);
+  border: 1px solid rgba(14, 124, 102, 0.16);
+}
+
+.answer-panel.hidden {
+  display: none;
+}
+
+.answer-translation {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.note-panel {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(143, 51, 51, 0.07);
+  border: 1px solid rgba(143, 51, 51, 0.16);
+}
+
+.footer-meta {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
